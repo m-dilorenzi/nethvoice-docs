@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "NethVoice",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Administrator manual": {
+    "message": "Manuale amministratore",
+    "description": "Navbar item with label Administrator manual"
+  },
+  "item.label.User manual": {
+    "message": "Manuale utente",
+    "description": "Navbar item with label User manual"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Announcements": {
+    "message": "Annunci",
+    "description": "Navbar item with label Announcements"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

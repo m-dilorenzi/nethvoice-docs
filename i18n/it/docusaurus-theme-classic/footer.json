@@ -1,0 +1,58 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Administrator manual": {
+    "message": "Administrator manual",
+    "description": "The label of footer link with label=Administrator manual linking to /docs/administrator-manual/introduction"
+  },
+  "link.item.label.User manual": {
+    "message": "User manual",
+    "description": "The label of footer link with label=User manual linking to /docs/user-manual/nethcti"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "The label of footer link with label=Tutorial linking to /docs/tutorial"
+  },
+  "link.item.label.NethServer Community (English)": {
+    "message": "NethServer Community (English)",
+    "description": "The label of footer link with label=NethServer Community (English) linking to https://community.nethserver.org/"
+  },
+  "link.item.label.Partner Community (Italian)": {
+    "message": "Partner Community (Italian)",
+    "description": "The label of footer link with label=Partner Community (Italian) linking to https://partner.nethesis.it"
+  },
+  "link.item.label.Announcements": {
+    "message": "Announcements",
+    "description": "The label of footer link with label=Announcements linking to /blog/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/NethServer/nethvoice-docs"
+  },
+  "link.item.label.NethServer documentations": {
+    "message": "NethServer documentations",
+    "description": "The label of footer link with label=NethServer documentations linking to https://ns8.nethserver.org"
+  },
+  "link.item.label.NethServer website": {
+    "message": "NethServer website",
+    "description": "The label of footer link with label=NethServer website linking to https://www.nethserver.org"
+  },
+  "link.item.label.Nethesis website": {
+    "message": "Nethesis website",
+    "description": "The label of footer link with label=Nethesis website linking to https://www.nethesis.it"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 Nethesis",
+    "description": "The footer copyright"
+  }
+}

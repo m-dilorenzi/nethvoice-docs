@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.administratorManualSidebar.category.Installazione": {
+    "message": "Installazione",
+    "description": "The label for category 'Installazione' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.administratorManualSidebar.category.Configurazione": {
+    "message": "Configurazione",
+    "description": "The label for category 'Configurazione' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.administratorManualSidebar.category.Applicazioni": {
+    "message": "Applicazioni",
+    "description": "The label for category 'Applicazioni' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.administratorManualSidebar.category.Provisioning": {
+    "message": "Provisioning",
+    "description": "The label for category 'Provisioning' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.administratorManualSidebar.category.Configurazione avanzata": {
+    "message": "Configurazione avanzata",
+    "description": "The label for category 'Configurazione avanzata' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.administratorManualSidebar.category.NethHotel": {
+    "message": "NethHotel",
+    "description": "The label for category 'NethHotel' in sidebar 'administratorManualSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Migrazione": {
+    "message": "Migrazione",
+    "description": "The label for category 'Migrazione' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Trunk": {
+    "message": "Trunk",
+    "description": "The label for category 'Trunk' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Provisioning": {
+    "message": "Provisioning",
+    "description": "The label for category 'Provisioning' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.userManualSidebar.category.NethVoice CTI": {
+    "message": "NethVoice CTI",
+    "description": "The label for category 'NethVoice CTI' in sidebar 'userManualSidebar'"
+  },
+  "sidebar.userManualSidebar.category.NethLink": {
+    "message": "NethLink",
+    "description": "The label for category 'NethLink' in sidebar 'userManualSidebar'"
+  }
+}
