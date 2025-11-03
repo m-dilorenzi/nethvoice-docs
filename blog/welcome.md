@@ -19,7 +19,7 @@ NethVoice is a powerful, open-source unified communications platform that combin
 
 This documentation site is your complete resource for everything NethVoice. We've organized all information into clear, easy-to-navigate sections:
 
-### **[Administrator Manual](/docs/administrator-manual/intro)**
+### **[Administrator Manual](/docs/administrator-manual/)**
 Learn how to install, configure, and manage your NethVoice system. Covers:
 - System installation and setup
 - Phone and gateway provisioning
