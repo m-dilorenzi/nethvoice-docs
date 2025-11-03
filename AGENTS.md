@@ -22,6 +22,7 @@ The agent ensures that:
    - Draft new pages or sections in English following Docusaurus markdown standards.
    - Maintain a consistent tone, terminology, and formatting across all documents.
    - Ensure technical accuracy in collaboration with subject matter experts.
+   - When translating to Italian, keep technical terminology consistent with the English version.
 
 2. **Documentation Review**
    - Detect and flag:
