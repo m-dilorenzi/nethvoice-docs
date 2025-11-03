@@ -1,5 +1,5 @@
 ---
-title: Manuale Amministratore
+title: Introduzione
 sidebar_position: 0
 ---
 

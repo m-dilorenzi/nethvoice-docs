@@ -3,221 +3,221 @@ title: Parametri di provisioning
 sidebar_position: 6
 ---
 
-# Provisioning Parameters Guide
+# Guida ai Parametri di Provisioning
 
-The functions of phones that can be configured through provisioning are grouped in various panels within the NethVoice administration interface. This guide describes the configurable provisioning parameters organized by functional category.
+Le funzioni dei telefoni che possono essere configurate tramite provisioning sono raggruppate in vari pannelli all'interno dell'interfaccia di amministrazione di NethVoice. Questa guida descrive i parametri di provisioning configurabili organizzati per categoria funzionale.
 
-## Overview
+## Panoramica
 
-Not all phone models offer the same functions, so some parameters or entire panels might not be displayed for all devices.
+Non tutti i modelli di telefoni offrono le stesse funzioni, quindi alcuni parametri o interi pannelli potrebbero non essere visualizzati per tutti i dispositivi.
 
-**Parameter Priority:** Generally, leaving a field empty or selecting the option `-` (minus sign) indicates that the value inherited from a context with lower priority is used. The highest priority is given to phone settings, followed in descending order by model settings and default settings.
+**Priorità dei Parametri:** In generale, lasciare un campo vuoto o selezionare l'opzione `-` (segno meno) indica che viene utilizzato il valore ereditato da un contesto con priorità inferiore. La priorità più alta è data alle impostazioni del telefono, seguita in ordine discendente dalle impostazioni del modello e dalle impostazioni predefinite.
 
-Refer to [Phone Configuration Priority](./phone_provisioning.md#phone-configuration-priority) for more information about the configuration hierarchy.
+Fare riferimento a [Priorità di Configurazione del Telefono](./phone_provisioning.md#phone-configuration-priority) per ulteriori informazioni sulla gerarchia di configurazione.
 
-## Soft Keys
+## Tasti Soft
 
-The **soft keys** are programmable phone keys designated for calling phone functions.
+I **tasti soft** sono tasti telefonici programmabili designati per le funzioni di chiamata del telefono.
 
-If the phone provides more keys than those displayed in the NethVoice administration interface, a **View more** button is available to add additional keys.
+Se il telefono fornisce più tasti di quelli visualizzati nell'interfaccia di amministrazione di NethVoice, è disponibile un pulsante **Visualizza altro** per aggiungere tasti aggiuntivi.
 
-Depending on the **Type**, the **Value** and **Label** fields may also need to be completed as indicated in the table below.
-
-:::info
-In the Label column, the term "default" signifies that if the Label field is left empty, the phone will assign a default label to the soft key.
-:::
-
-| Type | Description | Value | Label |
-|------|-------------|-------|-------|
-| Forward | Enable/disable the forward state (unconditional forwarding). If enabled, all incoming calls are forwarded to the specified number | Phone number or extension | Yes (default) |
-| DND | Enable/disable the do not disturb state. If enabled, all incoming calls are rejected | No | No |
-| Recall | Call back the last dialed number | No | Yes (default) |
-| Pick up | Answer an ongoing call to the specified extension | Phone number | Yes |
-| Speed dial | Call the given number by pressing the key | Phone number | Yes |
-| Group pickup | Answer an ongoing call to the configured pickup group | No (The group is configured.) | No |
-| History | Display the call history screen | No | Yes (default) |
-| Menu | Show the phone configuration menu | No | Yes (default) |
-| Status | Display phone status information (e.g., firmware version, registration status) | No | Yes (default) |
-| Prefix | Add the specified digits to the dialed number | The digits of the prefix | Yes (default) |
-| LDAP | Display the LDAP address book configured on the phone | No | Yes (default) |
-
-## Line Keys
-
-The **line keys** are programmable phone keys that resemble soft keys but are more specifically designed for call management and monitoring the status of extensions.
-
-If the phone provides more keys than those displayed in the NethVoice administration interface, there is a **View more** button to add additional keys.
-
-Depending on the **Type**, the fields **Value** and **Label** might need to be filled in as outlined in the table below.
+A seconda del **Tipo**, potrebbero essere necessari anche i campi **Valore** e **Etichetta** come indicato nella tabella seguente.
 
 :::info
-In the Label column, the term "default" signifies that if the Label field is left blank, the phone will assign a default label to the line key.
+Nella colonna Etichetta, il termine "predefinito" significa che se il campo Etichetta viene lasciato vuoto, il telefono assegnerà un'etichetta predefinita al tasto soft.
 :::
 
-| Type | Description | Value | Label |
-|------|-------------|-------|-------|
-| Conference | Active calls are merged into a conference where each participant can listen and speak with others simultaneously | No | Yes (default) |
-| Forward | Enable/disable the forward state (unconditional forwarding). If enabled, all incoming calls are forwarded to the specified number | Phone number or extension | Yes (default) |
-| Call transfer | Transfers the current call to the selected number or another dialed number at the moment | Phone number or extension | Yes |
-| Hold | Places the current call on hold | No | Yes (default) |
-| DND | Enables/disables the Do Not Disturb (DND) status. If enabled, all incoming calls are rejected | No | No |
-| Recall | Dials the last dialed number again | No | Yes (default) |
-| Pick up | Answers an incoming call on the specified extension | Phone number | Yes |
-| DTMF | Executes a sequence of Dual-Tone Multi-Frequency (DTMF) tones during a call | Sequence of symbols or numbers | Yes |
-| Login/logout dynamic agent | Login/logout the call queue | No | Yes |
-| Voicemail | Check voicemail | No | Yes (default) |
-| Speed dial | Call the given number by pressing the key | Phone number | Yes |
-| Line | Select another line | No | Yes (default) |
-| BLF | Monitors the status of the selected extension and, depending on its status, performs either a pick up or speed dial when pressed | Phone number | Yes |
-| URL | Performs an HTTP GET request to the specified web address | Web address (URL) | Yes |
-| Group pickup | Answer a call in progress for the configured pickup group | No (the group is configured) | No |
-| Multicast paging | Send audio directly to the configured extension for multicast paging | Phone number | Yes (default) |
-| Record | Start audio recording of the active call | No | Yes (default) |
-| Prefix | Add the specified digits to the dialed number | The prefix digits | Yes (default) |
-| Phone lock | Activate the phone lock feature, restricting access to the keys and interface. The unlock sequence needs to be configured according to the phone's documentation | No | Yes (default) |
-| LDAP | Show configured LDAP address book on the phone | No | Yes (default) |
+| Tipo | Descrizione | Valore | Etichetta |
+|------|-------------|--------|-----------|
+| Inoltro | Abilita/disabilita lo stato di inoltro (inoltro incondizionato). Se abilitato, tutte le chiamate in ingresso vengono inoltrate al numero specificato | Numero di telefono o interno | Sì (predefinito) |
+| DND | Abilita/disabilita lo stato non disturbare. Se abilitato, tutte le chiamate in ingresso vengono rifiutate | No | No |
+| Richiamare | Richiama l'ultimo numero composto | No | Sì (predefinito) |
+| Rispondere | Rispondi a una chiamata in corso all'interno specificato | Numero di telefono | Sì |
+| Numero veloce | Chiama il numero dato premendo il tasto | Numero di telefono | Sì |
+| Prelievo gruppo | Rispondi a una chiamata in corso per il gruppo di prelievo configurato | No (Il gruppo è configurato.) | No |
+| Cronologia | Visualizza la schermata della cronologia delle chiamate | No | Sì (predefinito) |
+| Menu | Mostra il menu di configurazione del telefono | No | Sì (predefinito) |
+| Stato | Visualizza informazioni sullo stato del telefono (es. versione firmware, stato della registrazione) | No | Sì (predefinito) |
+| Prefisso | Aggiungi le cifre specificate al numero composto | Le cifre del prefisso | Sì (predefinito) |
+| LDAP | Visualizza la rubrica LDAP configurata sul telefono | No | Sì (predefinito) |
 
-## Expansion Keys
+## Tasti Linea
 
-The **Expansion Keys** are programmable buttons on expansion modules, devices that can be connected to the phone to increase the number of available keys.
+I **tasti linea** sono tasti telefonici programmabili che assomigliano ai tasti soft ma sono progettati più specificamente per la gestione delle chiamate e il monitoraggio dello stato degli interni.
 
-If the expansion module provides more keys than are displayed in the NethVoice administration interface, a **View more** button is available to add additional keys.
+Se il telefono fornisce più tasti di quelli visualizzati nell'interfaccia di amministrazione di NethVoice, è disponibile un pulsante **Visualizza altro** per aggiungere tasti aggiuntivi.
 
-Expansion keys are configured similarly to [Line Keys](#line-keys), so refer to that section for the available types and parameters.
+A seconda del **Tipo**, i campi **Valore** e **Etichetta** potrebbero aver bisogno di essere compilati come descritto nella tabella seguente.
 
-## Screen and Ringtone
+:::info
+Nella colonna Etichetta, il termine "predefinito" significa che se il campo Etichetta viene lasciato vuoto, il telefono assegnerà un'etichetta predefinita al tasto linea.
+:::
 
-This section allows configuration of the phone's display and audio alert settings:
+| Tipo | Descrizione | Valore | Etichetta |
+|------|-------------|--------|-----------|
+| Conferenza | Le chiamate attive vengono unite in una conferenza dove ogni partecipante può ascoltare e parlare con gli altri simultaneamente | No | Sì (predefinito) |
+| Inoltro | Abilita/disabilita lo stato di inoltro (inoltro incondizionato). Se abilitato, tutte le chiamate in ingresso vengono inoltrate al numero specificato | Numero di telefono o interno | Sì (predefinito) |
+| Trasferimento chiamata | Trasferisce la chiamata corrente al numero selezionato o a un altro numero composto al momento | Numero di telefono o interno | Sì |
+| Attesa | Mette la chiamata corrente in attesa | No | Sì (predefinito) |
+| DND | Abilita/disabilita lo stato Non Disturbare (DND). Se abilitato, tutte le chiamate in ingresso vengono rifiutate | No | No |
+| Richiamare | Richiama l'ultimo numero composto | No | Sì (predefinito) |
+| Rispondere | Rispondi a una chiamata in ingresso all'interno specificato | Numero di telefono | Sì |
+| DTMF | Esegue una sequenza di toni DTMF (Dual-Tone Multi-Frequency) durante una chiamata | Sequenza di simboli o numeri | Sì |
+| Accedi/Esci agente dinamico | Accedi/Esci dalla coda di chiamata | No | Sì |
+| Segreteria telefonica | Controlla la segreteria telefonica | No | Sì (predefinito) |
+| Numero veloce | Chiama il numero dato premendo il tasto | Numero di telefono | Sì |
+| Linea | Seleziona un'altra linea | No | Sì (predefinito) |
+| BLF | Monitora lo stato dell'interno selezionato e, a seconda del suo stato, esegue un prelievo o un numero veloce quando premuto | Numero di telefono | Sì |
+| URL | Esegue una richiesta HTTP GET all'indirizzo web specificato | Indirizzo web (URL) | Sì |
+| Prelievo gruppo | Rispondi a una chiamata in corso per il gruppo di prelievo configurato | No (il gruppo è configurato) | No |
+| Multicast paging | Invia audio direttamente all'interno configurato per il paging multicast | Numero di telefono | Sì (predefinito) |
+| Registra | Avvia la registrazione audio della chiamata attiva | No | Sì (predefinito) |
+| Prefisso | Aggiungi le cifre specificate al numero composto | Le cifre del prefisso | Sì (predefinito) |
+| Blocco telefono | Attiva la funzione di blocco del telefono, limitando l'accesso ai tasti e all'interfaccia. La sequenza di sblocco deve essere configurata secondo la documentazione del telefono | No | Sì (predefinito) |
+| LDAP | Mostra la rubrica LDAP configurata sul telefono | No | Sì (predefinito) |
 
-- **Ringtone Selection**: Each phone has some predefined ringtones that can be selected based on their progressive number. Where supported, a custom ringtone can also be chosen, which should then be uploaded into the field described below.
+## Tasti di Espansione
 
-- **Custom Ringtone Management**: Select an audio file for the custom ringtone that has been previously uploaded, or upload a new one by opening the dedicated management module. The audio format must be compatible with the specifications of the phone manufacturer.
+I **Tasti di Espansione** sono pulsanti programmabili su moduli di espansione, dispositivi che possono essere collegati al telefono per aumentare il numero di tasti disponibili.
 
-- **Background Image**: Select an image file for the phone screen background, or upload a new one by opening the dedicated management panel. The image format must be compatible with the phone manufacturer's specifications.
+Se il modulo di espansione fornisce più tasti di quelli visualizzati nell'interfaccia di amministrazione di NethVoice, è disponibile un pulsante **Visualizza altro** per aggiungere tasti aggiuntivi.
 
-- **Screensaver Image**: Select an image file for the screensaver, or upload a new one through the management panel.
+I tasti di espansione sono configurati in modo simile ai [Tasti Linea](#tasti-linea), quindi fare riferimento a quella sezione per i tipi e i parametri disponibili.
 
-- **Screensaver Activation**: Time interval after which the screensaver is activated.
+## Schermo e Suoneria
 
-- **Backlight Off**: Time interval after which the screen lowers brightness or turns off the screen backlight.
+Questa sezione consente la configurazione delle impostazioni di visualizzazione e avviso audio del telefono:
 
-- **Screen Brightness**: Select the brightness level of the screen.
+- **Selezione Suoneria**: Ogni telefono ha alcune suonerie predefinite che possono essere selezionate in base al loro numero progressivo. Dove supportato, è possibile scegliere anche una suoneria personalizzata, che deve essere caricata nel campo descritto di seguito.
 
-- **Screen Contrast**: Select the contrast level of the screen.
+- **Gestione Suoneria Personalizzata**: Seleziona un file audio per la suoneria personalizzata precedentemente caricato, o caricane uno nuovo aprendo il modulo di gestione dedicato. Il formato audio deve essere compatibile con le specifiche del produttore del telefono.
 
-## Preferences
+- **Immagine di Sfondo**: Seleziona un file immagine per lo sfondo dello schermo del telefono, o carica una nuova tramite il pannello di gestione dedicato. Il formato immagine deve essere compatibile con le specifiche del produttore del telefono.
 
-This section contains important configuration parameters for phone operation:
+- **Immagine Screen Saver**: Seleziona un file immagine per lo screen saver, o carica una nuova tramite il pannello di gestione.
 
-### Time Settings
+- **Attivazione Screen Saver**: Intervallo di tempo dopo il quale lo screen saver viene attivato.
 
-- **NTP Server Address**: The hostname or IP address of the Network Time Protocol (NTP) server to automatically set the phone's time.
+- **Spegnimento Retroilluminazione**: Intervallo di tempo dopo il quale lo schermo abbassa la luminosità o spegne la retroilluminazione dello schermo.
 
-- **Timezone**: Sets the phone's timezone, necessary for daylight saving time adjustments.
+- **Luminosità Schermo**: Seleziona il livello di luminosità dello schermo.
 
-- **Time Format**: Choice of the time/date format displayed on the phone's screen.
+- **Contrasto Schermo**: Seleziona il livello di contrasto dello schermo.
 
-- **Date Format**: Choice of the date format displayed on the phone's screen.
+## Preferenze
 
-### Provisioning Schedule
+Questa sezione contiene importanti parametri di configurazione per il funzionamento del telefono:
 
-- **Provisioning Schedule**: 
-  - *Only at startup*: Phones renew their configuration after turning on or restarting
-  - *Every day*: Phones autonomously renew their configuration at a random time during the night
+### Impostazioni di Ora
 
-### Call Transfer
+- **Indirizzo Server NTP**: Il nome host o l'indirizzo IP del server Network Time Protocol (NTP) per impostare automaticamente l'ora del telefono.
 
-- **Transfer Mode for Line Keys**: Specifies how line keys transfer the ongoing call to another extension:
-  - **New Call**: Initiates a new call to the extension configured on the line key, placing the current call on hold
-  - **Consultative**: Always places the current call on hold, and the transfer completion can occur while the extension is ringing or even after the answer
-  - **Blind/No Confirmation**: Immediately transfers the current call to the configured extension
+- **Fuso Orario**: Imposta il fuso orario del telefono, necessario per gli aggiustamenti dell'ora legale.
 
-### Language and Localization
+- **Formato Ora**: Scelta del formato ora/data visualizzato sullo schermo del telefono.
 
-- **Phone Language**: Language used by the phone's screen and its web interface.
+- **Formato Data**: Scelta del formato data visualizzato sullo schermo del telefono.
 
-- **Ring Tones**: These are specific to each country and indicate call status through an audible signal (free tone, busy tone, hang-up tone, etc.).
+### Programma Provisioning
 
-### Firmware Management
+- **Programma Provisioning**: 
+  - *Solo all'avvio*: I telefoni rinnovano la loro configurazione dopo l'accensione o il riavvio
+  - *Ogni giorno*: I telefoni rinnovano autonomamente la loro configurazione a un'ora casuale durante la notte
 
-- **Firmware**: Upload and selection of a new firmware version for the phone. Refer to [Phone Provisioning](./phone_provisioning.md#firmware-upgrade) for details on firmware updates.
+### Trasferimento Chiamata
 
-## LDAP Phonebook
+- **Modalità Trasferimento per Tasti Linea**: Specifica come i tasti linea trasferiscono la chiamata in corso a un altro interno:
+  - **Nuova Chiamata**: Avvia una nuova chiamata all'interno configurato sul tasto linea, mettendo la chiamata corrente in attesa
+  - **Consultiva**: Mette sempre la chiamata corrente in attesa, e il completamento del trasferimento può avvenire mentre l'interno sta squillando o anche dopo la risposta
+  - **Cieco/Senza Conferma**: Trasferisce immediatamente la chiamata corrente all'interno configurato
 
-The LDAP Phonebook section allows integration with external directory services.
+### Lingua e Localizzazione
 
-### Address Book Type
+- **Lingua Telefono**: Lingua utilizzata dallo schermo del telefono e dalla sua interfaccia web.
 
-The first two options in the **Address Book Type** do not allow further modifications:
-- Phones will use the fixed and unmodifiable centralized phonebook of NethVoice
-- By selecting "Custom phonebook," you can modify the remaining fields to connect phones to a third-party LDAP server
+- **Suonerie**: Sono specifiche per ogni paese e indicano lo stato della chiamata attraverso un segnale udibile (tono libero, tono occupato, tono di riagganciamento, ecc.).
 
-### LDAP Configuration Parameters
+### Gestione Firmware
 
-- **Server Address**: Hostname or IP address of the LDAP server.
+- **Firmware**: Caricamento e selezione di una nuova versione firmware per il telefono. Fare riferimento a [Phone Provisioning](./phone_provisioning.md#firmware-upgrade) per i dettagli sugli aggiornamenti firmware.
 
-- **Port Number**: TCP port used by the LDAP server.
+## Rubrica LDAP
 
-- **Username**: Authentication username for the LDAP service. May be specified as a Distinguished Name (DN) LDAP or in another format depending on the LDAP server's requirements.
+La sezione Rubrica LDAP consente l'integrazione con servizi directory esterni.
 
-- **Password**: Authentication password for the LDAP service.
+### Tipo di Rubrica
 
-- **Encryption**: Protects the connection with TLS or STARTTLS.
+Le prime due opzioni in **Tipo di Rubrica** non consentono ulteriori modifiche:
+- I telefoni utilizzeranno la rubrica centralizzata fissa e non modificabile di NethVoice
+- Selezionando "Rubrica personalizzata", è possibile modificare i campi rimanenti per collegare i telefoni a un server LDAP di terze parti
+
+### Parametri di Configurazione LDAP
+
+- **Indirizzo Server**: Nome host o indirizzo IP del server LDAP.
+
+- **Numero Porta**: Porta TCP utilizzata dal server LDAP.
+
+- **Nome Utente**: Nome utente di autenticazione per il servizio LDAP. Può essere specificato come Distinguished Name (DN) LDAP o in un altro formato a seconda dei requisiti del server LDAP.
+
+- **Password**: Password di autenticazione per il servizio LDAP.
+
+- **Crittografia**: Protegge la connessione con TLS o STARTTLS.
   :::warning
-  Some phones do not support encryption. If connection fails, select "None".
+  Alcuni telefoni non supportano la crittografia. Se la connessione non riesce, selezionare "Nessuno".
   :::
 
-- **Search Base (DN)**: Limits access to the branch of the LDAP database specified as the base. Usually, the search base is mandatory.
+- **Base di Ricerca (DN)**: Limita l'accesso al ramo del database LDAP specificato come base. Di solito, la base di ricerca è obbligatoria.
 
-- **Search Filter for Contact Name**: LDAP search filter for retrieving contact names. Must follow RFC-4515 syntax. Use `%` as a placeholder for the search term.
+- **Filtro di Ricerca per Nome Contatto**: Filtro di ricerca LDAP per il recupero dei nomi dei contatti. Deve seguire la sintassi RFC-4515. Usa `%` come segnaposto per il termine di ricerca.
 
-- **Search Filter for Phone Number**: LDAP search filter for retrieving phone numbers. Must follow RFC-4515 syntax. Use `%` as a placeholder for the phone number.
+- **Filtro di Ricerca per Numero Telefono**: Filtro di ricerca LDAP per il recupero dei numeri di telefono. Deve seguire la sintassi RFC-4515. Usa `%` come segnaposto per il numero di telefono.
 
-- **Attributes for Contact Name**: Separated by space, list the names of LDAP attributes that can contain the contact's name.
+- **Attributi per Nome Contatto**: Separati da spazio, elenca i nomi degli attributi LDAP che possono contenere il nome del contatto.
 
-- **Name Display Format**: Attributes' names preceded by `%` can be composed to form the pattern with which the name is displayed on the phone screen.
+- **Formato di Visualizzazione Nome**: I nomi degli attributi preceduti da `%` possono essere composti per formare il pattern con cui il nome è visualizzato sullo schermo del telefono.
 
-- **Attribute for Main Phone Number**: LDAP attribute containing the main phone number.
+- **Attributo per Numero Telefono Principale**: Attributo LDAP contenente il numero di telefono principale.
 
-- **Attribute for Mobile Number**: LDAP attribute containing the mobile phone number.
+- **Attributo per Numero Mobile**: Attributo LDAP contenente il numero di telefono cellulare.
 
-- **Attribute for Other Phone Number**: LDAP attribute containing other phone numbers.
+- **Attributo per Altro Numero Telefono**: Attributo LDAP contenente altri numeri di telefono.
 
-## Network
+## Rete
 
-This section configures network-level parameters for the phone.
+Questa sezione configura i parametri a livello di rete per il telefono.
 
-### DHCP Configuration
+### Configurazione DHCP
 
-Phones use the DHCP protocol to receive network configuration: IP address, subnet mask, DNS, and gateway. In some cases, DHCP is also used to obtain the provisioning URL (refer to [Provisioning Methods](./phone_provisioning.md#provisioning-methods)).
+I telefoni utilizzano il protocollo DHCP per ricevere la configurazione di rete: indirizzo IP, subnet mask, DNS e gateway. In alcuni casi, DHCP viene utilizzato anche per ottenere l'URL di provisioning (fare riferimento a [Metodi di Provisioning](./phone_provisioning.md#provisioning-methods)).
 
-### VLAN Configuration
+### Configurazione VLAN
 
-The following parameters can be configured for VLAN support:
+I seguenti parametri possono essere configurati per il supporto VLAN:
 
-- **VLAN Identifier (VID)**: By specifying a number between 1 and 4094, the phone will add VLAN tagging to the packets generated by the phone itself, according to the IEEE 802.1Q standard.
+- **Identificatore VLAN (VID)**: Specificando un numero tra 1 e 4094, il telefono aggiungerà tagging VLAN ai pacchetti generati dal telefono stesso, in conformità allo standard IEEE 802.1Q.
 
-- **VLAN Identifier for PC port**: By specifying a number between 1 and 4094, the phone will add VLAN tagging to packets coming from the PC port (or data port), following the IEEE 802.1Q standard.
+- **Identificatore VLAN per Porta PC**: Specificando un numero tra 1 e 4094, il telefono aggiungerà tagging VLAN ai pacchetti provenienti dalla porta PC (o porta dati), seguendo lo standard IEEE 802.1Q.
 
 :::warning
-Entering an incorrect VLAN identifier can render the phone unreachable. Test VLAN configurations carefully.
+L'inserimento di un identificatore VLAN non corretto può rendere il telefono irraggiungibile. Testare attentamente le configurazioni VLAN.
 :::
 
-### VLAN Field Values
+### Valori dei Campi VLAN
 
-In the VLAN fields:
-- Empty string `""` usually considers the setting at a lower priority (model or default)
-- `"0"` (zero) corresponds to "disabled"
+Nei campi VLAN:
+- Stringa vuota `""` generalmente considera l'impostazione con priorità inferiore (modello o predefinito)
+- `"0"` (zero) corrisponde a "disabilitato"
 
 ---
 
-## Best Practices for Provisioning Parameters
+## Best Practices per Parametri di Provisioning
 
-1. **Test in Development**: Always test parameter configurations on a non-production phone before deploying to production devices.
+1. **Testare in Sviluppo**: Testare sempre le configurazioni dei parametri su un telefono non-produzione prima di distribuire ai dispositivi di produzione.
 
-2. **Use Hierarchy Effectively**: Leverage the configuration priority to set defaults and then customize individual phones as needed.
+2. **Utilizzare la Gerarchia in Modo Efficace**: Sfruttare la priorità di configurazione per impostare i predefiniti e quindi personalizzare i singoli telefoni secondo le necessità.
 
-3. **Document Custom Configurations**: Document any custom soft keys, line keys, or LDAP configurations for future reference and troubleshooting.
+3. **Documentare le Configurazioni Personalizzate**: Documentare eventuali tasti soft, tasti linea o configurazioni LDAP personalizzate per riferimento futuro e risoluzione dei problemi.
 
-4. **Validate Network Settings**: Ensure DHCP and VLAN settings are correct before provisioning to avoid connectivity issues.
+4. **Convalidare le Impostazioni di Rete**: Assicurarsi che le impostazioni DHCP e VLAN siano corrette prima del provisioning per evitare problemi di connettività.
 
-5. **Monitor Provisioning**: Check provisioning logs to verify that phones are receiving and applying configurations correctly.
+5. **Monitorare il Provisioning**: Controllare i log di provisioning per verificare che i telefoni stiano ricevendo e applicando le configurazioni correttamente.

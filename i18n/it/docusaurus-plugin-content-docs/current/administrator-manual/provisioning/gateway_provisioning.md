@@ -3,37 +3,42 @@ title: Provisioning gateway
 sidebar_position: 4
 ---
 
-# Gateway provisioning
+# Provisioning gateway
 
-# Gateway provisioning
+## Gateway Supportati
 
-## Supported Gateways
-
-See [supported gateways](supported-gateways) for a list of supported gateways and their firmware versions.
+Vedere [gateway supportati](supported_gateways) per un elenco di gateway supportati e le loro versioni firmware.
 
 ## Provisioning
 
-Gateway configuration is carried out in the Wizard.
+La configurazione del gateway viene eseguita utilizzando la Procedura guidata.
 
-Gateway provisioning adheres to the same guidelines as provisioning for phones, with one key distinction: unlike phones, NethVoice establishes a direct connection to the gateway via telnet to upload the configuration, eliminating the need for the gateway to fetch it.
+Il provisioning segue le stesse regole generali del provisioning dei telefoni, con una differenza importante: NethVoice carica la configurazione sul gateway tramite una connessione telnet diretta, quindi il gateway non deve recuperare la sua configurazione.
 
-Gateway configuration is performed with the gateway online; by default, gateways initiate in DHCP mode.
+I gateway devono essere online per ricevere un caricamento automatico; per impostazione predefinita si avviano in modalità `DHCP`. Tuttavia, è anche possibile preparare un file di configurazione in anticipo per un gateway non ancora connesso utilizzando **Aggiungi Gateway**. Il file generato può quindi essere caricato manualmente tramite l'interfaccia web del gateway quando il dispositivo è disponibile.
 
-However, by selecting `Add Gateway`, it is feasible to generate a configuration for a gateway not yet connected and subsequently configure it by uploading the file through the gateway's web interface.
+### Configurazione dei Gateway
 
-### Configuring Gateways
+Per configurare il gateway, è necessario specificare alcuni parametri di configurazione richiesti:
 
-To configure the gateway, it is necessary to specify a few required configuration parameters:
+1. **IP Dispositivo**: Inserire l'indirizzo IP da assegnare al gateway, assicurandosi che sia nella stessa subnet del sistema NethVoice, ad es. `192.168.1.100`
+2. **Indirizzo MAC**: Inserire l'indirizzo MAC del dispositivo gateway, solitamente indicato su un'etichetta sul dispositivo stesso, ad es. `00:11:22:AA:BB:CC`
+3. **Subnet mask**: Specificare la subnet mask per il gateway, solitamente qualcosa come `255.255.255.0`
+4. **Gateway di rete**: Inserire l'indirizzo IP del gateway, tipicamente l'indirizzo IP del router sulla rete locale. Ad es. `192.168.1.1`
+5. **IP PBX**: Inserire l'FQDN (consigliato) o l'indirizzo IP del sistema NethVoice a cui il gateway si connetterà.
+6. Inserire tutte le caratteristiche richieste per la configurazione delle linee collegate (per linee ISDN, la modalità dell'adattatore terminale ISDN; per linee analogiche, il numero composto della linea).
+   
+   Queste impostazioni dipendono dal modello:
 
-1. Device IP address; gateway configuration necessitates a static IP.
-2. Subnet mask.
-3. Network gateway.
-4. NethVoice IP address; in some installation scenarios, the gateway may connect to NethVoice via a non-local IP.
-5. Any characteristics required for configuring connected lines (for ISDN lines, the ISDN terminal adapter's mode; for analog lines, the dialed number of the line).
+    - `ISDN` (Specificare se la linea è Point-to-Point o Point-to-Multipoint)
+    - `PRI`
+    - `FXS` (Specificare per ogni porta l'interno da assegnare scegliendo un utente precedentemente configurato)
+    - `FXO` (Specificare il numero direttamente nel campo di testo)
+
 
 :::note
-For Grandstream models with 2 network interfaces, the LAN interface's MAC address must be provided, but NethVoice's configuration utilizes the WAN interface, which will be the one used.
+Per i modelli Grandstream con 2 interfacce di rete, deve essere fornito l'indirizzo MAC dell'interfaccia LAN, ma la configurazione di NethVoice utilizza l'interfaccia WAN, che sarà quella utilizzata.
 :::
 
-To download the gateway configuration for uploading via the web interface, click on the management button (symbol with three squares).
+Per scaricare la configurazione del gateway per il caricamento tramite l'interfaccia web, fare clic sul pulsante di gestione (simbolo con tre quadrati).
 

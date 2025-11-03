@@ -5,20 +5,20 @@ sidebar_position: 2
 
 # Tutorial
 
-Welcome to the tutorials section! Here you'll find step-by-step guides and practical examples to help you get started and make the most of the platform. Whether you're a beginner or looking to deepen your knowledge, these tutorials are designed to support your learning journey.
+Benvenuti nella sezione tutorial! Qui troverete guide passo-passo e esempi pratici per aiutarvi a iniziare e trarre il massimo dalla piattaforma. Che siate principianti o stiate cercando di approfondire le vostre conoscenze, questi tutorial sono progettati per supportare il vostro percorso di apprendimento.
 
-## Available Tutorials
+## Tutorial Disponibili
 
-### Trunks
+### Trunk
 
-Learn how to configure and manage trunks within the platform. These tutorials covers the basics of trunk setup, best practices, and troubleshooting tips.
+Imparate come configurare e gestire i trunk all'interno della piattaforma. Questi tutorial coprono le basi della configurazione dei trunk, le migliori pratiche e suggerimenti per la risoluzione dei problemi.
 
-[Read the Trunks Tutorial](./trunks)
+[Leggi il Tutorial Trunk](./trunks)
 
 ---
 
-### Migration
+### Migrazione
 
-Step-by-step guidance on migrating your existing setup to the latest version. These tutorials includes preparation steps, migration procedures, and post-migration checks.
+Guida passo-passo per migrare la vostra configurazione esistente all'ultima versione. Questi tutorial includono i passaggi di preparazione, le procedure di migrazione e i controlli post-migrazione.
 
-[Read the Migration Tutorial](./migration)
+[Leggi il Tutorial Migrazione](./migration)

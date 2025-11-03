@@ -3,19 +3,19 @@ title: Gateway supportati
 sidebar_position: 5
 ---
 
-# Supported Gateways
+# Gateway Supportati
 
-We support the following gateway using automatic provisioning. 
-Before using any other gateway, please open a support ticket.
+Supportiamo i seguenti gateway utilizzando provisioning automatico. 
+Prima di utilizzare qualsiasi altro gateway, si prega di aprire un ticket di supporto.
 
 ## GRANDSTREAM
 
-- FXS Models HT801 and HT802
-- FXS Models HT812 and HT814
-- FXS Models GXW4216, GXW4224, GXW4232, and GXW4248
+- Modelli FXS HT801 e HT802
+- Modelli FXS HT812 e HT814
+- Modelli FXS GXW4216, GXW4224, GXW4232 e GXW4248
 
 ## PATTON
 
-- BRI Trinity Models
-- PRI Trinity Models
-- FXO Trinity Models
+- Modelli BRI Trinity
+- Modelli PRI Trinity
+- Modelli FXO Trinity

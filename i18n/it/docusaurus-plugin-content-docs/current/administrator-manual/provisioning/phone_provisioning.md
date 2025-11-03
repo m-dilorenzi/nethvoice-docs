@@ -3,162 +3,172 @@ title: Phone provisioning
 sidebar_position: 2
 ---
 
-# Phone provisioning
+# Provisioning Telefonico
 
-Provisioning involves configuring phones in automatic mode, minimizing the necessary operations.
+Il provisioning implica la configurazione automatica dei telefoni, minimizzando le operazioni necessarie.
 
-Actions to be performed in NethVoice:
+Azioni da eseguire in NethVoice:
 
-1. Identification of phones.
-2. Assignment of phones to users.
+1. Identificazione dei telefoni.
+2. Assegnazione dei telefoni agli utenti.
 
-## Supported phones
+## Telefoni Supportati
 
-See [supported phones](supported-phones) for a list of supported phones and their firmware versions.
+Vedere [telefoni supportati](supported_phones) per un elenco di telefoni supportati e le loro versioni firmware.
 
 
-## Identification of Phones
+## Identificazione dei Telefoni
 
-The MAC address is fundamental for the **Provisioning** of NethVoice as it uniquely identifies the phone.
+L'indirizzo MAC è fondamentale per il **Provisioning** di NethVoice in quanto identifica univocamente il telefono.
 
-Entering the MAC address of the phones does not require connecting the phone to the network. Indeed, it is possible to enter the MAC addresses of phones that are still packaged.
+L'inserimento dell'indirizzo MAC dei telefoni non richiede il collegamento del telefono alla rete. Infatti, è possibile inserire gli indirizzi MAC di telefoni ancora imballati.
 
-Regardless, you can enter the MAC addresses of the phones by typing or copying the MAC address from a spreadsheet, invoice, or other document.
+In ogni caso, è possibile inserire gli indirizzi MAC dei telefoni digitandoli o copiandoli da un foglio di calcolo, una fattura o altro documento.
 
-## Associating Phones with Users
+## Associazione dei Telefoni agli Utenti
 
-The configuration of a phone is complete when it is associated with a user.
+La configurazione di un telefono è completa quando è associata a un utente.
 
-Up to eight telephone devices can be associated with each user.
+Fino a otto dispositivi telefonici possono essere associati a ciascun utente.
 
-NethVoice assigns a progressive number to each device associated with the user using the following criteria:
+NethVoice assegna un numero progressivo a ogni dispositivo associato all'utente utilizzando i seguenti criteri:
 
-- `Main Extension` - main phone, for example, `201`
+- `Internal Principale` - telefono principale, ad esempio, `201`
 
-- `91+Main Extension` - phone 2, for example, `91201`
+- `91+Internal Principale` - telefono 2, ad esempio, `91201`
 
-- `92+Main Extension` - phone 3, for example, `92201`
+- `92+Internal Principale` - telefono 3, ad esempio, `92201`
 
 - ...
 
-However, from the user perspective, the Main Extension is the only important number to remember.
+Tuttavia, dal punto di vista dell'utente, l'Internal Principale è l'unico numero importante da ricordare.
 
-## Actions to Be Performed on the Phones
+## Azioni da Eseguire sui Telefoni
 
 :::note
-Let's consider the **first boot** for phones that are new, just taken out of the box, or those that have undergone a factory reset and have never been started up.
+Considerare l'**accensione iniziale** per telefoni nuovi, appena tolti dalla scatola, o quelli che hanno subito un ripristino alle impostazioni di fabbrica e non sono mai stati avviati.
 :::
 
-Phones at **first boot** are already able to reach NethVoice to retrieve their configuration using supported methods.
+I telefoni all'**accensione iniziale** sono già in grado di raggiungere NethVoice per recuperare la loro configurazione utilizzando i metodi supportati.
 
-The only action required in these cases is to connect the Ethernet cable with PoE (Power over Ethernet) to the phone. If PoE is not available, it will also be necessary to connect the phone's power cable.
+L'unica azione richiesta in questi casi è collegare il cavo Ethernet con PoE (Power over Ethernet) al telefono. Se PoE non è disponibile, sarà necessario collegare anche il cavo di alimentazione del telefono.
 
 :::warning
-Verify the compatibility of the phones with supported provisioning methods. Please read the following sections carefully.
+Verificare la compatibilità dei telefoni con i metodi di provisioning supportati. Si prega di leggere attentamente le seguenti sezioni.
 :::
 
-If a phone is already in use, it is possible to prepare it for association with NethVoice through **firmware upgrade** and **factory reset** procedures. Both procedures are accessible via the phone's web administration interface.
+Se un telefono è già in uso, è possibile prepararlo per l'associazione con NethVoice attraverso le procedure di **aggiornamento firmware** e **ripristino alle impostazioni di fabbrica**. Entrambe le procedure sono accessibili tramite l'interfaccia di amministrazione web del telefono.
 
 
-## Provisioning Methods
+## Metodi di Provisioning
 
-Phones can access their configuration via standard web protocols, HTTP or HTTPS (TCP port 80 or 443).
+I telefoni possono accedere alla loro configurazione tramite protocolli web standard, HTTP o HTTPS (porta TCP 80 o 443).
 
-When the MAC address of the phone is entered into NethVoice, a provisioning URL (address) is generated.
+Quando l'indirizzo MAC del telefono viene inserito in NethVoice, viene generato un URL di provisioning (indirizzo).
 
-For example:
+Per esempio:
 
 ```
 https://NethVoiceBaseHost/provisioning/1234567890.1234/{mac}.cfg
 ```
 
-This URL contains a secret (`1234567890.1234` in the example) that authenticates and identifies the device that will use it.
+Questo URL contiene un segreto (`1234567890.1234` nell'esempio) che autentica e identifica il dispositivo che lo utilizzerà.
 
-To obtain the provisioning URL, the phone, at its first boot, can use two methods: **RPS** and **DHCP**.
+Per ottenere l'URL di provisioning, il telefono, all'accensione iniziale, può utilizzare due metodi: **RPS** e **DHCP**.
 
-The **RPS** (Redirect & Provisioning Service) method involves entering the provisioning URL on the manufacturer's website for the phone. NethVoice is capable of performing this insertion automatically. As soon as the phone is powered on for the first time, it attempts to contact the manufacturer's website to obtain the provisioning URL.
+Il metodo **RPS** (Redirect & Provisioning Service) implica l'inserimento dell'URL di provisioning sul sito web del produttore del telefono. NethVoice è in grado di eseguire questo inserimento automaticamente. Non appena il telefono viene acceso per la prima volta, tenta di contattare il sito web del produttore per ottenere l'URL di provisioning.
 
-The **DHCP** method is based on configuring OPTION 66 of the DHCP (Dynamic Host Configuration Protocol) protocol specifically for each brand of phone. It is necessary to configure the network's DHCP server appropriately.
+Il metodo **DHCP** si basa sulla configurazione di OPTION 66 del protocollo DHCP (Dynamic Host Configuration Protocol) specificamente per ogni marca di telefono. È necessario configurare appropriatamente il server DHCP della rete.
 
-If neither RPS nor DHCP works, it is possible to access the web interface of the phone's administration and manually enter the provisioning URL. Remember to disable other provisioning methods, such as DHCP and PNP.
+Se né RPS né DHCP funzionano, è possibile accedere all'interfaccia web dell'amministrazione del telefono e inserire manualmente l'URL di provisioning. Ricordarsi di disabilitare altri metodi di provisioning, come DHCP e PNP.
 
-The provisioning URL is displayed in the administration interface of NethVoice for each phone, via the `Info` button on the page `Devices > Phones`.
+L'URL di provisioning è visualizzato nell'interfaccia di amministrazione di NethVoice per ogni telefono, tramite il pulsante `Info` nella pagina `Dispositivi > Telefoni`.
 
-In any case, once the provisioning URL is obtained, the phone always uses this to access its configuration on NethVoice.
+In ogni caso, una volta ottenuto l'URL di provisioning, il telefono lo utilizza sempre per accedere alla sua configurazione su NethVoice.
 
 :::warning
-Refer to section `provisioning-support-section` for further information on manufacturer support for RPS and DHCP.
+Fare riferimento alla sezione `provisioning-support-section` per ulteriori informazioni sul supporto del produttore per RPS e DHCP.
 :::
 
-## Phone Configuration Specifications
+## Specifiche di Configurazione del Telefono
 
-If you want to modify or customize the settings of phones configured via provisioning, access the web administration interface of NethVoice, modifying the settings at the *Default*, *Model*, or *individual phone* level.
+Se si desidera modificare o personalizzare le impostazioni dei telefoni configurati tramite provisioning, accedere all'interfaccia di amministrazione web di NethVoice, modificando le impostazioni al livello *Predefinito*, *Modello* o *telefono individuale*.
 
-The editable parameters include:
+### Priorità di Configurazione del Telefono
 
-- Language
-- Time zone
-- Date/time format
-- Tones
-- Admin user password
-- Call waiting
-- Ringtone
-- Transfer mode
-- LDAP directory
+La configurazione del telefono segue una struttura gerarchica in cui le impostazioni possono essere definite a tre livelli:
+
+1. **Livello Telefono** (Priorità Più Alta) - Impostazioni del singolo telefono
+2. **Livello Modello** (Priorità Media) - Impostazioni applicate a tutti i telefoni di un modello specifico
+3. **Livello Predefinito** (Priorità Più Bassa) - Impostazioni predefinite globali per tutti i telefoni
+
+Quando un parametro viene lasciato vuoto o impostato su `-` (segno meno) a un livello di priorità più alta, il telefono erediterà il valore dal livello di priorità successivo. Questa gerarchia consente di impostare predefiniti ampi e quindi personalizzare modelli specifici o singoli telefoni secondo necessità.
+
+I parametri modificabili includono:
+
+- Lingua
+- Fuso orario
+- Formato data/ora
+- Toni
+- Password amministratore
+- Avviso di chiamata
+- Suoneria
+- Modalità trasferimento
+- Rubrica LDAP
 - VLAN
-- Soft keys
-- Line keys
-- Expansion keys
-- Screen Saver and Background
+- Tasti soft
+- Tasti linea
+- Tasti di espansione
+- Screen Saver e Sfondo
 
-Refer to `wizard-section` for more information.
+Fare riferimento a `wizard-section` per ulteriori informazioni.
 
 :::warning
-Do not change settings from the phone's administration interface.
+Non modificare le impostazioni dall'interfaccia di amministrazione del telefono.
 :::
 
-Upon restart, the phone retrieves the configurations from the provisioning URL.
+Al riavvio, il telefono recupera le configurazioni dall'URL di provisioning.
 
-Any changes made from the phone's administration interface will be lost.
+Tutte le modifiche apportate dall'interfaccia di amministrazione del telefono andranno perse.
 
-The following sections describe some settings provided by NethVoice.
+Le seguenti sezioni descrivono alcune impostazioni fornite da NethVoice.
 
-Provisioned phones will automatically update their configuration even upon a change of state (Available, Do Not Disturb, etc.) in NethVoice CTI of the connected user to maintain uniformity of state across all devices.
+I telefoni sottoposti a provisioning aggiorneranno automaticamente la loro configurazione anche in caso di cambio di stato (Disponibile, Non Disturbare, ecc.) in NethVoice CTI dell'utente connesso per mantenere l'uniformità dello stato su tutti i dispositivi.
 
-This configuration update does not cause any disruption or restart of the phone.
+Questo aggiornamento della configurazione non causa alcun disturbo o riavvio del telefono.
 
-## Admin Password
+## Password Amministratore
 
-The phone web administration interface is accessible with the username `admin` and a password generated randomly during the installation of NethVoice.
+L'interfaccia di amministrazione web del telefono è accessibile con il nome utente `admin` e una password generata casualmente durante l'installazione di NethVoice.
 
-The password is available in the NethVoice administration interface, on the `Models > Default Settings` page.
-
-
-
-## Automatic Updates
-
-The phone automatically contacts NethVoice every night to update its configuration. It is possible to completely disable automatic updates.
-
-In any case, the phone downloads the configuration every time it is restarted.
+La password è disponibile nell'interfaccia di amministrazione di NethVoice, nella pagina `Modelli > Impostazioni Predefinite`.
 
 
 
-## Firmware upgrade
+## Aggiornamenti Automatici
 
-The phone manufacturer periodically publishes firmware updates for the various models of their phones on their website.
+Il telefono contatta automaticamente NethVoice ogni notte per aggiornare la sua configurazione. È possibile disabilitare completamente gli aggiornamenti automatici.
 
-It is possible to distribute the updated firmware to all phones of the same model or to a single phone.
-The firmware file obtained from the manufacturer's website must be uploaded through the administration interface of NethVoice, respectively in `Models > Preferences > Firmware` or in `Configuration > Associated Devices > Edit > Preferences`.
+In ogni caso, il telefono scarica la configurazione ogni volta che viene riavviato.
 
-The filename can contain only letters, numbers, and the symbols `._-()`.
 
-The phones receive the update according to the times indicated in `provisioning-automatic-updates`.
+
+## Aggiornamento Firmware
+
+Il produttore del telefono pubblica periodicamente aggiornamenti firmware per i vari modelli dei loro telefoni sul loro sito web.
+
+È possibile distribuire il firmware aggiornato a tutti i telefoni dello stesso modello o a un singolo telefono.
+Il file firmware ottenuto dal sito web del produttore deve essere caricato tramite l'interfaccia di amministrazione di NethVoice, rispettivamente in `Modelli > Preferenze > Firmware` o in `Configurazione > Dispositivi Associati > Modifica > Preferenze`.
+
+Il nome del file può contenere solo lettere, numeri e i simboli `._-()`.
+
+I telefoni ricevono l'aggiornamento secondo i tempi indicati in `provisioning-automatic-updates`.
 
 :::tip
-When the phones have received the update, deselect the firmware file in the NethVoice interface to reduce network traffic.
+Quando i telefoni hanno ricevuto l'aggiornamento, deselezionare il file firmware nell'interfaccia NethVoice per ridurre il traffico di rete.
 :::
 
-List of web pages for firmware download:
+Elenco di pagine web per il download del firmware:
 
 - [Yealink](http://support.yealink.com/documentFront/forwardToDocumentFrontDisplayPage)
 - [Snom](https://service.snom.com/display/wiki/Firmware+Update+Center)
