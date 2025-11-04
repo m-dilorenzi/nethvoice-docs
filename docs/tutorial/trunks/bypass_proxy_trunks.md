@@ -22,11 +22,11 @@ This page explains why and how to bypass the SIP proxy for unsupported trunks. I
 ## Trunks with registration
 
 - Default behaviour: the wizard sets the proxy as the outbound proxy for registered trunks.
-- To bypass for a registered trunk, remove the outbound proxy value in the [FreePBX advanced](../administrator-manual/advanced/freepbx) for that trunk.
+- To bypass for a registered trunk, remove the outbound proxy value in the [FreePBX advanced](/docs/administrator-manual/advanced/freepbx) for that trunk.
 
 ## Trunks without registration
 
-- For non‑registered trunks, proxy routing is configured using the [specific page](../administrator-manual/advanced/trunks_without_registration); incoming routes can be added based on numbers.
+- For non‑registered trunks, proxy routing is configured using the [specific page](/docs/administrator-manual/advanced/trunks_without_registration); incoming routes can be added based on numbers.
 - Some devices/operators send a Request‑URI containing an unknown domain. Rules based on domain (in addition to number) are planned and will simplify handling these cases.
 
 ## Notes on Mediant devices
