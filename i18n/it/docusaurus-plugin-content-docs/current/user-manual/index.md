@@ -2,3 +2,8 @@
 title: Manuale Utente
 sidebar_position: 0
 ---
+
+Benvenuti nel manuale utente di NethVoice. Questa sezione contiene guide rivolte agli utenti finali per il client web e il client desktop di NethVoice. Utilizza i collegamenti qui sotto per accedere alla documentazione del prodotto e alle pagine di avvio rapido corrispondenti.
+
+- [NethVoice CTI](/docs/user-manual/nethcti/) — client web per la gestione delle chiamate e la collaborazione tramite browser.
+- [NethLink](/docs/user-manual/nethlink/) — applicazione desktop (Windows/macOS/Linux) per il controllo nativo delle chiamate.
