@@ -23,7 +23,7 @@ Il provisioning implica la distribuzione automatica delle impostazioni di config
 
 Questa sezione copre il flusso di lavoro completo del provisioning:
 
-### [Phone Provisioning](phone_provisioning)
+### [Phone Provisioning](phone_provisioning.md)
 Scopri come identificare i telefoni, associarli agli utenti e configurare il provisioning automatico attraverso i metodi supportati (RPS e DHCP). Scopri come gestire gli aggiornamenti del firmware del telefono e personalizzare le impostazioni del telefono.
 
 **Argomenti chiave:**
@@ -34,7 +34,7 @@ Scopri come identificare i telefoni, associarli agli utenti e configurare il pro
 - Aggiornamenti del firmware
 - Aggiornamenti automatici
 
-### [Telefoni supportati](supported_phones)
+### [Telefoni supportati](supported_phones.md)
 Sfoglia l'elenco completo dei modelli di telefono supportati dai principali produttori tra cui NethPhone, Fanvil, Yealink, Snom e Gigaset. Questa sezione descrive i requisiti del firmware e la compatibilità del provisioning per ogni produttore.
 
 **Produttori in primo piano:**
@@ -44,7 +44,7 @@ Sfoglia l'elenco completo dei modelli di telefono supportati dai principali prod
 - Snom
 - Gigaset
 
-### [Gateway Provisioning](gateway_provisioning)
+### [Gateway Provisioning](gateway_provisioning.md)
 Configura gateway per la connettività ISDN, analogica e FXO. A differenza dei telefoni, i gateway vengono sottoposti a provisioning tramite connessioni telnet dirette, consentendo il caricamento della configurazione in tempo reale ai dispositivi online o ai file di configurazione preliminare per la successiva distribuzione.
 
 **Argomenti chiave:**
@@ -53,14 +53,14 @@ Configura gateway per la connettività ISDN, analogica e FXO. A differenza dei t
 - Configurazione della connessione diretta
 - Distribuzione della configurazione basata su file
 
-### [Gateway supportati](supported_gateways)
+### [Gateway supportati](supported_gateways.md)
 Esamina l'elenco dei modelli di gateway supportati da Grandstream e Patton, incluse le varianti FXS, FXO, BRI e PRI. Questi gateway consentono l'integrazione con le linee telefoniche tradizionali e i sistemi legacy.
 
 **Marchi supportati:**
 - Grandstream (modelli FXS e analogici)
 - Patton (modelli Patton BRI, PRI e FXO Trinity)
 
-### [Parametri di Provisioning](provisioning_parameters)
+### [Parametri di Provisioning](provisioning_parameters.md)
 Comprendi tutti i parametri di provisioning disponibili organizzati per categorie funzionali. Questa guida completa copre soft key, line key, expansion key, impostazioni dello schermo e della suoneria, preferenze, configurazione della rubrica LDAP e impostazioni di rete.
 
 **Aree di configurazione:**
@@ -84,8 +84,8 @@ Comprendi tutti i parametri di provisioning disponibili organizzati per categori
 
 ## Passaggi successivi
 
-- **Nuovo al provisioning?** Inizia con [Phone Provisioning](phone_provisioning) per comprendere le basi
-- **Configurare i telefoni?** Controlla [Telefoni supportati](supported_phones) per le informazioni sulla compatibilità
-- **Configurare i gateway?** Vedi [Gateway Provisioning](gateway_provisioning) per istruzioni dettagliate
-- **Messa a punto delle impostazioni?** Esamina [Parametri di Provisioning](provisioning_parameters) per tutte le opzioni disponibili
+- **Nuovo al provisioning?** Inizia con [Phone Provisioning](phone_provisioning.md) per comprendere le basi
+- **Configurare i telefoni?** Controlla [Telefoni supportati](supported_phones.md) per le informazioni sulla compatibilità
+- **Configurare i gateway?** Vedi [Gateway Provisioning](gateway_provisioning.md) per istruzioni dettagliate
+- **Messa a punto delle impostazioni?** Esamina [Parametri di Provisioning](provisioning_parameters.md) per tutte le opzioni disponibili
 

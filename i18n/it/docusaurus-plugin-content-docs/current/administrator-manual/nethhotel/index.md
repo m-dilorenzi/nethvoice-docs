@@ -31,7 +31,7 @@ NethHotel consente agli operatori degli hotel di:
 
 ## Link veloci
 
-### [Configurazione e gestione di NethHotel](nethhotel)
+### [Configurazione e gestione di NethHotel](configuration.md)
 
 Guida completa per la configurazione e la gestione del modulo NethHotel:
 - Abilita NethHotel nella configurazione di NethVoice
@@ -43,7 +43,7 @@ Guida completa per la configurazione e la gestione del modulo NethHotel:
 - Fatturazione e reporting
 - Codici funzionalità del telefono
 
-### [Integrazione FIAS](fias_integration)
+### [Integrazione FIAS](fias_integration.md)
 
 Integrazione del sistema di gestione della proprietà (PMS) tramite protocollo FIAS:
 - Certificazione Oracle Hospitality OPERA
@@ -75,6 +75,6 @@ O dalla procedura guidata dell'amministratore di NethVoice:
 
 ## Scopri di più
 
-- Vedi la guida [Configurazione e gestione di NethHotel](nethhotel) per i dettagli completi di configurazione e operazione
-- Rivedi [Integrazione FIAS](fias_integration) per la connessione PMS e l'automazione
-- Consulta la [documentazione principale di NethVoice](../../introduction) per le funzionalità generali di NethVoice
+- Vedi la guida [Configurazione e gestione di NethHotel](configuration.md) per i dettagli completi di configurazione e operazione
+- Rivedi [Integrazione FIAS](fias_integration.md) per la connessione PMS e l'automazione
+- Consulta la [documentazione principale di NethVoice](../../intro.md) per le funzionalità generali di NethVoice

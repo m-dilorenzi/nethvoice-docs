@@ -23,13 +23,13 @@ Il vostro sistema NethServer 7 deve soddisfare i seguenti requisiti:
 
 Il sistema NS8 di destinazione richiede:
 
-- **Installazione Pulita**: Un cluster NS8 appena installato (vedere [Guida all'Installazione NS8](/docs/administrator-manual/install/nethserver))
+- **Installazione Pulita**: Un cluster NS8 appena installato (vedere [Guida all'Installazione NS8](../../administrator-manual/install/nethserver.md))
 - **Risorse Adeguate**: CPU, RAM e spazio su disco sufficienti per ospitare NethVoice e i suoi dati
   - Minimo: 4 vCPU, 8GB RAM, 100GB spazio disco
   - Consigliato: Scalare in base all'utilizzo e al volume di dati di NS7
-- **Proxy NethVoice**: Dovrebbe essere pre-installato e configurato (vedere [Documentazione Proxy NethVoice](/docs/administrator-manual/install/nethvoice_proxy))
+- **Proxy NethVoice**: Dovrebbe essere pre-installato e configurato (vedere [Documentazione Proxy NethVoice](../../administrator-manual/advanced/nethvoice_proxy.md))
   - Nota: Se non installato, lo strumento di migrazione lo installerà automaticamente, ma la configurazione manuale sarà richiesta successivamente
-- **Trunk VoIP e telefoni supportati**: Assicuratevi che tutti i trunk VoIP e i telefoni utilizzati in NS7 siano supportati in NS8. Controllate la documentazione [Telefoni Supportati](../../administrator-manual/provisioning/supported_phones), [Gateway Supportati](../../administrator-manual/provisioning/supported_gateways) e [Trunk supportati](../../administrator-manual/provisioning/supported_trunks) per informazioni sulla compatibilità.
+- **Trunk VoIP e telefoni supportati**: Assicuratevi che tutti i trunk VoIP e i telefoni utilizzati in NS7 siano supportati in NS8. Controllate la documentazione [Telefoni Supportati](../../administrator-manual/provisioning/supported_phones.md), [Gateway Supportati](../../administrator-manual/provisioning/supported_gateways.md) e [Trunk supportati](../../administrator-manual/provisioning/supported_trunks.md) per informazioni sulla compatibilità.
 
 :::tip Pre-installa Proxy NethVoice
 Si consiglia vivamente di installare e configurare Proxy NethVoice **prima** di avviare la migrazione. Questo assicura una corretta configurazione di rete e riduce i compiti post-migrazione.
@@ -239,8 +239,8 @@ Completate questa lista di controllo prima di avviare la migrazione:
 
 Prima di procedere, consultate queste risorse:
 
-- **[Guida all'Installazione NethServer 8](/docs/administrator-manual/install/nethserver)** - Setup completo NS8
-- **[Installazione Proxy NethVoice](/docs/administrator-manual/install/nethvoice_proxy)** - Setup e configurazione del proxy
+- **[Guida all'Installazione NethServer 8](../../administrator-manual/install/nethserver.md)** - Setup completo NS8
+- **[Installazione Proxy NethVoice](../../administrator-manual/advanced/nethvoice_proxy.md)** - Setup e configurazione del proxy
 - **[Guida Ufficiale Migrazione NS8](https://docs.nethserver.org/projects/ns8/en/latest/migration.html)** - Procedure di migrazione generale NS8
 - **[Configurazione Provider di Account](https://docs.nethserver.org/projects/ns8/en/latest/user_domains.html)** - Setup dominio utente in NS8
 

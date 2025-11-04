@@ -13,7 +13,7 @@ Benvenuti nella sezione tutorial! Qui troverete guide passo-passo e esempi prati
 
 Imparate come configurare e gestire i trunk all'interno della piattaforma. Questi tutorial coprono le basi della configurazione dei trunk, le migliori pratiche e suggerimenti per la risoluzione dei problemi.
 
-[Leggi il Tutorial Trunk](./trunks)
+[Leggi il Tutorial Trunk](./trunks/index.md)
 
 ---
 
@@ -21,4 +21,4 @@ Imparate come configurare e gestire i trunk all'interno della piattaforma. Quest
 
 Guida passo-passo per migrare la vostra configurazione esistente all'ultima versione. Questi tutorial includono i passaggi di preparazione, le procedure di migrazione e i controlli post-migrazione.
 
-[Leggi il Tutorial Migrazione](./migration)
+[Leggi il Tutorial Migrazione](./migration/index.md)

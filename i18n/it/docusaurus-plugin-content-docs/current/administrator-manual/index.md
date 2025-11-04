@@ -91,30 +91,30 @@ Prima di distribuire NethVoice, assicuratevi di avere:
 
 - ✅ **Risorse di Sistema**: Minimo 2 vCPU, 2GB RAM, 40GB storage per istanza
 - ✅ **Requisiti di Rete**: IP statico, DNS configurato, connettività internet
-- ✅ **NethServer 8**: Completamente installato e configurato (vedere [Guida all'Installazione](./install/))
+- ✅ **NethServer 8**: Completamente installato e configurato (vedere [Guida all'Installazione](./install/index.md))
 - ✅ **Dominio Utente**: Creato per utenti e autenticazione (vedere [Domini Utente nell'Installazione NethServer](./install/nethserver.md#user-domains))
 - ✅ **Proxy NethVoice**: Installato e configurato con FQDN appropriato e record DNS (richiesto per qualsiasi distribuzione di NethVoice)
 
 ### Passaggi di Distribuzione
 
-1. **[Verificare i Requisiti di Sistema](./install/nethserver#system-requirements)** - Assicuratevi che la vostra infrastruttura soddisfi i requisiti
-2. **[Installare NethServer 8](./install/nethserver/)** - Distribuire la piattaforma infrastruttura base
+1. **[Verificare i Requisiti di Sistema](./install/nethserver.md#system-requirements)** - Assicuratevi che la vostra infrastruttura soddisfi i requisiti
+2. **[Installare NethServer 8](./install/nethserver.md)** - Distribuire la piattaforma infrastruttura base
 3. **[Creare Dominio Utente](./install/nethserver.md#user-domains)** - Configurare LDAP per utenti e autenticazione
-4. **[Installare e Configurare Proxy NethVoice](./advanced/nethvoice_proxy)** - Distribuire il gateway VoIP esterno (RICHIESTO prima di NethVoice)
-5. **[Distribuire NethVoice](./install/nethvoice_install/)** - Installare il modulo NethVoice sopra il proxy
+4. **[Installare e Configurare Proxy NethVoice](./advanced/nethvoice_proxy.md)** - Distribuire il gateway VoIP esterno (RICHIESTO prima di NethVoice)
+5. **[Distribuire NethVoice](./install/nethvoice_install.md)** - Installare il modulo NethVoice sopra il proxy
 6. **Configurare il Vostro Sistema**:
-   - [Provisioning Telefoni](./provisioning/) - Distribuire e configurare dispositivi telefonici
-   - [Gestire Interni](../user-manual/nethcti/) - Creare interni e assegnare agli utenti
-7. **[Configurazione Avanzata](./advanced/)** - Configurare trunk, gateway, instradamento e funzionalità avanzate
+   - [Provisioning Telefoni](./provisioning/index.md) - Distribuire e configurare dispositivi telefonici
+   - [Gestire Interni](../user-manual/nethcti/index.md) - Creare interni e assegnare agli utenti
+7. **[Configurazione Avanzata](./advanced/index.md)** - Configurare trunk, gateway, instradamento e funzionalità avanzate
 
 ## Sezioni Documentazione Principale
 
 | Sezione | Scopo | Argomenti |
 |---------|-------|----------|
-| **[Installazione](./install/)** | Setup di sistema e distribuzione | NethServer, installazione NethVoice, prerequisiti |
-| **[Provisioning](./provisioning/)** | Gestione dispositivi telefonici | Dispositivi supportati, metodi di provisioning, configurazione |
-| **[Manuale Amministratore](./administrator-manual/)** | Amministrazione di sistema | Utenti, interni, trunk, gateway, instradamento |
-| **[Manuale Utente](../user-manual/)** | Funzionalità per l'utente finale | Client CTI, NethCTI, NethLink, funzionalità di chiamata |
+| **[Installazione](./install/index.md)** | Setup di sistema e distribuzione | NethServer, installazione NethVoice, prerequisiti |
+| **[Provisioning](./provisioning/index.md)** | Gestione dispositivi telefonici | Dispositivi supportati, metodi di provisioning, configurazione |
+| **[Manuale Amministratore](./index.md)** | Amministrazione di sistema | Utenti, interni, trunk, gateway, instradamento |
+| **[Manuale Utente](../user-manual/index.md)** | Funzionalità per l'utente finale | Client CTI, NethCTI, NethLink, funzionalità di chiamata |
 
 :::tip Distribuzioni Multi-Istanza
 Potete installare più istanze di NethVoice sullo stesso nodo NethServer 8 dal Software Center. Ogni istanza richiede una configurazione separata ed esegue in modo indipendente. Questo è utile per distribuzioni multi-tenant o unità di business separate.
@@ -129,7 +129,7 @@ Il modulo NethVoice richiede che il **proxy NethVoice** sia già installato, con
 - Abilita l'accesso esterno anche con una singola istanza di NethVoice
 - Instrada il traffico tra più installazioni di NethVoice sullo stesso nodo
 
-Se non avete ancora configurato il proxy, fare riferimento alla [documentazione Proxy NethVoice](./advanced/nethvoice_proxy) prima di installare NethVoice.
+Se non avete ancora configurato il proxy, fare riferimento alla [documentazione Proxy NethVoice](./advanced/nethvoice_proxy.md) prima di installare NethVoice.
 :::
 
 ## Supporto e Risorse Aggiuntive
@@ -137,7 +137,7 @@ Se non avete ancora configurato il proxy, fare riferimento alla [documentazione 
 - **Documentazione Ufficiale**: Riferimento tecnico completo e guide di configurazione avanzata
 - **Supporto Comunità**: Unitevi alla comunità NethVoice per domande e discussioni
 - **Servizi Professionali**: Contattate Nethesis per distribuzioni enterprise e supporto
-- **Guida Provisioning**: Informazioni dettagliate su telefoni e gateway supportati nella [sezione Provisioning](./provisioning/)
+- **Guida Provisioning**: Informazioni dettagliate su telefoni e gateway supportati nella [sezione Provisioning](./provisioning/index.md)
 
 ## Struttura della Documentazione
 

@@ -60,7 +60,7 @@ Verificare la compatibilità dei telefoni con i metodi di provisioning supportat
 Se un telefono è già in uso, è possibile prepararlo per l'associazione con NethVoice attraverso le procedure di **aggiornamento firmware** e **ripristino alle impostazioni di fabbrica**. Entrambe le procedure sono accessibili tramite l'interfaccia di amministrazione web del telefono.
 
 
-## Metodi di Provisioning
+## Metodi di Provisioning {#provisioning-methods}
 
 I telefoni possono accedere alla loro configurazione tramite protocolli web standard, HTTP o HTTPS (porta TCP 80 o 443).
 
@@ -94,7 +94,7 @@ Fare riferimento alla sezione `provisioning-support-section` per ulteriori infor
 
 Se si desidera modificare o personalizzare le impostazioni dei telefoni configurati tramite provisioning, accedere all'interfaccia di amministrazione web di NethVoice, modificando le impostazioni al livello *Predefinito*, *Modello* o *telefono individuale*.
 
-### Priorità di Configurazione del Telefono
+### Priorità di Configurazione del Telefono {#phone-configuration-priority}
 
 La configurazione del telefono segue una struttura gerarchica in cui le impostazioni possono essere definite a tre livelli:
 
@@ -153,7 +153,7 @@ In ogni caso, il telefono scarica la configurazione ogni volta che viene riavvia
 
 
 
-## Aggiornamento Firmware
+## Aggiornamento Firmware {#firmware-upgrade}
 
 Il produttore del telefono pubblica periodicamente aggiornamenti firmware per i vari modelli dei loro telefoni sul loro sito web.
 

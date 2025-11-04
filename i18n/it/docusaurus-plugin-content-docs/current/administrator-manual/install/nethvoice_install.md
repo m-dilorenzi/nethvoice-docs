@@ -40,7 +40,7 @@ Anche con una singola installazione di NethVoice, il proxy è essenziale per una
 Assicurati che NethVoice Proxy sia completamente installato e configurato con FQDN appropriate e record DNS prima di procedere all'installazione delle istanze di NethVoice.
 :::
 
-### Passaggio 2: Configura NethVoice Proxy
+### Passaggio 2: Configura NethVoice Proxy {#step-2-configure-nethvoice-proxy}
 
 Prima di installare NethVoice, devi configurare NethVoice Proxy:
 
@@ -59,7 +59,7 @@ Assicurati che:
 
 Questi requisiti sono critici per ottenere un certificato SSL/TLS valido per le comunicazioni sicure.
 
-Vedi [Documentazione di NethVoice Proxy](advanced/nethvoice_proxy) per ulteriori informazioni.
+Vedi [Documentazione di NethVoice Proxy](../advanced/nethvoice_proxy.md) per ulteriori informazioni.
 
 ### Passaggio 3: Installa NethVoice
 
@@ -76,12 +76,12 @@ Una volta che NethVoice Proxy è in esecuzione, puoi installare le istanze di Ne
 Puoi installare più istanze di NethVoice sullo stesso nodo. Ognuna utilizzerà il NethVoice Proxy condiviso per l'accesso esterno e l'instradamento del traffico. Ogni istanza richiede una configurazione separata e FQDN dedicati.
 :::
 
-## Configurazione del modulo
+## Configurazione del modulo {#module-configuration}
 
 :::warning Prerequisiti richiesti
 Prima di procedere con la configurazione di qualsiasi istanza di NethVoice, assicurati che:
 
-1. **NethVoice Proxy sia installato** - Vedi [Installazione di NethVoice Proxy](../nethvoice_proxy/)
+1. **NethVoice Proxy sia installato** - Vedi [Installazione di NethVoice Proxy](../advanced/nethvoice_proxy.md)
 2. **NethVoice Proxy sia configurato** - Il dominio proxy (FQDN) deve essere impostato e i record DNS creati
 3. **NethVoice Proxy sia in esecuzione** - Verifica lo stato del proxy nell'interfaccia di gestione del nodo
 4. **Il dominio utente sia creato** - Vedi [Domini utente nell'installazione di NethServer](./nethserver.md#user-domains) (richiesto per gli utenti e gli interni di NethVoice)
@@ -117,7 +117,7 @@ Opzioni di configurazione avanzata:
 Le seguenti opzioni sono disponibili solo con un abbonamento Enterprise attivo:
 
 - **Abilita modulo hotel**: Attiva il modulo Hotel per la gestione delle funzionalità telefoniche specifiche dell'hotel.
-  Vedi [Documentazione del modulo NethVoice Hotel](/nethhotel/) per ulteriori dettagli.
+  Vedi [Documentazione del modulo NethVoice Hotel](../nethhotel/index.md) per ulteriori dettagli.
 - **Host del server Hotel FIAS**: Inserisci l'indirizzo IP o il nome host del server Hotel FIAS.
 - **Porta del server Hotel FIAS**: Specifica il numero di porta per la connessione al server Hotel FIAS.
 

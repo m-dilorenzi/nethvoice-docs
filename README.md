@@ -72,3 +72,12 @@ Eg:
 ```bash
 yarn write-heading-ids --overwrite docs/ docs/user-manual/
 ```
+
+Always build the documentation to verify there are no broken links or anchor issues:
+```bash
+yarn build --locale en
+```
+And for Italian:
+```bash
+yarn build --locale it
+```

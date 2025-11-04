@@ -6,7 +6,7 @@ sidebar_position: 1
 Questa sezione consente l'accesso al pannello di amministrazione FreePBX sottostante e ad altre opzioni di configurazione avanzate.
 
 :::warning Prerequisiti
-Assicurati di avere familiarità con la [configurazione di base di NethVoice](/docs/administrator-manual/wizard) prima di procedere con le impostazioni avanzate. Le configurazioni non corrette in questa sezione potrebbero influire sulla stabilità del sistema.
+Assicurati di avere familiarità con la [configurazione di base di NethVoice](../configuration/wizard.md) prima di procedere con le impostazioni avanzate. Le configurazioni non corrette in questa sezione potrebbero influire sulla stabilità del sistema.
 :::
 
 :::info Supporto

@@ -26,7 +26,7 @@ Il processo di migrazione converte l'installazione di NethVoice su NethServer 7 
 - Passaggio finale: 30 minuti - 2 ore
 
 :::info Installazione automatica di NethVoice Proxy
-Se NethVoice Proxy non è già installato sul nodo di destinazione, lo strumento di migrazione lo installerà automaticamente. Tuttavia, dovrete configurarlo manualmente dopo il completamento della migrazione.
+Se NethVoice Proxy non è già installato sul nodo di destinazione, lo strumento di migrazione lo installerà automaticamente. Tuttavia, dovrete configurarlo manualmente dopo il completamento della migrazione. Vedi [Documentazione Proxy NethVoice](../../administrator-manual/advanced/nethvoice_proxy.md) per i dettagli di configurazione.
 :::
 
 ## Passaggio 1: Installare lo strumento di migrazione su NS7
@@ -378,7 +378,7 @@ Se il proxy è stato auto-installato, configurate:
    - Assicurarsi che le porte siano aperte nel firewall
 
 Per i passaggi di configurazione dettagliati, vedere:
-➡️ **[Guida alla configurazione di NethVoice Proxy](/docs/administrator-manual/install/nethvoice_proxy)**
+➡️ **[Guida alla configurazione di NethVoice Proxy](../../administrator-manual/advanced/nethvoice_proxy.md)**
 
 :::warning La configurazione del proxy è critica
 Le chiamate esterne e le registrazioni dei telefoni non funzioneranno correttamente fino a quando il proxy non sarà correttamente configurato. Non saltate questo passaggio!
@@ -571,7 +571,7 @@ api-cli run module/<nethvoice-instance>/get-logs
 Per informazioni più dettagliate:
 
 - **[Guida di migrazione completa NS8](https://docs.nethserver.org/projects/ns8/en/latest/migration.html)** - Procedure di migrazione complete
-- **[Guida alla configurazione di NethVoice Proxy](/docs/administrator-manual/install/nethvoice_proxy)** - Guida alla configurazione del proxy
+- **[Guida alla configurazione di NethVoice Proxy](../../administrator-manual/advanced/nethvoice_proxy.md)** - Guida alla configurazione del proxy
 - **[Migrazione del provider di account](https://docs.nethserver.org/projects/ns8/en/latest/migration.html#account-provider)** - Dettagli del provider di account
 - **[Documentazione dei log di migrazione](https://docs.nethserver.org/projects/ns8/en/latest/migration.html#logs)** - Posizioni e significati dei file di log
 

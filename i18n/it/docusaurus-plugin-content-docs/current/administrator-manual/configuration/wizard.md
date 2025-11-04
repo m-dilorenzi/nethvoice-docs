@@ -55,9 +55,9 @@ I trunk sono le connessioni che consentono al tuo PBX di inviare e ricevere chia
 
 ### Aggiungi linee fisiche
 
-Per aggiungere linee fisiche, è necessario configurare un gateway SIP supportato. Vedi la sezione [Gateway supportati](./provisioning/supported_gateways) per un elenco dei dispositivi compatibili.
+Per aggiungere linee fisiche, è necessario configurare un gateway SIP supportato. Vedi la sezione [Gateway supportati](../provisioning/supported_gateways.md) per un elenco dei dispositivi compatibili.
 
-Vedi la sezione [Provisioning del gateway](./provisioning/gateway_provisioning) per istruzioni dettagliate su come configurare e fornire il tuo gateway.
+Vedi la sezione [Provisioning del gateway](../provisioning/gateway_provisioning.md) per istruzioni dettagliate su come configurare e fornire il tuo gateway.
 
 Una volta salvate le impostazioni, puoi scaricare il file di configurazione da caricare sul dispositivo tramite la sua interfaccia.
 
@@ -353,4 +353,4 @@ Assicurati di utilizzare una password forte per proteggere l'istanza di NethVoic
 ### Avanzate
 
 La sezione Avanzate fornisce accesso diretto all'interfaccia avanzata di NethVoice.
-Vedi la sezione [Avanzate](./advanced) per maggiori dettagli.
+Vedi la sezione [Avanzate](../advanced/index.md) per maggiori dettagli.

@@ -7,7 +7,7 @@ sidebar_position: 2
 
 NethVoice gira sopra **NethServer 8 (NS8)**, una piattaforma infrastruttura Linux unificata open-source. Questa pagina ti guida attraverso l'installazione di NethServer 8, che è un prerequisito per l'installazione di NethVoice.
 
-## Requisiti di sistema
+## Requisiti di sistema {#system-requirements}
 
 Prima di installare NethServer 8, assicurati che il tuo sistema soddisfi i seguenti requisiti:
 
@@ -139,7 +139,7 @@ Dopo la configurazione del cluster, puoi:
 1. **Installa dominio utente**: [Configura LDAP o Active Directory](#user-domains)
 2. **Installa NethVoice**: Procedi con l'[installazione di NethVoice](nethvoice_install) tramite il Software Center
 
-## Domini utente
+## Domini utente {#user-domains}
 
 I domini utente archiviano utenti e gruppi in un database LDAP. NethVoice richiede almeno un dominio utente per gestire interni, utenti e autenticazione.
 

@@ -64,6 +64,12 @@ Consigliamo la seguente configurazione:
 - Consenti alle camere di chiamare la ricezione configurando un numero di selezione rapida (vedi [Numeri di selezione rapida](#speed-dial-numbers))
 - Gli interni dei servizi possono chiamarsi direttamente l'un l'altro
 
+### Numeri a selezione rapida {#speed-dial-numbers}
+
+I numeri a selezione rapida consentono agli ospiti nelle camere di accedere rapidamente ai servizi come la ricezione.
+
+Configura i numeri di selezione rapida nel profilo hotel per abilitare le camere di chiamare i servizi configurati.
+
 ### Rotte in uscita
 
 - Utilizza una rotta in uscita separata **senza** prefisso per gli interni dei servizi
