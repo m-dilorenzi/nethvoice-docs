@@ -132,6 +132,36 @@ Il modulo NethVoice richiede che il **proxy NethVoice** sia già installato, con
 Se non avete ancora configurato il proxy, fare riferimento alla [documentazione Proxy NethVoice](./advanced/nethvoice_proxy.md) prima di installare NethVoice.
 :::
 
+## Subscription {#subscription}
+
+NethVoice richiede una **subscription a NethServer** per sbloccare tutte le funzionalità avanzate.
+
+:::info Subscription NethServer
+Per informazioni dettagliate sui piani di abbondamento, la registrazione e la gestione, consultate la [documentazione Subscription NethServer](https://docs.nethserver.org/projects/ns8/en/latest/subscription.html).
+:::
+
+### Piano di Subscription Supportato
+
+**Solo la subscription Enterprise è supportata in NethVoice.** Il piano Enterprise fornisce:
+
+- Aggiornamenti di sicurezza e funzionalità pianificati
+- Accesso al supporto remoto
+- Monitoraggio del cluster e sistemi di allerta
+- Accesso a tutti i moduli e alle funzionalità di NethVoice
+
+Contattate [info@nethesis.it](mailto:info@nethesis.it) per i dettagli sulla subscription Enterprise.
+
+### Limitazioni senza Subscription
+
+Se distribuite NethVoice senza una subscription attiva, si applicano le seguenti limitazioni:
+
+- **Massimo 8 interni** — Limite a 8 interni utente nel sistema
+- **Nessun provisioning telefoni** — Il motore di provisioning Tancredi non è disponibile; i telefoni possono essere configurati solo tramite DHCP, quindi funzioneranno solamente se i telefoni e il PBX sono nella stessa rete locale (nessun provisioning cloud)
+- **Nessun accesso all'app mobile** — L'app mobile NethVoice non è disponibile
+- **Solo supporto comunitario** — Nessun accesso al supporto remoto o assistenza prioritaria
+
+Per sbloccare queste funzionalità e superare il limite di 8 interni, attivate una sottoscrizione Enterprise.
+
 ## Supporto e Risorse Aggiuntive
 
 - **Documentazione Ufficiale**: Riferimento tecnico completo e guide di configurazione avanzata

@@ -32,7 +32,8 @@ Enter the corresponding extension for each user:
 3. On success the user row is highlighted and a green checkmark appears.
 
 :::info
-Installation without an subscription are limited to 8 users.
+Installation without an Enterprise subscription are limited to 8 users.
+For more info see [Subscription](/docs/administrator-manual#subscription).
 :::
 
 Click the **Next** button to proceed to the Trunks section.

@@ -32,7 +32,8 @@ Inserisci l'interno corrispondente per ogni utente:
 3. Se ha successo, la riga dell'utente viene evidenziata e appare un segno di spunta verde.
 
 :::info
-Le installazioni senza abbonamento sono limitate a 8 utenti.
+Le installazioni senza una subscription Enterprise sono limitate a 8 utenti.
+Per maggiori informazioni, vedi [Subscription](/docs/administrator-manual#subscription).  
 :::
 
 Fai clic sul pulsante **Avanti** per procedere alla sezione Trunk.

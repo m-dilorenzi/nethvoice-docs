@@ -131,6 +131,36 @@ The NethVoice module requires that the **NethVoice proxy** be already installed,
 If you haven't set up the proxy yet, refer to the [NethVoice Proxy documentation](./advanced/nethvoice_proxy.md) before installing NethVoice.
 :::
 
+## Subscription {#subscription}
+
+NethVoice requires a **NethServer subscription** to unlock its full capabilities. 
+
+:::info NethServer Subscription
+For detailed information about subscription plans, registration, and management, refer to the [NethServer Subscription documentation](https://docs.nethserver.org/projects/ns8/en/latest/subscription.html).
+:::
+
+### Supported Subscription Plan
+
+**Only the Enterprise subscription is supported in NethVoice.** The Enterprise plan provides:
+
+- Scheduled security and feature updates
+- Remote support access
+- Cluster monitoring and alerting
+- Access to all NethVoice modules and features
+
+Contact [info@nethesis.it](mailto:info@nethesis.it) for Enterprise subscription details.
+
+### Limitations Without Subscription
+
+If you deploy NethVoice without an active subscription, the following restrictions apply:
+
+- **Maximum 8 extensions** — Limited to 8 user extensions in the system
+- **No phone provisioning** — Tancredi provisioning engine is unavailable; phones can be provisioned only via DHCP so it will work only if the phones and the PBX are in the same local network (no cloud provisioning)
+- **No mobile app access** — The NethVoice mobile application is not available
+- **Community support only** — No access to remote support or priority assistance
+
+To unlock these features and scale beyond 8 extensions, activate an Enterprise subscription.
+
 ## Support & Additional Resources {#support--additional-resources}
 
 - **Official Documentation**: Full technical reference and advanced configuration guides
