@@ -113,7 +113,7 @@ Puoi aggiungere:
 - Organizzazione
 - Note
 
-## Cronologia Chiamate
+## Cronologia Chiamate {#call-history}
 
 Utilizza comodi filtri per cercare le chiamate dal tuo interno, gruppo o dall'intero centralino telefonico (soggetto a autorizzazioni specifiche):
 
@@ -207,6 +207,37 @@ Gestione avanzata videocitofoni. Gestisci e controlla i tuoi videocitofoni (sogg
 ### PBX Report
 
 Accedi alla [Reportistica Avanzata](https://docs.nethvoice.it/it/latest/pbxreport_manual.html) per il tuo centralino telefonico (soggetto a autorizzazioni specifiche).
+
+## Trascrizione Vocale {#voice-transcription}
+
+La trascrizione vocale converte automaticamente l'audio della tua chiamata in testo in tempo reale. Questa funzionalità è disponibile se il tuo amministratore ha configurato una chiave API di Deepgram in NethVoice.
+
+### Requisiti
+
+- La trascrizione vocale deve essere abilitata e configurata in NethVoice dal tuo amministratore
+- Una chiave API di Deepgram valida deve essere configurata nel sistema telefonico
+- Devi avere le autorizzazioni appropriate per utilizzare questa funzionalità
+
+### Avvio di una Trascrizione
+
+Durante una chiamata attiva:
+
+1. Cerca il pulsante di trascrizione nel pannello laterale (accessibile tramite il pulsante di espansione delle azioni laterali)
+2. Clicca il pulsante **Avvia Trascrizione**
+3. La trascrizione inizierà immediatamente e apparirà sullo schermo
+4. L'audio verrà trascritto in tempo reale mentre la chiamata progredisce
+
+### Interruzione di una Trascrizione
+
+Per interrompere la registrazione della trascrizione:
+
+1. Clicca il pulsante **Interrompi Trascrizione** (o il pulsante di chiusura nel pannello di trascrizione)
+2. La trascrizione verrà interrotta immediatamente
+3. Qualsiasi testo trascritto precedentemente rimarrà disponibile per la revisione
+
+### Accesso alla Cronologia delle Trascrizioni
+
+La cronologia delle trascrizioni non è attualmente disponibile e verrà implementata nelle versioni future.
 
 ## Impostazioni
 

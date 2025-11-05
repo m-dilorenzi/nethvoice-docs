@@ -118,9 +118,13 @@ Durante la procedura guidata di configurazione del modulo, ti verrà chiesto di 
 
 Opzioni di configurazione avanzata:
 
-- **Chiave API di Deepgram**: Inserisci la tua chiave API di Deepgram per abilitare funzionalità di riconoscimento vocale avanzate.
-  - **Abilita trascrizione delle chiamate (Anteprima)**: Abilita questa opzione per trascrivere tutte le chiamate utilizzando il servizio speech-to-text di Deepgram. Nota che questa funzione è in anteprima e potrebbe avere limitazioni e comporterà costi aggiuntivi in base al tuo utilizzo di Deepgram.
+- **Chiave API di Deepgram**: Inserisci la tua chiave API di Deepgram per abilitare funzionalità di riconoscimento vocale avanzate e trascrizione vocale.
+  - **Abilita trascrizione delle chiamate**: Abilita questa opzione per permettere agli utenti di trascrivere le chiamate in tempo reale utilizzando il servizio speech-to-text di Deepgram. Questa funzione comporta costi aggiuntivi in base al tuo utilizzo di Deepgram.
   - **Trascrizione della segreteria telefonica**: Abilita la trascrizione della segreteria telefonica per convertire i messaggi della segreteria telefonica in testo utilizzando Deepgram. Questa funzione comporta anche costi aggiuntivi in base al tuo utilizzo di Deepgram.
+
+:::info Trascrizione vocale
+Per informazioni dettagliate su come gli utenti possono accedere e utilizzare le funzionalità di trascrizione vocale, vedi [Trascrizione Vocale](../../user-manual/nethcti/other.md#voice-transcription) nel Manuale Utente.
+:::
 
 Le seguenti opzioni sono disponibili solo con un abbonamento Enterprise attivo:
 

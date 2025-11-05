@@ -121,9 +121,13 @@ During the module configuration wizard, you will be prompted to provide the foll
 
 Advanced configuration options:
 
-- **Deepgram API Key**: Insert your Deepgram API key to enable advanced speech recognition features.
-  - **Enable call transcription (Preview)**: Enable this option to transcribe all calls using Deepgram's speech-to-text service. Please note that this feature is in preview and may have limitations and will incur additional costs based on your Deepgram usage.
+- **Deepgram API Key**: Insert your Deepgram API key to enable advanced speech recognition features and voice transcription.
+  - **Enable call transcription**: Enable this option to allow users to transcribe calls in real-time using Deepgram's speech-to-text service. This feature incurs additional costs based on your Deepgram usage.
   - **Voicemail transcription**: Enable voicemail transcription to convert voicemail messages to text using Deepgram. This feature also incurs additional costs based on your Deepgram usage.
+
+:::info Voice Transcription
+For detailed information on how users can access and use voice transcription features, see [Voice Transcription](../../user-manual/nethcti/other.md#voice-transcription) in the User Manual.
+:::
 
 The following options are available only with an active Enterprise subscription:
 

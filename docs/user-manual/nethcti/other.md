@@ -208,6 +208,37 @@ Advanced video intercom management. Manage and control your video intercoms (sub
 
 Access [Advanced Reporting](https://docs.nethvoice.it/it/latest/pbxreport_manual.html) for your phone system (subject to specific permissions).
 
+## Voice Transcription {#voice-transcription}
+
+Voice transcription automatically converts your call audio into text in real-time. This feature is available if your administrator has configured a Deepgram API key in NethVoice.
+
+### Requirements {#transcription-requirements}
+
+- Voice transcription must be enabled and configured in NethVoice by your administrator
+- A valid Deepgram API key must be configured in the phone system
+- You must have the appropriate permissions to use this feature
+
+### Starting a Transcription {#starting-transcription}
+
+During an active call:
+
+1. Look for the transcription button in the side panel (accessible through the side actions expansion button)
+2. Click the **Start Transcription** button
+3. The transcription will begin immediately and appear on your screen
+4. Audio will be transcribed in real-time as the call progresses
+
+### Stopping a Transcription {#stopping-transcription}
+
+To stop recording the transcription:
+
+1. Click the **Stop Transcription** button (or the close button on the transcription panel)
+2. The transcription will be stopped immediately
+3. Any previously transcribed text will remain available for review
+
+### Accessing Transcription History
+
+Transcription history is currently not available and will be implemented in future releases.
+
 ## Settings {#settings}
 
 Customize your NethVoice CTI by accessing Settings:
