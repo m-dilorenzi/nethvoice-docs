@@ -8,7 +8,9 @@ sidebar_position: 4
 NethVoice is a VoIP application that requires a specific installation on NethServer. This guide will walk you through the installation process.
 
 :::tip
-If you want a ready-to-use NethVoice installation, please consider our **[NethVoice SaaS](saas.md#nethvoice-as-a-service)** service, which provides a fully managed NethVoice instance in the cloud.
+If you want a ready-to-use NethVoice installation, please consider:
+- our **[NethVoice SaaS](saas.md#nethvoice-as-a-service)** service, which provides a fully managed NethVoice instance in the cloud
+- a **[VoiceBox Appliance](voicebox.md)**, a hardware appliance with NethServer and NethVoice pre-installed
 :::
 
 ## Overview {#overview}
