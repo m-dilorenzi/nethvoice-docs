@@ -25,3 +25,54 @@ Il link di collegamento e le credenziali di accesso sono specifiche della tua in
 3. Immetti il tuo nome utente e password
 4. Clicca il pulsante di accesso
 5. Verrai reindirizzato all'interfaccia principale
+
+## Autenticazione a due fattori (2FA) {#two-factor-authentication}
+
+L'autenticazione a due fattori (2FA) fornisce un livello di sicurezza aggiuntivo per il tuo account NethVoice CTI richiedendo un secondo metodo di verifica durante l'accesso.
+
+### Attivazione della 2FA
+
+1. Vai a **Impostazioni** → **Autenticazione**
+2. Cerca la sezione "Autenticazione a due fattori" che mostra lo stato attuale (abilitato o disabilitato)
+3. Fai clic sul pulsante di configurazione per iniziare l'installazione
+4. Scegli il tuo metodo di configurazione:
+   - **Codice QR**: Scansiona il codice QR con la tua app authenticator (es. Google Authenticator)
+   - **Chiave segreta**: Inserisci manualmente il codice segreto nella tua app authenticator
+5. Inserisci il codice OTP (one-time password) dal tuo authenticator
+6. Fai clic su conferma
+7. Vedrai un messaggio di conferma quando la 2FA è stata attivata con successo
+
+### Codici di recupero
+
+Quando la 2FA è abilitata, puoi accedere ai tuoi codici di recupero in Impostazioni (richiesta verifica della password). Questi codici sono:
+
+- **Monouso**: Ogni codice può essere utilizzato una sola volta
+- **Rigenerazione automatica**: Quando tutti i codici sono stati utilizzati, ne vengono generati automaticamente di nuovi
+- **Accesso di emergenza**: Usa questi codici se perdi l'accesso alla tua app authenticator
+
+### Accesso con 2FA
+
+Quando la 2FA è abilitata:
+
+1. Inserisci il tuo nome utente e password come al solito
+2. Ti verrà richiesto di inserire il tuo codice OTP
+3. Apri la tua app authenticator e inserisci il codice di 6 cifre
+4. Sarai loggato con successo
+
+### Disattivazione della 2FA
+
+Per disattivare l'autenticazione a due fattori:
+
+1. Vai a **Impostazioni** → **Autenticazione**
+2. Fai clic sul pulsante di configurazione
+3. Inserisci la tua password per confermare
+4. La 2FA sarà disabilitata
+5. Sarai disconnesso da tutte le sessioni attive del tuo account
+
+### App Authenticator supportate
+
+La 2FA funziona con qualsiasi authenticator OTP (one-time password) standard. Le app testate e confermate funzionanti includono:
+
+- **Google Authenticator** (tutte le piattaforme)
+- **Bitwarden** (password manager con supporto 2FA)
+- Qualsiasi altra app authenticator conforme allo standard OTP
