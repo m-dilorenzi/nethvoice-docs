@@ -16,7 +16,7 @@ At the end of the wizard:
 - a new [Dashboard](./dashboard) page will be available to monitor system status and performance
 - a new [Applications](./applications) section will be available to manage CTI features
 
-## Extensions {#extensions}
+## Extensions - Users {#extensions}
 
 VoIP (Voice over Internet Protocol) extensions are virtual phone numbers that let people make and receive calls using the network instead of a traditional phone line. Each extension is a unique number inside your NethVoice system — colleagues can call one another by dialing that number. An extension can also receive external calls once the system’s phone lines are configured.
 
@@ -36,6 +36,50 @@ Installation without an subscription are limited to 8 users.
 :::
 
 Click the **Next** button to proceed to the Trunks section.
+
+### Import and export users {#import-and-export-users}
+
+The page allows you to import and export users in bulk using CSV files:
+
+- **Import**: Create a plain text CSV file (UTF‑8) with one user per line using this field order:
+- **Export**: Download a CSV template containing current users for editing and reimporting.
+  The exported file has the same format of the imported one.
+
+Create a plain text CSV file (UTF‑8) with one user per line using this field order:
+```
+<NICKNAME>,<FULL NAME>,[EXTENSION],[USER PASSWORD],[MOBILE],[VOICEMAIL],[WEBRTC EXTENSION],[CTI GROUPS],[CTI PROFILE]
+```
+
+Notes and examples:
+- Fields in square brackets are optional.
+- Use commas to separate fields. Do not include surrounding quotes unless part of the value.
+- Boolean fields accept TRUE or FALSE (case‑insensitive).
+- CTI groups are a pipe (|) separated list; groups that do not exist will be created automatically.
+- The CTI profile must already exist in the system.
+
+Example:
+```
+mario,Mario Rossi
+paolo,Paolo Bianchi,200
+carlo201,Carlo Neri,201,Carlo1@.!
+francesco,Francesco Verdi,202,,33312312343,FALSE,TRUE,Sviluppo|Assistenza|Tecnici,Advanced
+andrea,Andrea Rossi,203,Andrea1234,,TRUE,TRUE,Commerciali,Standard
+```
+
+Import procedure:
+1. Click Import and select the CSV file you created.  
+2. In the import dialog click Import and wait for the users to be processed.
+
+Behavioral details:
+- If EXTENSION is omitted, only the user account is created (no extension assigned).  
+- If PASSWORD is omitted, a random password will be generated.  
+- When importing to assign extensions to existing users (users already present but without an extension), the PASSWORD field is ignored for those users.  
+- Lines starting with `#` are treated as comments and ignored.
+
+
+:::tip
+- Keep the file encoding UTF‑8 and avoid special characters in the nickname field to prevent import issues.
+:::
 
 ## Trunks {#trunks}
 

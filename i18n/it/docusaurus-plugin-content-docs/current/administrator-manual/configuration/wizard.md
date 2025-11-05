@@ -16,7 +16,7 @@ Alla fine della procedura guidata:
 - una nuova pagina [Dashboard](./dashboard) sarà disponibile per monitorare lo stato del sistema e le prestazioni
 - una nuova sezione [Applicazioni](./applications) sarà disponibile per gestire le funzionalità CTI
 
-## Interni
+## Interni - Utenti
 
 Gli interni VoIP (Voice over Internet Protocol) sono numeri telefonici virtuali che consentono alle persone di effettuare e ricevere chiamate utilizzando la rete invece di una linea telefonica tradizionale. Ogni interno è un numero univoco all'interno del tuo sistema NethVoice — i colleghi possono chiamarsi l'un l'altro componendo quel numero. Un interno può anche ricevere chiamate esterne una volta configurate le linee telefoniche del sistema.
 
@@ -36,6 +36,48 @@ Le installazioni senza abbonamento sono limitate a 8 utenti.
 :::
 
 Fai clic sul pulsante **Avanti** per procedere alla sezione Trunk.
+
+### Importazione ed esportazione utenti {#import-and-export-users}
+
+Questa pagina consente di importare ed esportare utenti in blocco utilizzando file CSV:
+
+- **Importa**: crea un file CSV in testo semplice (UTF‑8) con un utente per riga usando il seguente ordine dei campi.  
+- **Esporta**: scarica un modello CSV contenente gli utenti correnti per modificarlo e reimportarlo. Il file esportato ha lo stesso formato di quello importabile.
+
+Crea un file CSV in testo semplice (UTF‑8) con un utente per riga usando il seguente ordine dei campi:
+```
+<NICKNAME>,<FULL NAME>,[EXTENSION],[USER PASSWORD],[MOBILE],[VOICEMAIL],[WEBRTC EXTENSION],[CTI GROUPS],[CTI PROFILE]
+```
+
+Note ed esempi:
+- I campi tra parentesi quadre sono opzionali.  
+- Usa la virgola per separare i campi. Non includere virgolette attorno ai valori a meno che non facciano parte del valore stesso.  
+- I campi booleani accettano TRUE o FALSE (non case‑sensitive).  
+- I gruppi CTI sono una lista separata da pipe (|); i gruppi non esistenti verranno creati automaticamente.  
+- Il profilo CTI deve esistere già nel sistema.
+
+Esempio:
+```
+mario,Mario Rossi
+paolo,Paolo Bianchi,200
+carlo201,Carlo Neri,201,Carlo1@.!
+francesco,Francesco Verdi,202,,33312312343,FALSE,TRUE,Sviluppo|Assistenza|Tecnici,Advanced
+andrea,Andrea Rossi,203,Andrea1234,,TRUE,TRUE,Commerciali,Standard
+```
+
+Procedura di importazione:
+1. Clicca su Importa e seleziona il file CSV che hai creato.  
+2. Nella finestra di importazione clicca Importa e attendi che gli utenti vengano elaborati.
+
+Dettagli di comportamento:
+- Se EXTENSION è omesso, viene creato solo l'account utente (nessuna interno assegnato).  
+- Se PASSWORD è omesso, verrà generata una password casuale.  
+- Quando si importa per assegnare interni ad utenti già esistenti (utenti presenti ma senza interno), il campo PASSWORD viene ignorato per quegli utenti.  
+- Le righe che iniziano con `#` sono trattate come commenti e vengono ignorate.
+
+:::tip
+- Mantieni la codifica del file in UTF‑8 ed evita caratteri speciali nel campo nickname per prevenire problemi di importazione.
+:::
 
 ## Trunk
 
