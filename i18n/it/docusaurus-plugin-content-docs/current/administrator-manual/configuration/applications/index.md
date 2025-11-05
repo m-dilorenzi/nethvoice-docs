@@ -17,3 +17,4 @@ Le seguenti applicazioni sono disponibili nella sezione *Applicazioni*:
 - **Fonti della rubrica**: Integra le rubriche esterne per la risoluzione dei contatti.
 - **URL parametrizzati**: Attiva gli URL personalizzati con parametri relativi alle chiamate durante gli eventi di chiamata.
 - **Sorgenti Video**: Configura telecamere IP e sorgenti video per l'integrazione con NethVoice.
+- **Gestione massiva**: Gestisci e modifica simultaneamente più interni e telefoni.

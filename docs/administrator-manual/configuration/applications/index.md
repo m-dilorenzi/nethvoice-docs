@@ -17,3 +17,4 @@ The following applications are available in the *Applications* section:
 - **Phonebook Sources**: Integrate external address books for contact resolution.
 - **Parameterized URLs**: Trigger custom URLs with call-related parameters during call events.
 - **Video Sources**: Configure IP cameras and video sources for integration with NethVoice.
+- **Bulk actions**: Manage and modify multiple extensions and phones simultaneously.
