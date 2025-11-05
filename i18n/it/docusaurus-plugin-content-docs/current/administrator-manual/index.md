@@ -169,11 +169,28 @@ Per sbloccare queste funzionalità e superare il limite di 8 interni, attivate u
 - **Servizi Professionali**: Contattate Nethesis per distribuzioni enterprise e supporto
 - **Guida Provisioning**: Informazioni dettagliate su telefoni e gateway supportati nella [sezione Provisioning](./provisioning/index.md)
 
-## Struttura della Documentazione
+## Informazioni su Nethesis {#about-nethesis}
 
-Questo manuale è organizzato come segue:
+**Nethesis** è l'azienda dietro lo sviluppo di NethVoice. È un'importante realtà italiana nella produzione di soluzioni open source per le PMI (piccole e medie imprese). Fondata sul principio che il software open source sia la base ideale per sistemi aziendali sicuri, innovativi e convenienti, Nethesis fornisce soluzioni ICT modulari, user‑friendly e affidabili, con supporto e servizi completamente in italiano.
 
-- **Introduzione**: Installazione e configurazione iniziale
-- **Provisioning Telefonico**: Gestione dispositivi, modelli supportati e configurazione
-- **Amministrazione Avanzata**: Trunk, gateway, instradamento, applicazioni e tuning di sistema
-- **Manuale Utente**: Documentazione per l'utente finale per client CTI e strumenti di comunicazione
+Con migliaia di installazioni attive e una rete di centinaia di partner in Italia e all'estero, Nethesis si impegna a:
+
+- **Innovazione Open Source**: Costruire su tecnologie comprovate, trasparenti e guidate dalla comunità per garantire sicurezza e flessibilità
+- **Design incentrato sull'utente**: Semplificare tecnologie complesse con interfacce web intuitive per esperti e non esperti
+- **Supporto locale**: Fornire supporto tecnico e commerciale in lingua italiana, con sviluppo e infrastrutture basate in Italia
+- **Partnership a lungo termine**: Dare priorità alle relazioni rispetto alle transazioni, collaborando strettamente con partner, clienti e comunità
+
+### Suite di prodotti Nethesis
+
+Nethesis offre una suite completa di soluzioni ICT modulari e indipendenti che rispondono alle esigenze fondamentali delle aziende moderne:
+
+- **[NethVoice](https://www.nethesis.it/soluzioni/nethvoice)** — PBX VoIP aperto e versatile per comunicazioni unificate. Integra voce, video, mobile e sistemi aziendali con funzionalità come web phone, app mobile, funzionalità di call center e provisioning intelligente dei telefoni. Si installa su NethServer.
+
+- **[NethService](https://www.nethesis.it/soluzioni/nethservice)** — Suite di collaborazione per il cloud privato. Centralizza posta elettronica, calendari, contatti, documenti e chat con Active Directory integrata e servizi cloud aziendali. Si installa su NethServer.
+
+- **[NethSecurity](https://www.nethesis.it/soluzioni/nethsecurity)** — Firewall enterprise per le PMI. Protegge la rete e assicura accesso rapido e sicuro ai servizi cloud con threat intelligence, qualità del servizio, VPN e filtraggio cloud. Firewall UTM basato su OpenWRT.
+
+- **[NethSpot](https://www.nethesis.it/soluzioni/nethspot)** — Gestione hotspot WiFi pubblici. Migliora l'esperienza guest con proximity marketing, login social, gestione centralizzata del WiFi e controllo della banda.
+
+Tutte le soluzioni sono indipendenti dalla modalità di distribuzione: installabili su appliance certificate, macchine virtuali, cloud privati o hardware compatibile. Per maggiori informazioni visitate [www.nethesis.it](https://www.nethesis.it) o contattate [marketing@nethesis.it](mailto:marketing@nethesis.it).
+
