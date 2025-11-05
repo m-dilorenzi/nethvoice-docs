@@ -15,10 +15,6 @@
     "message": "Tutorial",
     "description": "Navbar item with label Tutorial"
   },
-  "item.label.Announcements": {
-    "message": "Annunci",
-    "description": "Navbar item with label Announcements"
-  },
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"

@@ -54,7 +54,6 @@ Directory structure:
 
 - `docs/` - English documentation content
 - `i18n/it/docusaurus-plugin-content-docs/current/` - Italian
-- `blog/` - Blog posts
 
 To add a new documentation page, follow these steps:
 

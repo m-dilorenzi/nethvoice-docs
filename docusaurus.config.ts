@@ -129,7 +129,6 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Announcements', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right',
@@ -177,10 +176,6 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Announcements',
-              to: '/blog/',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/NethServer/nethvoice-docs',

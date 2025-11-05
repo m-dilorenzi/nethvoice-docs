@@ -31,10 +31,6 @@
     "message": "Partner Community (Italian)",
     "description": "The label of footer link with label=Partner Community (Italian) linking to https://partner.nethesis.it"
   },
-  "link.item.label.Announcements": {
-    "message": "Announcements",
-    "description": "The label of footer link with label=Announcements linking to /blog/"
-  },
   "link.item.label.GitHub": {
     "message": "GitHub",
     "description": "The label of footer link with label=GitHub linking to https://github.com/NethServer/nethvoice-docs"
