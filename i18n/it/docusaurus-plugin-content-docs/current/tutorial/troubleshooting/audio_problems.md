@@ -33,6 +33,8 @@ Negli ambienti di deploy di NethVoice standard, il Proxy gestisce la traduzione 
 
 **Situazione:** Telefoni registrati da sedi remote utilizzando crittografia TLS hanno audio mono-direzionale o assente.
 
+![VoIP Provider ACK Issue](/img/tutorial/sngrep_trunk.png)
+
 **Causa Principale:** Configurazione dell'indirizzo IP esterno non correttamente pubblicizzata ai client TLS-connessi.
 
 ### Scenario 4: Problema ACK del Provider VoIP

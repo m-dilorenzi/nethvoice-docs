@@ -39,6 +39,8 @@ In standard NethVoice deployments, the Proxy handles NAT translation, and you sh
 
 **Situation:** NethVoice sends a **200 OK** response to the provider, but the provider doesn't send back an **ACK** (acknowledgment). This typically indicates incomplete call signaling.
 
+![VoIP Provider ACK Issue](/img/tutorial/sngrep_trunk.png)
+
 **Root Cause:** NethVoice advertises a different public IP address than the one from which the signaling is actually sent, causing the provider to route the ACK to an incorrect destination.
 
 ## Solution: Configure NAT Settings {#nat-settings}
