@@ -5,9 +5,7 @@ sidebar_position: 6
 
 Questa procedura è necessaria solo per un trunk VoIP non registrato (ad esempio, un trunk basato su IP senza credenziali di registrazione SIP).
 
-L'obiettivo è instradare le chiamate con una radice specifica a un'istanza NethVoice (il PBX interno).
-Quando una chiamata (in uscita dal PBX o in arrivo da un gateway/provider) viene elaborata da NethVoice Proxy, il proxy verifica la parte iniziale della stringa di composizione, la **radice**.
-Se la chiamata corrisponde alla radice configurata (ad esempio, `07214055`), il proxy instrada la chiamata al sistema PBX NethVoice specificato (`nethvoice1`).
+Lo scopo di questa procedura è instradare le chiamate che iniziano con un prefisso radice designato verso una specifica istanza PBX NethVoice. Quando una chiamata—sia in uscita dal PBX che in arrivo da un gateway o provider—raggiunge il NethVoice Proxy, il proxy esamina l'inizio del numero composto (la **radice**). Se la stringa di composizione corrisponde alla radice configurata (ad esempio, `07214055`), il proxy inoltra automaticamente la chiamata all'istanza PBX NethVoice selezionata (ad esempio, `nethvoice1`). In questo modo, le chiamate con il prefisso specificato vengono sempre instradate correttamente verso il PBX interno desiderato.
 
 ### 1. Prerequisiti {#1-prerequisites}
 

@@ -5,7 +5,7 @@ sidebar_position: 6
 
 This procedure is only necessary if an unregistered VoIP trunk (e.g., an IP-based trunk without SIP registration credentials).
 
-The objective is to route calls that begin with a specific root to a NethVoice instance (the internal PBX). When a call (either outgoing from the PBX or incoming from a gateway/provider) is processed by the NethVoice Proxy, the proxy checks the start of the dial string — the **root**. If the call matches the configured root (for example, `07214055`), the proxy routes the call to the specified NethVoice PBX instance (e.g., `nethvoice1`).
+The goal of this procedure is to route calls that start with a designated root prefix to a specific NethVoice PBX instance. When a call—whether outgoing from the PBX or incoming from a gateway or provider—reaches the NethVoice Proxy, the proxy examines the beginning of the dialed number (the **root**). If the dial string matches the configured root (for example, `07214055`), the proxy automatically forwards the call to the selected NethVoice PBX instance (such as `nethvoice1`). This ensures that calls with the specified prefix are consistently routed to the correct internal PBX.
 
 ### 1. Prerequisites {#1-prerequisites}
 
