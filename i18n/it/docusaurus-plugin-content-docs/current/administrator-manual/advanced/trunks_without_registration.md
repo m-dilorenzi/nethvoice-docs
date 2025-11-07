@@ -79,4 +79,4 @@ This rule instructs the NethVoice Proxy to handle calls for a specific prefix an
 
 When a call (outgoing from the PBX or incoming from a gateway/provider) is processed by the NethVoice Proxy, the proxy checks the initial part of the dialing string (the **Root**).
 
-If the call matches the configured prefix (e.g., `456`), the proxy routes the call to the specified NethVoice PBX system (`nethvoice1`).
+If the call matches the configured prefix (e.g., `07214055`), the proxy routes the call to the specified NethVoice PBX system (`nethvoice1`).
