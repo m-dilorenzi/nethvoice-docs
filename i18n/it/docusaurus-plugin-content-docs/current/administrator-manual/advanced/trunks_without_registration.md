@@ -45,7 +45,7 @@ Questa regola istruisce NethVoice Proxy a gestire le chiamate per un prefisso sp
 
 Quando una chiamata (in uscita dal PBX o in arrivo da un gateway/provider) viene elaborata da NethVoice Proxy, il proxy verifica la parte iniziale della stringa di composizione (la **Radice**).
 
-Se la chiamata corrisponde al prefisso configurato (ad esempio, `456`), il proxy instrada la chiamata al sistema PBX NethVoice specificato (`nethvoice1`).
+Se la chiamata corrisponde al prefisso configurato (ad esempio, `07214055`), il proxy instrada la chiamata al sistema PBX NethVoice specificato (`nethvoice1`).
 
 ### 2. Accessing Trunk Routing Rules {#2-accessing-trunk-routing-rules}
 
