@@ -5,7 +5,7 @@ sidebar_position: 6
 
 Questa procedura è necessaria solo per un trunk VoIP non registrato (ad esempio, un trunk basato su IP senza credenziali di registrazione SIP).
 
-L'obiettivo è instradare le chiamate con una radice specifica (prefisso) direttamente a un'istanza NethVoice (il PBX interno) **senza farle passare attraverso il motore SIP/RTP di NethVoice Proxy (Kamalio/RTP Engine).**
+L'obiettivo è instradare le chiamate con una radice specifica (prefisso) a un'istanza NethVoice (il PBX interno).
 
 ### 1. Prerequisiti {#1-prerequisites}
 
@@ -22,7 +22,7 @@ L'obiettivo è instradare le chiamate con una radice specifica (prefisso) dirett
 
 ### 3. Creazione della regola di instradamento {#3-creating-the-routing-rule}
 
-Questa regola istruisce NethVoice Proxy a gestire le chiamate per un prefisso specifico e instradare il traffico direttamente all'istanza NethVoice scelta.
+Questa regola istruisce NethVoice Proxy a gestire le chiamate per un prefisso specifico e instradare il traffico verso l'istanza NethVoice scelta.
 
 1.  Fai clic sul pulsante **Aggiungi regola**.
 2.  Apparirà la finestra di dialogo **Aggiungi regola**.
@@ -45,7 +45,7 @@ Questa regola istruisce NethVoice Proxy a gestire le chiamate per un prefisso sp
 
 Quando una chiamata (in uscita dal PBX o in arrivo da un gateway/provider) viene elaborata da NethVoice Proxy, il proxy verifica la parte iniziale della stringa di composizione (la **Radice**).
 
-Se la chiamata corrisponde al prefisso configurato (ad esempio, `456`), il proxy instrada la chiamata **direttamente** al sistema PBX NethVoice specificato (`nethvoice1`), bypassando la sua gestione interna di SIP e RTP (Kamalio/RTP Engine). Ciò garantisce che il traffico VoIP dal trunk/gateway non registrato specifico, che potrebbe avere problemi di compatibilità con il proxy, sia gestito direttamente dal PBX.
+Se la chiamata corrisponde al prefisso configurato (ad esempio, `456`), il proxy instrada la chiamata al sistema PBX NethVoice specificato (`nethvoice1`).
 
 ### 2. Accessing Trunk Routing Rules {#2-accessing-trunk-routing-rules}
 
@@ -56,7 +56,7 @@ Se la chiamata corrisponde al prefisso configurato (ad esempio, `456`), il proxy
 
 ### 3. Creating the Routing Rule {#3-creating-the-routing-rule}
 
-This rule instructs the NethVoice Proxy to handle calls for a specific prefix and route the traffic directly to the chosen NethVoice instance.
+This rule instructs the NethVoice Proxy to handle calls for a specific prefix and route the traffic to the chosen NethVoice instance.
 
 1.  Click the **Add rule** button.
 2.  The **Add rule** dialog will appear.
@@ -79,4 +79,4 @@ This rule instructs the NethVoice Proxy to handle calls for a specific prefix an
 
 When a call (outgoing from the PBX or incoming from a gateway/provider) is processed by the NethVoice Proxy, the proxy checks the initial part of the dialing string (the **Root**).
 
-If the call matches the configured prefix (e.g., `456`), the proxy routes the call **directly** to the specified NethVoice PBX system (`nethvoice1`), bypassing its internal SIP and RTP handling (Kamalio/RTP Engine). This ensures that the VoIP traffic from the specific unregistered trunk/gateway, which may have compatibility issues with the proxy, is handled directly by the PBX.
+If the call matches the configured prefix (e.g., `456`), the proxy routes the call to the specified NethVoice PBX system (`nethvoice1`).
