@@ -5,6 +5,8 @@ sidebar_position: 2
 
 # Configurazione
 
+![Nethlinklogin](/img/nethlink/nethlink_login.png)
+
 La configurazione di NethLink è semplice e richiede solo:
 
 1. Inserire il dominio di NethVoice CTI
@@ -15,6 +17,8 @@ Una volta configurato, la Phone Island di NethVoice CTI verrà automaticamente e
 
 ## Configurazione audio
 
+![Nethlinkaudio](/img/nethlink/nethlink_audio_video.png)
+
 Per garantire una qualità ottimale delle chiamate:
 
 1. Selezionare il dispositivo di input (microfono) desiderato
@@ -23,6 +27,8 @@ Per garantire una qualità ottimale delle chiamate:
 4. Regolare i livelli del volume secondo necessità
 
 ## Configurazione delle scorciatoie da tastiera
+
+![Nethlinkshortcut](/img/nethlink/nethlink_scorciatoia.png)
 
 NethLink permette di personalizzare le scorciatoie da tastiera per le operazioni più comuni:
 

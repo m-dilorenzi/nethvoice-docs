@@ -5,6 +5,8 @@ sidebar_position: 2
 
 # Configuration
 
+![Nethlinklogin](/img/nethlink/nethlink_login.png)
+
 NethLink configuration is simple and requires only:
 
 1. Enter the NethVoice CTI domain
@@ -15,6 +17,8 @@ Once configured, the Phone Island of NethVoice CTI will automatically run in Net
 
 ## Audio Configuration {#audio-configuration}
 
+![Nethlinkaudio](/img/nethlink/nethlink_audio_video.png)
+
 To ensure optimal call quality:
 
 1. Select the desired input device (microphone)
@@ -23,6 +27,8 @@ To ensure optimal call quality:
 4. Adjust volume levels as needed
 
 ## Keyboard Shortcut Configuration {#keyboard-shortcut-configuration}
+
+![Nethlinkshortcut](/img/nethlink/nethlink_scorciatoia.png)
 
 NethLink allows you to customize keyboard shortcuts for common operations:
 
