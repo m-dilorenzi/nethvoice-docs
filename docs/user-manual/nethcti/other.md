@@ -215,7 +215,9 @@ Advanced video intercom management. Manage and control your video intercoms (sub
 
 ### PBX Report {#pbx-report}
 
-Access [Advanced Reporting](https://docs.nethvoice.it/it/latest/pbxreport_manual.html) for your phone system (subject to specific permissions).
+Access detailed reports and analytics to monitor call activities, costs, and performance metrics.
+See [PBX Report](report.md) for more information.
+To login, use your NethVoice CTI credentials.
 
 ## Voice Transcription {#voice-transcription}
 
@@ -257,7 +259,7 @@ Customize your NethVoice CTI by accessing Settings:
 ### Available Settings {#available-settings}
 
 - **Devices**: Control your phones and their status
-- **Mobile App**: Generate QR code to connect your [smartphone](https://docs.nethvoice.it/it/latest/app_manual.html) (subject to specific permissions)
+- **Mobile App**: Generate QR code to connect your [smartphone](../mobile_app.md) (subject to specific permissions)
 - **Customer Card**: Configure how the customer card behaves (subject to specific permissions)
 - **Queues**: Decide how to automate your queue access (subject to specific permissions)
 - **Profile Picture**: Modify your avatar

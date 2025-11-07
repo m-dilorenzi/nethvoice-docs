@@ -215,7 +215,9 @@ Gestione avanzata videocitofoni. Gestisci e controlla i tuoi videocitofoni (sogg
 
 ### PBX Report
 
-Accedi alla [Reportistica Avanzata](https://docs.nethvoice.it/it/latest/pbxreport_manual.html) per il tuo centralino telefonico (soggetto a autorizzazioni specifiche).
+Accedi a report dettagliati e analisi per monitorare le attività delle chiamate, i costi e le metriche di performance.
+Consulta [PBX Report](report.md) per maggiori informazioni.
+Per accedere, utilizza le tue credenziali di NethVoice CTI.
 
 ## Trascrizione Vocale {#voice-transcription}
 
@@ -257,7 +259,7 @@ Personalizza il tuo NethVoice CTI accedendo alle Impostazioni:
 ### Impostazioni Disponibili
 
 - **Dispositivi**: Controlla i tuoi telefoni e il loro stato
-- **App Mobile**: Genera il codice QR per collegare il tuo [smartphone](https://docs.nethvoice.it/it/latest/app_manual.html) (soggetto a autorizzazioni specifiche)
+- **App Mobile**: Genera il codice QR per collegare il tuo [smartphone](../mobile_app.md) (soggetto a autorizzazioni specifiche)
 - **Scheda Cliente**: Configura il comportamento della scheda cliente (soggetto a autorizzazioni specifiche)
 - **Code**: Decidi come automatizzare l'accesso alle tue code (soggetto a autorizzazioni specifiche)
 - **Immagine Profilo**: Modifica il tuo avatar

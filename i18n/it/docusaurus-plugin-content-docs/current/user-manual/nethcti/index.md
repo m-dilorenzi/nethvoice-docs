@@ -42,4 +42,5 @@ Per ulteriori informazioni, consulta le sezioni specifiche:
 
 - [Accesso](./access.md) - Come accedere a NethVoice CTI
 - [Chiamate](./calls.md) - Come gestire le chiamate
+- [Report](./report.md) - Come visualizzare report e analitiche delle chiamate
 - [Altre funzionalità](./other.md) - Funzionalità aggiuntive e opzioni

@@ -42,4 +42,5 @@ For more information, refer to the specific sections:
 
 - [Access](./access.md) - How to access NethVoice CTI
 - [Calls](./calls.md) - How to manage calls
+- [Report](./report.md) - How to view reports and call analytics
 - [Other Features](./other.md) - Additional features and options
