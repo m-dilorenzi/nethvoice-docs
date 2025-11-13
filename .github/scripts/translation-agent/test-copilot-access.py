@@ -30,7 +30,7 @@ def test_copilot_access():
             }
         ],
         "model": "openai/gpt-4o",
-        "temperature": 1
+        "temperature": 0
     }
     
     try:

@@ -146,7 +146,7 @@ Return ONLY the translated markdown content that should be added/modified, witho
                     }
                 ],
                 "model": self.model_name,
-                "temperature": 1
+                "temperature": 0.2
             }
             
             response = requests.post(
@@ -269,7 +269,7 @@ Return ONLY the raw file content, starting directly with the file's content (e.g
                     }
                 ],
                 "model": self.model_name,
-                "temperature": 1  # Lower temperature for more consistent positioning
+                "temperature": 0
             }
             
             print(f"🤖 Using AI positioning for {target_file}")
@@ -376,7 +376,7 @@ Return the COMPLETE translated file content, without any explanations or markdow
                     }
                 ],
                 "model": self.model_name,
-                "temperature": 1  # Slightly higher for full file translation
+                "temperature": 0.2
             }
             
             print(f"🌍 Translating entire file: {file_path}")
