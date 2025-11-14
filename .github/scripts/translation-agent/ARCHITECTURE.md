@@ -147,7 +147,7 @@ Implemented in the agent's prompt:
 ### AI Integration Specifics
 - **Endpoint**: `https://models.github.ai/inference/chat/completions`
 - **Model**: `openai/gpt-4o` 
-- **Temperature**: 1 (for consistent translations)
+- **Temperature**: 0-0.2 (for consistent translations)
 - **Authentication**: GitHub token with Copilot subscription
 - **Timeout**: 30 seconds per request
 
