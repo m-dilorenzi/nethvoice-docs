@@ -431,6 +431,29 @@ Aggiornare i seguenti record DNS per puntare al nodo NS8:
 Testare il DNS da posizioni diverse (rete interna, rete esterna, ISP diversi) per assicurare una corretta propagazione prima di disattivare NS7.
 :::
 
+### Abilitare il certificato Let's Encrypt per NethVoice
+
+Se volete utilizzare un certificato TLS fornito da Let's Encrypt per NethVoice:
+
+1. **Aprire le impostazioni dell'applicazione NethVoice**
+   - Accedere all'interfaccia web di NS8
+   - Aprire la vostra applicazione di **NethVoice**
+   - Aprire la sezione **Impostazioni**
+
+2. **Abilitare la richiesta del certificato Let's Encrypt**
+   - Individuare la sezione TLS/Certificato
+   - Abilitare il toggle **Richiedi certificato Let's Encrypt**
+   - Assicurarsi che:
+     - Gli FQDN di NethVoice risolvano pubblicamente verso il nodo NS8
+     - La porta TCP 443 sia raggiungibile da Internet
+
+3. **Confermare e attendere l'emissione**
+   - Salvare la configurazione
+   - Attendere che la configurazione venga applicata
+   - Se la richiesta fallisce, verificare DNS, firewall e log, quindi riprovare
+
+Usate questo passaggio solo se è necessario (o preferito) un certificato Let's Encrypt invece di un certificato personalizzato.
+
 ## Riepilogo del processo di migrazione
 
 Ecco il flusso di lavoro completo della migrazione:
@@ -467,6 +490,7 @@ Ecco il flusso di lavoro completo della migrazione:
    - Puntare gli FQDN a NS8
    - Verificare la propagazione
    - Testare l'accesso
+   - Abilitare Let's Encrypt (opzionale)
    ↓
 8. Verificare e testare
    (Vedere i passaggi successivi alla migrazione)
