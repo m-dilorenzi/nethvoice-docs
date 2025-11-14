@@ -430,6 +430,28 @@ Update the following DNS records to point to your NS8 node:
 Test DNS from different locations (internal network, external network, different ISPs) to ensure proper propagation before decommissioning NS7.
 :::
 
+### Enable Let's Encrypt Certificate for NethVoice {#enable-lets-encrypt-certificate}
+
+If you want to use a TLS certificate provided by Let's Encrypt for NethVoice:
+
+1. **Open NethVoice application settings**
+   - Access the NS8 web interface
+   - Go to your **NethVoice** application
+   - Open the **Settings** section
+
+2. **Enable Let's Encrypt certificate request**
+   - Enable the toggle for **Request Let's Encrypt certificate**
+   - Ensure that:
+     - The NethVoice FQDNs resolve publicly to the NS8 node
+     - TCP port 80 (and, if required, 443) are reachable from the Internet
+
+3. **Confirm and wait for issuance**
+   - Save the configuration
+   - Wait for the configuration to complete
+   - If the configuration change fails, check DNS, firewall and logs, then retry
+
+Use this step only if you need (or prefer) a Let's Encrypt certificate instead of a custom certificate.
+
 ## Migration Process Summary {#migration-process-summary}
 
 Here's the complete migration workflow:
@@ -466,6 +488,7 @@ Here's the complete migration workflow:
    - Point FQDNs to NS8
    - Verify propagation
    - Test access
+   - Request a Let's Encrypt certificate (optional)
    ↓
 8. Verify and Test
    (See Post-Migration Steps)
