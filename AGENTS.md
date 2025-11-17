@@ -85,7 +85,7 @@ docs/
 
 ## Tutorials and guides
 
-- When generating a new tutorial or guide, use the template found inside `agents_templates/tutorial.md`
+- When generating a new tutorial or guide, use the template found inside `templates/tutorial.md`
 - Tutorials must be written inside the `docs/tutorials/` directory.
 
 ---
