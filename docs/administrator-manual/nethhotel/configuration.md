@@ -80,55 +80,53 @@ Add an extra charge to a room:
 *33 + Room Extension + # + Extra ID + # + Quantity
 ```
 
-**Example:** `*33201#99#3` charges three units of extra code 99 to room 201
+**Example:** `*33201#99#3` charges three units of the extra code 99 to room 201
 
-Set a wake-up call (guest dialed):
-```
-977
-```
+Set an alarm (guest call):
+
+`977`
 
 ## Room Management {#room-management}
 
 ### Room Status Display {#room-status-display}
 
-On the main page, all configured extensions are listed in tabs based on the numeric value of the callgroup field (configured in NethVoice).
+On the main page, all configured extensions are displayed in tabs based on the numeric value of the *callgroup* field (configured in NethVoice).
 
-Room status is indicated by color:
+The room status is indicated by color:
 
-| Color | Status | Meaning |
-|-------|--------|---------|
-| Green | Available | Room is empty and ready for check-in |
-| Red | Occupied | Guest has checked in |
-| Yellow | Cleaning | Room requires cleaning |
+| Color  | Status      | Meaning                                   |
+| ------ | ----------- | ----------------------------------------- |
+| Green  | Available   | The room is empty and ready for check-in  |
+| Red    | Occupied    | The guest has checked in                 |
+| Yellow | Cleaning    | The room needs cleaning                  |
 
 ### Accessing Room Functions {#accessing-room-functions}
 
-All available functions are presented directly within the room's panel. You can also use the contextual menu by right-clicking on a room.
+All available functions are presented directly in the room panel. It is also possible to use the context menu by right-clicking on the room.
 
-## Wake-up Call {#wake-up-call}
+## Wake-Up Call {#wake-up-call}
 
-The wake-up call feature can be scheduled either as a one-time event or repeated over multiple days.
+The wake-up call feature can be scheduled as a single event or repeated over multiple days.
 
 ### For Guests {#for-guests}
 
-Guests can set a wake-up call for their room by dialing:
-```
-977
-```
+Guests can set the wake-up call for their room by dialing:
 
-### From NethHotel Interface {#from-nethhotel-interface}
+`977`
+
+### From the NethHotel Interface {#from-nethhotel-interface}
 
 Administrators can schedule wake-up calls for rooms through the NethHotel web interface.
 
 ## Groups {#groups}
 
-You can group multiple rooms into a single group to perform bulk operations:
+It is possible to group multiple rooms into a single group to perform multiple operations:
 
-- **Check-in/Check-out**: Perform these actions on all rooms in the group simultaneously
-- **Wake-up Calls**: Schedule wake-up calls for all rooms in a group
-- **Call Policies**: Define call policies for group members:
+- **Check-in/Check-out**: perform these actions on all rooms in the group
+- **Wake-Up Calls**: schedule wake-up calls for all rooms in a group
+- **Call Policies**: define call rules for group members:
   - Enable calls between rooms
-  - Enable calls between all rooms in group
+  - Enable calls among all rooms in the group
   - Allow external calls
 
 ## Billing and Reporting {#billing-and-reporting}
@@ -138,83 +136,82 @@ You can group multiple rooms into a single group to perform bulk operations:
 To add a charge to a room:
 
 1. Open the room panel
-2. Click the corresponding extra icon
+2. Click on the icon of the corresponding extra
 3. The charge will be added to the room's bill
 
 ### Generate Reports {#generate-reports}
 
-To generate a bill report for currently occupied rooms:
+To generate the report of the bills for currently occupied rooms:
 
-1. Click the report icon
+1. Click on the report icon
 2. The report includes:
-   - Detailed list of all calls made from the room
+   - A detailed list of all calls made from the room
    - All extras/charges applied to the room
-   - Total amount summary in real time
+   - Real-time updated total
 
 ## Rates {#rates}
 
-NethHotel includes a default set of call rates based on call type (e.g., mobile, local, long-distance, etc.).
+NethHotel includes a predefined set of phone rates based on the type of call (mobile, local, long-distance, etc.).
 
 ### Managing Rates {#managing-rates}
 
 - Modify existing rates according to your pricing policy
 - Create new custom rates
-- Enable or disable calls to specific number types (e.g., premium numbers, international)
+- Enable or disable calls to specific types of numbers (e.g., premium, international)
 
 ## Extras {#extras}
 
-Extras are additional charges that can be assigned to rooms for services or items.
+Extras are additional charges assignable to rooms for services or items.
 
 ### Configuring Extras {#configuring-extras}
 
-Extras can be configured within the system and assigned to rooms:
+Extras can be configured and assigned to rooms:
 
-- **Via Web Interface**: Use the NethHotel interface to add charges to rooms
-- **Directly from Phone**: Guests or staff can dial feature codes (e.g., `*33`)
+- **Web Interface**: use NethHotel to add charges to rooms
+- **Directly from the Phone**: guests or staff can dial function codes (e.g., `*33`)
 
 ### Example {#example}
 
-Charge three units of extra code 99 to room 201:
-```
-*33201#99#3
-```
+Charge three units of the extra code 99 to room 201:
+
+`*33201#99#3`
 
 ## Options {#options}
 
-The general options section allows configuration of hotel-wide policies:
+The General Options section allows you to configure policies valid for the entire hotel:
 
-- **External Call Prefix**: Configuration of the prefix for making external calls
-- **Extension Number Format**: Define how extensions are formatted
-- **Calls Between Rooms**: Enable/disable inter-room calling
-- **Group Calls**: Enable/disable calls between rooms in same group
-- **External Calls**: Enable/disable external calls from rooms
-- **Unchecked-in Room Calls**: Enable/disable calls from rooms without checked-in guests
-- **Missed Wake-up Extension**: Extension to contact if a wake-up call is missed
-- **Room Cleaning Feature**: Enable/disable the room cleaning status feature
-- **Room Cleaning Status Code**: Code for updating room cleaning status
-- **Language**: Default language for reception messages (acts as fallback language)
+- **External Call Prefix**: set the prefix for making external calls
+- **Internal Numbering Format**: define how extensions should be formatted
+- **Calls Between Rooms**: enable/disable calls between rooms
+- **Calls Between Rooms in the Same Group**
+- **External Calls**: enable/disable external calls from rooms
+- **Calls from Rooms Without Check-in**
+- **Missed Wake-Up Call Notification Extension**
+- **Room Cleaning Status Function**
+- **Room Cleaning Status Code**
+- **Language**: default language for reception messages (fallback)
 
 ## Speed Dial Numbers {#speed-dial-numbers}
 
-The Speed Dial Numbers section allows you to define shortcuts for quick calling:
+The Speed Dial section allows you to define quick numbers for easily calling predefined destinations.
 
 ### Basic Speed Dial {#basic-speed-dial}
 
-- Define shortcuts to quickly call predefined extensions
-- **Example**: Dial `9` to reach the reception
+- Define shortcuts to quickly call extensions
+- **Example**: Dial `9` to call the reception
 
-### Conditional Speed Dial with Time Groups {#conditional-speed-dial-with-time-groups}
+### Conditional Speed Dial with Time Group {#conditional-speed-dial-with-time-groups}
 
-You can associate a speed dial number with time groups configured in the NethVoice PBX:
+It is possible to associate a speed dial with time groups configured in the NethVoice PBX:
 
-- **Destination**: Where the call goes if the time condition is met
-- **Otherwise**: Where the call goes if the time condition is not met
+- **Destination**: where the call goes if the time condition is met
+- **Otherwise**: where the call goes if the condition is NOT met
 
-This allows different routing based on business hours (e.g., send to reception during day, answering service at night).
+Allows different routing between working hours and nighttime (e.g., reception during the day, voicemail at night).
 
 ## Call History {#call-history}
 
-Review all calls made from rooms using the History section:
+View all calls made from the rooms through the History section.
 
 ### Filtering Options {#filtering-options}
 
@@ -224,12 +221,11 @@ Review all calls made from rooms using the History section:
 
 ### Use Cases {#use-cases}
 
-- Verify call details for billing purposes
-- Investigate unusual calling patterns
-- Generate call reports for accounting
-
----
+- Verify calls for billing
+- Investigate unusual patterns
+- Generate reports for accounting
 
 ## FIAS Integration {#fias-integration}
 
-NethHotel can be connected to a hotel Property Management System (PMS) for automated operations. See [FIAS Integration](./fias_integration) for complete details.
+NethHotel can be connected to a PMS (Property Management System) for automated operations.  
+See [FIAS Integration](./fias_integration) for full details.

@@ -22,3 +22,10 @@ Imparate come configurare e gestire i trunk all'interno della piattaforma. Quest
 Guida passo-passo per migrare la vostra configurazione esistente all'ultima versione. Questi tutorial includono i passaggi di preparazione, le procedure di migrazione e i controlli post-migrazione.
 
 [Leggi il Tutorial Migrazione](./migration/index.md)
+
+---
+
+## Tutorial correlati {#tutorial-correlati}
+
+* [Cloud vs On-Premise deployments](cloud_vs_onpremise)  
+* [Esporta rubrica come CSV da NethVoice](export-phonebook-csv)

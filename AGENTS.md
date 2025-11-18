@@ -83,6 +83,13 @@ docs/
 
 ---
 
+## Tutorials and guides
+
+- When generating a new tutorial or guide, use the template found inside `templates/tutorial.md`
+- Tutorials must be written inside the `docs/tutorials/` directory.
+
+---
+
 ## Planning
 
 - For complex tasks, break down the work into smaller subtasks.
