@@ -2,8 +2,6 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-
-
 ## Contributing guidelines
 
 All contributions to this documentation repository are welcome!
@@ -108,3 +106,10 @@ This command generates static content into the `build` directory and can be serv
 ### Deployment
 
 Deployment is automated via GitHub Actions: every time changes are merged into the `main` branch, the site is rebuilt and deployed to [https://docs.nethvoice.com/](https://docs.nethvoice.com/).
+
+## Documentation versioning
+
+The documentation referes to latest NethVoice release. Versioning is not implemented yet.
+In the future, for new major releases:
+- use Docusaurus [versioning feature](https://docusaurus.io/docs/versioning) to create a new version of the documentation
+- configure Kapa.ai to group documents using a version as a subgroup of NethVoice
