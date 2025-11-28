@@ -258,12 +258,23 @@ Personalizza il tuo NethVoice CTI accedendo alle Impostazioni:
 
 - **Dispositivi**: Controlla i tuoi telefoni e il loro stato
 - **App Mobile**: Genera il codice QR per collegare il tuo [smartphone](https://docs.nethvoice.it/it/latest/app_manual.html) (soggetto a autorizzazioni specifiche)
+- **Chiamate in entrata**: Controlla come si comporta l'applicazione quando riceve chiamate esterne. Questo include la scelta della suoneria, la selezione del dispositivo di riproduzione audio e la configurazione di azioni URL automatiche opzionali attivate dalle chiamate in entrata.
 - **Scheda Cliente**: Configura il comportamento della scheda cliente (soggetto a autorizzazioni specifiche)
 - **Code**: Decidi come automatizzare l'accesso alle tue code (soggetto a autorizzazioni specifiche)
 - **Immagine Profilo**: Modifica il tuo avatar
 - **Tema**: Scegli il tema chiaro o scuro in base alle tue preferenze
 - **Integrazioni**: Integra la tua Phone Island con strumenti esterni
 - **Cache**: Svuotare la cache del browser può aiutare a risolvere alcuni problemi di caricamento della pagina
+
+#### Chiamate in entrata {#chiamate-in-entrata}
+Le impostazioni delle chiamate in entrata consentono di configurare come il sistema gestisce le chiamate esterne, inclusi il comportamento della suoneria, l'uscita audio e le azioni URL automatizzate:
+
+1. Impostazioni suoneria: Scegli il suono che viene riprodotto quando si riceve una chiamata in entrata.
+2. Dispositivo di uscita suoneria: Seleziona quale dispositivo audio riprodurrà la suoneria.
+3. URL parametrizzato: È possibile configurare il sistema per aprire automaticamente un URL ogni volta che arriva una chiamata esterna. Questo è utile per ricerche nel CRM, pagine di informazioni sui clienti o strumenti interni.
+4. URL aperto su chiamata in entrata esterna: L'URL viene configurato dall'amministratore di sistema.
+5. Permessi per i pop-up: Il browser deve consentire i pop-up affinché questa funzionalità funzioni.
+6. Attivazione apertura URL: Scegli quando deve essere aperto l'URL configurato.
 
 ## Browser Supportati
 
