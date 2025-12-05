@@ -5,7 +5,7 @@ sidebar_position: 7
 
 # WSS Transport {#wss-transport}
 
-NethVoice on NethServer 8 supports Web Socket Secure (WSS) transport for extensions. Each NethVoice instance exposes a specific WSS port dedicated to websocket connections.
+NethVoice on NethServer 8 supports WebSocket Secure (WSS) transport for extensions. Each NethVoice instance exposes a specific WSS port dedicated to WebSocket connections.
 
 :::warning Network Constraint
 This configuration relies on direct connectivity and **does not function behind NAT**. Ensure the instance has direct network visibility to the client endpoints.
