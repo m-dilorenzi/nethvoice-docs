@@ -8,7 +8,7 @@ sidebar_position: 7
 NethVoice on NethServer 8 supports WebSocket Secure (WSS) transport for extensions. Each NethVoice instance exposes a specific WSS port dedicated to WebSocket connections.
 
 :::warning Network Constraint
-This configuration relies on direct connectivity and **does not function behind NAT**. Ensure the instance has direct network visibility to the client endpoints.
+This configuration relies on direct connectivity and **does not function behind NAT**. Ensure NethVoice has direct network visibility to the client endpoints.
 :::
 
 ## Service Configuration {#service-configuration}
