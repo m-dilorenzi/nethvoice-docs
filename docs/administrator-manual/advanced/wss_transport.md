@@ -18,7 +18,7 @@ The WSS port assigned to the specific NethVoice instance is defined dynamically.
 * **Variable:** `ASTERISK_WSS_PORT`
 * **Location:** Inside the module environment variables.
 
-Clients connecting to NethVoice via WebRTC or other websocket-based protocols must target this specific port.
+Clients connecting to NethVoice via WebRTC or other WebSocket-based protocols must target this specific port.
 
 ## Extension Setup {#extension-setup}
 
