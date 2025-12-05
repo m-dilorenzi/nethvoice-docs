@@ -25,7 +25,6 @@ Clients connecting to NethVoice via WebRTC or other WebSocket-based protocols mu
 To utilize WSS, the extension must be configured within the **Advanced Interface** (FreePBX).
 
 
-
 ### Prerequisites {#prerequisites}
 
 1.  Create a new **Custom Extension** or edit an existing one.
