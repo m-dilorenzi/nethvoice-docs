@@ -158,13 +158,13 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "Translation Sync Bot"
           
-          # Check if there are any changes to commit
-          if git diff --quiet; then
+          # Check if there are any changes to commit (modified files, new files, or deleted files)
+          if [ -z "$(git status --porcelain)" ]; then
             echo "✅ No translation changes needed"
           else
-            # Show what files were modified
+            # Show what files were modified or added
             echo "📝 Files with translation changes:"
-            git diff --name-only
+            git status --porcelain
             
             # Add all changes and commit
             git add .
