@@ -33,7 +33,7 @@ To utilize WSS, the extension must be configured within the **Advanced Interface
 
 ### Transport Settings {#transport-settings}
 
-Modify the extension `Advanced` settings with the following parameters to enable secure websocket transport:
+Modify the extension `Advanced` settings with the following parameters to enable secure WebSocket transport:
 
 1.  **Outbound Proxy:** Remove proxy configurations for this specific extension.
 2.  **Transport:** Set to `0.0.0.0-wss`.
