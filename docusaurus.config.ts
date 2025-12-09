@@ -9,6 +9,16 @@ const config: Config = {
   tagline: 'NethVoice is a complete and flexible VoIP solution for NethServer',
   favicon: 'img/favicon.ico',
 
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'E9DE13B70D9B7BA7',
+      },
+    },
+  ],
+
   // Custom fields for theme configuration
   customFields: {
     productVersion: '8.0',
@@ -117,6 +127,12 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+     algolia: {
+      appId: 'O6PGH102QO',
+      apiKey: '78afbe06254842a9184f40408492d896',
+      indexName: 'Docs NethVoice',
+      contextualSearch: true,
+    },
     navbar: {
       title: '',
       logo: {
