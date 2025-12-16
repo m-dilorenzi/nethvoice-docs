@@ -39,6 +39,8 @@ const config: Config = {
       "data-website-id": "54bcf336-8574-4f4e-b02d-27916cc99e46",
       "data-project-name": "NethVoice Documentation",
       "data-project-color": "#059669",
+      "data-modal-header-bg-color": "#059669",
+      "data-modal-title-color": "#ffffff",
       "data-project-logo": "https://docs.nethvoice.com/img/favicon_white.ico",
       "data-source-group-ids-include": "e92a7b49-112e-479c-8813-0b8562b9e652",
       async: true,
