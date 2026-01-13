@@ -99,10 +99,10 @@ Before deploying NethVoice, ensure you have:
 1. **[Review System Requirements](./install/nethserver.md#system-requirements)** - Ensure your infrastructure meets requirements
 2. **[Install NethServer 8](./install/nethserver.md)** - Deploy the base infrastructure platform
 3. **[Install & Configure NethVoice](./install/nethvoice_install.md)** - Install NethVoice Proxy and NethVoice modules
-6. **Configure Your System**:
+4. **Configure Your System**:
    - [Provision Phones](./provisioning/index.md) - Deploy and configure telephone devices
    - [Manage Extensions](../user-manual/nethcti/index.md) - Create extensions and assign to users
-7. **[Advanced Configuration](./advanced/index.md)** - Configure trunks, gateways, routing, and advanced features
+5. **[Advanced Configuration](./advanced/index.md)** - Configure trunks, gateways, routing, and advanced features
 
 ## Key Documentation Sections {#key-documentation-sections}
 

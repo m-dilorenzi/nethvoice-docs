@@ -137,7 +137,7 @@ After installation completes:
    - Password: `Nethesis,1234`
 
 Follow the wizard to create a cluster and configure the node.
-More info available in the [official NethServerdocumentation](https://docs.nethserver.org/projects/ns8/en/latest/install.html#post-installation-steps).
+More info available in the [official NethServer documentation](https://docs.nethserver.org/projects/ns8/en/latest/install.html#post-installation-steps).
 
 
 After cluster setup, you can:

@@ -29,7 +29,7 @@ Open the NethVoice application from the **Applications** page or from the **Appl
 
 ### Account Provider
 
-The first step of the setup wizard help you configure the user domain used by NethVoice.
+The first step of the setup wizard helps you configure the user domain used by NethVoice.
 
 User domains store users and groups in an LDAP database. NethVoice requires a user domain to manage extensions, users, and authentication. 
 NethServer 8 supports two types of LDAP account providers:
@@ -94,7 +94,7 @@ The setup wizard detects automatically if there already is a proxy on the instal
 3. **Set the Network interface** that will handle VoIP traffic
 4. **Configure Public IP address** if different from the interface IP
 
-Above configuration will be the entrypoint for all external VoIP traffic.
+The above configuration will be the entrypoint for all external VoIP traffic.
 
 Make sure that:
 - the configured FQDN resolves correctly to the public IP address
@@ -135,7 +135,7 @@ https://nethvoice.nethserver.org
 To access the NethVoice administration interface, use the following credentials:
 
 - User: `admin`
-- Password: `Nethesis,1234`, the default password if the *Reset NethVoice admin password to access user interface* option was not used during the configuration
+- Password: The password you have chosen in the first-time configuration wizard
 
 After completing NethVoice configuration in the administration interface, users can access NethVoice CTI on the base host configured, e.g.:
 ```
@@ -144,7 +144,7 @@ https://cti.nethserver.org
 
 ## Module Configuration {#module-configuration}
 
-The settings of the NethVoice module can be reviewew and changed by accessing the NethVoice module of NethServer 8. To do this:
+The settings of the NethVoice module can be reviewed and changed by accessing the NethVoice module of NethServer 8. To do this:
 
 - Access the NethServer cluster administration page.
 - Open the NethVoice application from the **Application drawer** or from the **Applications** page.
@@ -169,7 +169,7 @@ On the **Integrations** page you can configure call and voicemail transcription:
 For detailed information on how users can access and use voice transcription features, see [Voice Transcription](../../user-manual/nethcti/other.md#voice-transcription) in the User Manual.
 :::
 
-On the **Rebranding** page you can customize the NethVoice user interface with the brand identity of your company. To enable this feature, you have to contact Nethesis sales team and an have active Enterprise subscription.
+On the **Rebranding** page you can customize the NethVoice user interface with the brand identity of your company. To enable this feature, you have to contact Nethesis sales team and have an active Enterprise subscription.
 
 On the **Hotel** page you can configure the Hotel module; an active subscription is required for this feature.
 
