@@ -19,27 +19,19 @@ Inizia installando NethServer 8 sul tuo server.
 	- **Password:** `Nethesis,1234`
 - Crea un cluster e assicurati che il server abbia un IP statico e un FQDN valido.
 
-## 2. Installare e configurare il Proxy NethVoice {#2-install-and-configure-nethvoice-proxy}
+## 2. Installa il modulo NethVoice {#2-installa-il-modulo-nethvoice}
 
-Il Proxy NethVoice è necessario per abilitare l'accesso remoto sicuro ai servizi NethVoice.
-- Installa il modulo Proxy NethVoice dal Software Center.
-- Assegna un FQDN valido (es. `proxy.tuodominio.org`) e verifica che il record DNS sia configurato.
-- Configura l'interfaccia di rete e l'IP pubblico secondo necessità.
-- Può essere installato un solo Proxy NethVoice per nodo.
-- Per i passaggi dettagliati, consulta la [documentazione del Proxy NethVoice](https://docs.nethvoice.com/i18n/it/docusaurus-plugin-content-docs/current/administrator-manual/install/nethvoice_install.md#step-1-install-nethvoice-proxy).
+Una volta configurato il proxy, è possibile installare il modulo NethVoice:
+- Aprire il **Software Center** dall'interfaccia web.
+- Cercare l'applicazione NethVoice e fare clic su **Install**.
+- Per maggiori informazioni, consultare la [documentazione del Software Center](https://docs.nethserver.org/projects/ns8/en/latest/software_center.html).
 
-## 3. Installare il modulo NethVoice {#3-install-nethvoice-module}
+## 3. Configura NethVoice {#3-configura-nethvoice}
 
-Una volta configurato il proxy, puoi installare il modulo NethVoice:
-- Apri il **Software Center** dall'interfaccia web.
-- Cerca l'applicazione NethVoice e clicca su **Installa**.
-- Per maggiori informazioni, consulta la [documentazione del Software Center](https://docs.nethserver.org/projects/ns8/it/latest/software_center.html).
-
-## 4. Configurare NethVoice {#4-configure-nethvoice}
-
-Dopo l'installazione, configura la tua istanza NethVoice:
-- Segui la [guida alla configurazione di NethVoice](https://docs.nethvoice.com/i18n/it/docusaurus-plugin-content-docs/current/administrator-manual/install/nethvoice_install.md#module-configuration) per istruzioni dettagliate.
-- Completa la configurazione iniziale, aggiungi utenti e configura l'ambiente telefonico secondo le tue esigenze.
+Dopo l'installazione, configurare l'istanza NethVoice:
+- Seguire il [wizard di configurazione iniziale](https://docs.nethvoice.com/docs/administrator-manual/install/nethvoice_install#setup-wizard)
+- Seguire la [guida alla configurazione di NethVoice](https://docs.nethvoice.com/docs/administrator-manual/install/nethvoice_install#module-configuration) per istruzioni dettagliate sulla configurazione.
+- Completare la configurazione iniziale, aggiungere utenti e configurare l'ambiente di telefonia secondo necessità.
 
 ---
 
