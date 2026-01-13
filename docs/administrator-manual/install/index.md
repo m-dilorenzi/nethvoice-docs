@@ -49,7 +49,7 @@ Follow the [NethServer Installation guide](nethserver.md) to:
 - Access the web administration interface
 - Create your cluster
 
-### Step 3: Install and configure NethVoice {#step-5-install-nethvoice}
+### Step 3: Install and configure NethVoice {#step-3-install-nethvoice}
 
 Follow the [NethVoice Installation guide](nethvoice_install.md) to:
 - Install NethVoice
