@@ -143,7 +143,7 @@ Dopo la configurazione del cluster, puoi:
 1. **Installa NethVoice**: Procedi con l'[installazione di NethVoice](nethvoice_install) tramite il Software Center
 2. **Registra NethServer**: Attiva il tuo [abbonamento Enterprise](#registrare-nethserver)
 
-## Registrare NethServer {#registrare-nethserver}
+## Registrare NethServer {#register-nethserver}
 
 NethServer deve avere una subscription Enterprise per sbloccare tutte le funzionalità di NethVoice.
 Consulta la [sezione subscription](../index.md#subscription) per ulteriori informazioni.
