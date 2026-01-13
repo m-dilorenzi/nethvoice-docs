@@ -20,7 +20,7 @@ If you want a ready-to-use NethVoice installation, please consider:
 3. **Click "Install"** next to NethVoice.
 4. **Wait for installation** to complete (this may take a few minutes).
 
-## First setup wizard {#setup-wizard}
+## First-time setup wizard {#setup-wizard}
 
 Open the NethVoice application from the **Applications** page or from the **Application Drawer** in NethServer 8. A first-time configuration wizard will appear and guide you through:
 - Configuring an account provider for NethVoice
@@ -127,7 +127,7 @@ In the last step of the setup wizard, you will be prompted to provide the follow
 
 ### Next steps {#next-steps}
 
-At the end of the first-time configuration wizard, NethVoice will be accessible on the base host configured, e.g.:
+At the end of the first-time setup wizard, NethVoice will be accessible on the base host configured, e.g.:
 ```
 https://nethvoice.nethserver.org
 ```
@@ -135,7 +135,7 @@ https://nethvoice.nethserver.org
 To access the NethVoice administration interface, use the following credentials:
 
 - User: `admin`
-- Password: The password you have chosen in the first-time configuration wizard
+- Password: The password you have chosen in the first-time setup wizard
 
 After completing NethVoice configuration in the administration interface, users can access NethVoice CTI on the base host configured, e.g.:
 ```
