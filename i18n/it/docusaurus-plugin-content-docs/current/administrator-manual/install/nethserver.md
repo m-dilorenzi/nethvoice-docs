@@ -249,3 +249,5 @@ Se hai bisogno di riconfigurare le impostazioni di rete:
   - **Rocky Linux**: Utilizza `nmtui` o modifica i file di NetworkManager
   - **Debian**: Utilizza `netplan` o `/etc/network/interfaces`
   - **CentOS Stream/AlmaLinux**: Utilizza `nmcli` o `nmtui`
+
+## Registrare NethServer {#registrare-nethserver}

@@ -69,30 +69,25 @@ In questo scenario:
 
 ## Installazione
 
+### Installazione consigliata: {#installation-steps}
+
+NethVoice Proxy viene installato come parte della procedura guidata di configurazione del modulo NethVoice. Consultare [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza completa di installazione.
+
+### Installazione manuale (non consigliata):
+
 :::note
-Puoi installare solo un NethVoice Proxy per nodo dal Software Center.
+È possibile installare un solo NethVoice Proxy per nodo dal Software Center.
 :::
 
-NethVoice Proxy deve essere installato **prima** di distribuire qualsiasi istanza di NethVoice. Vedi [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza di installazione completa.
+NethVoice Proxy deve essere installato **prima** di distribuire qualsiasi istanza di NethVoice.
 
-### Passaggi di installazione
-
-1. **Apri l'interfaccia di gestione di NethServer** sul tuo nodo
-2. **Naviga a Software Center**
-3. **Cerca "NethVoice Proxy"**
-4. **Fai clic su "Installa"** e attendi il completamento dell'installazione
-5. **Procedi alla configurazione** (vedi la sezione sottostante)
-
-:::warning Ordine di installazione
-Non tentare di installare NethVoice prima di installare e configurare NethVoice Proxy. L'installazione non riuscirà se il proxy non è disponibile.
+1. **Aprire l'interfaccia di gestione di NethServer** sul proprio nodo  
+2. **Navigare al Software Center**  
+3. **Selezionare "NethVoice Proxy"** dall'elenco dei pacchetti disponibili  
+4. **Fare clic su "Installa"** e attendere il completamento dell'installazione  
+5. **Procedere alla configurazione** (vedere la sezione seguente)  
 
 ## Configurazione
-
-La configurazione di NethVoice Proxy è essenziale prima di installare le istanze di NethVoice. Il proxy richiede un FQDN dedicato e impostazioni di rete appropriate.
-
-:::warning Configurazione richiesta
-NethVoice Proxy deve essere completamente configurato e operativo prima di installare le istanze di NethVoice. Verifica che la configurazione sia completa e che il proxy sia in esecuzione prima di procedere all'installazione di NethVoice.
-:::
 
 ### Prerequisiti
 
@@ -102,21 +97,23 @@ Prima di configurare NethVoice Proxy, assicurati che:
 2. **Indirizzo IP pubblico**: Conosci l'indirizzo IPv4 o IPv6 pubblico dove il proxy sarà accessibile da Internet
 3. **Interfaccia di rete**: Identifica quale interfaccia di rete gestirà il traffico VoIP
 
-### Passaggi di configurazione
+### Passaggi di configurazione {#configuration-steps}
 
-1. **Accedi alla pagina di configurazione del proxy** nell'interfaccia di gestione di NethServer
-2. **Inserisci il dominio proxy**: Imposta un FQDN valido (ad es. `proxy.nethserver.org`)
-   - Questo dominio deve avere un record DNS A/AAAA valido che punta al tuo IP pubblico
-   - I dispositivi VoIP esterni e gli uffici remoti utilizzeranno questo dominio per raggiungere il tuo sistema
-3. **Seleziona interfaccia di rete**: Scegli l'interfaccia di rete che gestirà il traffico VoIP dal menu a discesa
-   - Tipicamente l'interfaccia collegata alla tua WAN/Internet
-4. **Configura indirizzo IP pubblico**: 
-   - Immetti l'indirizzo IPv4 o IPv6 pubblico se diverso dall'IP dell'interfaccia
-   - Questo è necessario se il tuo nodo è dietro un router/NAT
-   - Lascia vuoto se l'interfaccia ha un indirizzo IP pubblico diretto
-5. **Richiedi certificato SSL**:
-   - Abilita Let's Encrypt se desideri la gestione automatica dei certificati SSL
-   - Richiede che il record DNS sia risolvibile pubblicamente
+NethVoice Proxy viene solitamente configurato durante la procedura guidata di configurazione di un modulo NethVoice (consultare [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza completa di installazione). Per rivedere o modificare la configurazione del proxy:
+
+1. **Accedere alla pagina di configurazione del proxy** nell'interfaccia di gestione di NethServer  
+2. **Inserire il dominio del proxy**: Impostare un FQDN valido (es. `proxy.nethserver.org`)  
+   - Questo dominio deve avere un record DNS A/AAAA valido che punti al proprio IP pubblico  
+   - I dispositivi VoIP esterni e gli uffici remoti utilizzeranno questo dominio per raggiungere il sistema  
+3. **Richiedere il certificato SSL**:  
+   - Abilitare Let's Encrypt per gestire automaticamente i certificati SSL per il dominio del proxy  
+   - Questo richiede che il record DNS sia risolvibile pubblicamente  
+4. **Selezionare l'interfaccia di rete**: Scegliere l'interfaccia di rete che gestirà il traffico VoIP dal menu a tendina  
+   - Tipicamente l'interfaccia connessa alla rete WAN/Internet  
+5. **Configurare l'indirizzo IP pubblico**:  
+   - Inserire l'indirizzo IPv4 o IPv6 pubblico se diverso dall'IP dell'interfaccia  
+   - Questo è necessario se il nodo si trova dietro un router/NAT  
+   - Lasciare vuoto se l'interfaccia ha un IP pubblico diretto
 
 ### Esempio di configurazione
 
@@ -154,14 +151,6 @@ Se il tuo nodo ha più indirizzi IP pubblici, configura il proxy con l'IP pubbli
 2. Inserisci l'IP pubblico specifico nel campo "Indirizzo IP pubblico"
 3. Assicurati che i record DNS puntino a questo indirizzo IP
 
-### Passaggi successivi
-
-Una volta che NethVoice Proxy è completamente configurato e in esecuzione:
-
-1. **Verifica che il proxy sia operativo**: Controlla lo stato del proxy nell'interfaccia di gestione di NethServer
-2. **Procedi all'installazione di NethVoice**: Vedi [Installazione di NethVoice](../install/nethvoice_install.md)
-3. **Configura istanze di NethVoice**: Ogni istanza richiede una configurazione separata con FQDN dedicati
-
 :::info Diagramma di rete
 ```
 Utenti/Trunk esterni
@@ -177,5 +166,3 @@ Utenti/Trunk esterni
 
 Il proxy agisce come gateway tra il traffico VoIP esterno e le istanze interne di NethVoice.
 :::
-
-Ora puoi installare e configurare una o più istanze di NethVoice. Vedi [Installazione di NethVoice](../install/nethvoice_install.md) per i passaggi dettagliati.

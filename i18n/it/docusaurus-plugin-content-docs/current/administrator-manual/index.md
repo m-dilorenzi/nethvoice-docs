@@ -20,10 +20,9 @@ Questa documentazione copre l'installazione completa, la configurazione e la ges
 Iniziate velocemente passando alle sezioni più importanti:
 
 - **[Guida all'Installazione](./install/index.md)** - Istruzioni complete per l'installazione, dai prerequisiti di NethServer al deployment di NethVoice
-- **[Configurazione](./configuration/index.md)** - CTI, interni e gestione utenti
+- **[Configurazione](./configuration/index.md)** - Gestione di NethVoice dopo la configurazione iniziale.
 - **[Provisioning Telefoni](./provisioning/index.md)** - Gestione automatica dei dispositivi telefonici e provisioning
 - **[Risorse Avanzate](./advanced/index.md)** - Configurazione di sistema e argomenti avanzati
-
 
 ## Componenti Principali
 
@@ -99,13 +98,11 @@ Prima di distribuire NethVoice, assicuratevi di avere:
 
 1. **[Verificare i Requisiti di Sistema](./install/nethserver.md#system-requirements)** - Assicuratevi che la vostra infrastruttura soddisfi i requisiti
 2. **[Installare NethServer 8](./install/nethserver.md)** - Distribuire la piattaforma infrastruttura base
-3. **[Creare Dominio Utente](./install/nethserver.md#user-domains)** - Configurare LDAP per utenti e autenticazione
-4. **[Installare e Configurare Proxy NethVoice](./advanced/nethvoice_proxy.md)** - Distribuire il gateway VoIP esterno (RICHIESTO prima di NethVoice)
-5. **[Distribuire NethVoice](./install/nethvoice_install.md)** - Installare il modulo NethVoice sopra il proxy
-6. **Configurare il Vostro Sistema**:
+3. **[Installa e configura NethVoice](./install/nethvoice_install.md)** - Installa il Proxy NethVoice e i moduli NethVoice.
+4. **Configurare il Vostro Sistema**:
    - [Provisioning Telefoni](./provisioning/index.md) - Distribuire e configurare dispositivi telefonici
    - [Gestire Interni](../user-manual/nethcti/index.md) - Creare interni e assegnare agli utenti
-7. **[Configurazione Avanzata](./advanced/index.md)** - Configurare trunk, gateway, instradamento e funzionalità avanzate
+5. **[Configurazione Avanzata](./advanced/index.md)** - Configurare trunk, gateway, instradamento e funzionalità avanzate
 
 ## Sezioni Documentazione Principale
 
@@ -193,4 +190,3 @@ Nethesis offre una suite completa di soluzioni ICT modulari e indipendenti che r
 - **[NethSpot](https://www.nethesis.it/soluzioni/nethspot)** — Gestione hotspot WiFi pubblici. Migliora l'esperienza guest con proximity marketing, login social, gestione centralizzata del WiFi e controllo della banda.
 
 Tutte le soluzioni sono indipendenti dalla modalità di distribuzione: installabili su appliance certificate, macchine virtuali, cloud privati o hardware compatibile. Per maggiori informazioni visitate [www.nethesis.it](https://www.nethesis.it) o contattate [marketing@nethesis.it](mailto:marketing@nethesis.it).
-
