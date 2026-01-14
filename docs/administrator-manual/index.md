@@ -91,8 +91,6 @@ Before deploying NethVoice, ensure you have:
 - ✅ **System Resources**: Minimum 2 vCPU, 2GB RAM, 40GB storage per instance
 - ✅ **Network Requirements**: Static IP, DNS configured, internet connectivity
 - ✅ **NethServer 8**: Fully installed and configured (see [Installation Guide](./install/index.md))
-- ✅ **User Domain**: Created for users and authentication (see [User Domains in NethServer Installation](./install/nethserver.md#user-domains))
-- ✅ **NethVoice Proxy**: Installed and configured with proper FQDN and DNS records (required for any NethVoice deployment)
 
 ### Deployment Steps {#deployment-steps}
 

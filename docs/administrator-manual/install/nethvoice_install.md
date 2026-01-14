@@ -27,7 +27,7 @@ Open the NethVoice application from the **Applications** page or from the **Appl
 - Installing and configuring the NethVoice Proxy
 - Configuring the NethVoice application
 
-### Account Provider
+### Account Provider {#user-domains}
 
 The first step of the setup wizard helps you configure the user domain used by NethVoice.
 
@@ -177,4 +177,4 @@ On the **Hotel** page you can configure the Hotel module; an active subscription
 - **Hotel FIAS server host**: Enter the IP address or hostname of the Hotel FIAS server.
 - **Hotel FIAS server port**: Specify the port number for the Hotel FIAS server connection.
 
-See [NethVoice Hotel Module Documentation](/docs/administrator-manual/nethhotel/index.md) for more details.
+See [NethVoice Hotel Module Documentation](/docs/administrator-manual/nethhotel/) for more details.

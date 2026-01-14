@@ -91,8 +91,6 @@ Prima di distribuire NethVoice, assicuratevi di avere:
 - ✅ **Risorse di Sistema**: Minimo 2 vCPU, 2GB RAM, 40GB storage per istanza
 - ✅ **Requisiti di Rete**: IP statico, DNS configurato, connettività internet
 - ✅ **NethServer 8**: Completamente installato e configurato (vedere [Guida all'Installazione](./install/index.md))
-- ✅ **Dominio Utente**: Creato per utenti e autenticazione (vedere [Domini Utente nell'Installazione NethServer](./install/nethserver.md#user-domains))
-- ✅ **NethVoice Proxy**: Installato e configurato con FQDN appropriato e record DNS (richiesto per qualsiasi distribuzione di NethVoice)
 
 ### Passaggi di configurazione {#deployment-steps}
 
