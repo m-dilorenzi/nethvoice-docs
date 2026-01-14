@@ -81,7 +81,7 @@ NethVoice Proxy is a standard NethServer 8 application: its settings can be revi
 Before configuring NethVoice Proxy, ensure:
 
 1. **DNS Records Created**: Create a DNS A/AAAA record for the proxy domain (e.g., `proxy.nethserver.org`) pointing to your public IP address
-2. **Public IP Address**: Know the public IPv4 or IPv6 address where the proxy will be accessible from the internet
+2. **Public IP Address**: Identify the public IPv4 or IPv6 address where the proxy will be accessible from the internet
 3. **Network Interface**: Identify which network interface will handle VoIP traffic
 
 The setup wizard detects automatically if there already is a proxy on the installation node of NethVoice and proposes to install it if needed. Then, to configure the NethVoice Proxy:
@@ -162,7 +162,7 @@ On the **Settings** page you can review and change most of the configuration par
 
 On the **Integrations** page you can configure call and voicemail transcription:
 - **Deepgram API Key**: Enter your Deepgram API key to enable advanced speech recognition features and voice transcription.
-- **Enable call transcription**: Enable this option to allow users to transcribe calls in real-time using Deepgram's speech-to-text service. This feature incurs additional costs based on your Deepgram usage.
+- **Call transcription**: Enable this option to allow users to transcribe calls in real-time using Deepgram's speech-to-text service. This feature incurs additional costs based on your Deepgram usage.
 - **Voicemail transcription**: Enable voicemail transcription to convert voicemail messages to text using Deepgram. This feature also incurs additional costs based on your Deepgram usage.
 
 :::info Voice Transcription
