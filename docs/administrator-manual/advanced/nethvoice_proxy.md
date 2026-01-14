@@ -69,7 +69,7 @@ In this scenario:
 
 ## Installation {#installation}
 
-### Recommended Installation: {#installation-steps}
+### Recommended Installation {#installation-steps}
 
 NethVoice proxy is installed as part of the NethVoice module setup wizard. See [NethVoice Installation](../install/nethvoice_install.md) for the complete installation sequence.
 
