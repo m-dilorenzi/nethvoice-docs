@@ -51,7 +51,7 @@ La procedura guidata consente di installare facilmente un provider di account Op
 - **Inserire il nome del dominio** (es. `nethvoice.local`) - questo è un nome logico, non correlato al DNS  
 - **Impostare nome utente e password dell'amministratore di OpenLDAP**  
 
-Per scenari avanzati (LDAP esterno, Active Directory, configurazione DNS, politiche di password, gestione utenti), consulta la [documentazione ufficiale sui domini utenti di NethServer 8](https://docs.nethserver.org/projects/ns8/en/latest/user_domains.htm).  
+Per scenari avanzati (LDAP esterno, Active Directory, configurazione DNS, politiche di password, gestione utenti), consulta la [documentazione ufficiale sui domini utenti di NethServer 8](https://docs.nethserver.org/projects/ns8/en/latest/user_domains.html).
 
 Argomenti chiave nella documentazione ufficiale:  
 - **Configurazione di Active Directory**: Configurazione completa del controller di dominio  

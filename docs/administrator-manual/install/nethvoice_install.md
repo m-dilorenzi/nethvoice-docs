@@ -52,7 +52,7 @@ The setup wizard lets you quickly and easily install an OpenLDAP account provide
 - **Enter domain name** (e.g., `nethvoice.local`) - this is a logical name, not DNS-related
 - **Set OpenLDAP admin username and password**
 
-For advanced scenarios (external LDAP, Active Directory, DNS setup, password policies, user management), see the [official NethServer 8 User Domains documentation](https://docs.nethserver.org/projects/ns8/en/latest/user_domains.htm).
+For advanced scenarios (external LDAP, Active Directory, DNS setup, password policies, user management), see the [official NethServer 8 User Domains documentation](https://docs.nethserver.org/projects/ns8/en/latest/user_domains.html).
 
 Key topics in the official docs:
 - **Active Directory Setup**: Complete domain controller configuration
