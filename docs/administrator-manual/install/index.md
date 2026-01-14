@@ -53,7 +53,7 @@ Follow the [NethServer Installation guide](nethserver.md) to:
 
 Follow the [NethVoice Installation guide](nethvoice_install.md) to:
 - Install NethVoice
-- Complete the setup configuration wizard
+- Complete the setup configuration wizard:
   - Configure an account provider
   - Install and configure a NethVoice Proxy
   - Set up virtual hosts, certificates and administration password
@@ -61,7 +61,7 @@ Follow the [NethVoice Installation guide](nethvoice_install.md) to:
 
 ## Quick Reference {#quick-reference}
 
-### System Requirements (Minimum) {#system-requirements-minimum}
+### Minimum System Requirements {#system-requirements-minimum}
 
 | Component | Requirement |
 |-----------|-------------|
@@ -130,7 +130,7 @@ Complete guide covering:
 - Configuration (domain, interface, public IP)
 - SSL certificate setup
 - Verification and testing
-- Must be installed BEFORE NethVoice
+- Must be installed before NethVoice
 
 ## Installation Checklist {#installation-checklist}
 

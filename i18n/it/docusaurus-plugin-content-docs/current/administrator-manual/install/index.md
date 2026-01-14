@@ -11,10 +11,10 @@ Questa sezione copre il processo di installazione completo per NethVoice, dall'i
 
 L'installazione di NethVoice è un processo in due fasi:
 
-1. **[Installazione di NethServer 8](nethserver.md)** - Installare la piattaforma base NethServer 8  
-2. **[Installazione di NethVoice](nethvoice_install.md)** - Installare e configurare l'applicazione NethVoice  
+1. **[Installazione di NethServer 8](nethserver.md)** - Installa la piattaforma base NethServer 8  
+2. **[Installazione di NethVoice](nethvoice_install.md)** - Installa e configurare l'applicazione NethVoice  
 
-## Cos'è NethServer 8?
+## Cos'è NethServer 8? {#what-is-nethserver-8}
 
 NethServer 8 (NS8) è la piattaforma infrastruttura Linux sottostante su cui gira NethVoice. Fornisce:
 
@@ -28,9 +28,9 @@ NethServer 8 (NS8) è la piattaforma infrastruttura Linux sottostante su cui gir
 NethVoice richiede che NethServer 8 sia installato per primo. Assicurati di completare l'installazione di NethServer 8 prima di procedere con NethVoice.
 :::
 
-## Percorso di installazione
+## Percorso di installazione {#installation-path}
 
-### Passaggio 1: Prerequisiti
+### Passaggio 1: Prerequisiti {#step-1-prerequisites}
 
 Prima di iniziare, assicurati di avere:
 
@@ -41,7 +41,7 @@ Prima di iniziare, assicurati di avere:
 - Connessione Internet funzionante
 - Nome di dominio completamente qualificato (FQDN) registrato e risolto
 
-### Passaggio 2: Installa NethServer 8
+### Passaggio 2: Installa NethServer 8 {#step-2-install-nethserver-8}
 
 Segui la [guida all'installazione di NethServer](nethserver.md) per:
 - Installare i componenti core di NethServer 8
@@ -59,9 +59,9 @@ Segui la [Guida all'installazione di NethVoice](nethvoice_install.md) per:
   - Configurare virtual host, certificati e password di amministrazione  
 - Accedere all'interfaccia di amministrazione di NethVoice e CTI  
 
-## Riferimento veloce
+## Quick Reference {#quick-reference}
 
-### Requisiti di sistema (Minimo)
+### Requisiti minimi di sistema {#system-requirements-minimum}
 
 | Componente | Requisito |
 |-----------|-------------|
@@ -72,7 +72,7 @@ Segui la [Guida all'installazione di NethVoice](nethvoice_install.md) per:
 | OS | **Rocky Linux 9** (subscription supportato) - AlmaLinux 9, CentOS Stream 9, Debian 12 (community supportato) |
 | Browser | Firefox, Chrome o Chromium (versione attuale) |
 
-### Metodi di installazione
+### Metodi di installazione {#installation-methods}
 
 **NethServer 8** può essere installato tramite:
 - Script di installazione standard (consigliato)
@@ -96,7 +96,7 @@ Cambia le credenziali predefinite immediatamente dopo il primo accesso per motiv
 
 ## Guide dettagliate
 
-### [Installazione di NethServer 8](nethserver.md)
+### [Installazione di NethServer 8](nethserver.md) {#nethserver-8-installation}
 
 Guida completa che copre:
 - Requisiti di sistema e consigli hardware
@@ -121,7 +121,7 @@ Guida completa che copre:
 - Accesso amministratore  
 - Configurazione iniziale  
 
-### [Installazione di NethVoice Proxy](../advanced/nethvoice_proxy.md)
+### [Installazione di NethVoice Proxy](../advanced/nethvoice_proxy.md) {#nethvoice-proxy-installation}
 
 Guida completa che copre:
 - Panoramica del proxy e architettura
@@ -130,9 +130,9 @@ Guida completa che copre:
 - Configurazione (dominio, interfaccia, IP pubblico)
 - Configurazione del certificato SSL
 - Verifica e test
-- Deve essere installato PRIMA di NethVoice
+- Deve essere installato prima di NethVoice
 
-## Elenco di controllo dell'installazione
+## Checklist dell'installazione {#installation-checklist}
 
 Prima di iniziare, assicurati che:
 
@@ -145,7 +145,7 @@ Prima di iniziare, assicurati che:
 - [ ] La connessione Internet è stabile
 - [ ] Hai accesso amministrativo al server
 
-## Note importanti
+## Note importanti {#important-notes}
 
 :::info
 **Solo piattaforme supportate**: Installa NethServer 8 solo su distribuzioni supportate. Sistemi desktop e server che eseguono altri servizi non sono supportati.
@@ -174,9 +174,9 @@ Dopo l'installazione iniziale, NethServer 8 supporta:
 
 Vedi la [documentazione di NethServer 8](https://docs.nethserver.org/projects/ns8/) per i dettagli del clustering.
 
-## Risoluzione dei problemi
+## Risoluzione dei problemi {#troubleshooting}
 
-### Problemi comuni
+### Problemi comuni {#common-issues}
 
 **Non è possibile accedere all'interfaccia web**
 - Verifica la configurazione dell'indirizzo IP statico
@@ -198,7 +198,7 @@ Vedi la [documentazione di NethServer 8](https://docs.nethserver.org/projects/ns
 
 Per ulteriore aiuto, consulta le guide dettagliate o la documentazione di NethServer 8.
 
-## Passaggi successivi
+## Passaggi successivi {#next-steps}
 
 Dopo l'installazione completata con successo:
 
