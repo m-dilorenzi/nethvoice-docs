@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # NethVoice Proxy
 
-## Panoramica
+## Panoramica {#overview}
 
 NethVoice Proxy è un componente critico che gestisce tutto il traffico VoIP esterno per le istanze di NethVoice. Agisce come gateway per le connessioni SIP e RTP basate su Internet, abilitando l'accesso esterno sicuro al tuo sistema telefonico.
 
@@ -20,7 +20,7 @@ NethVoice Proxy fornisce:
 **Importante**: NethVoice Proxy è richiesto per ogni distribuzione di NethVoice, anche con una singola istanza. Gestisce l'accesso a Internet esterno e deve essere installato e configurato prima di distribuire eventuali istanze di NethVoice.
 :::
 
-## Architettura
+## Architettura {#architecture}
 
 Il modulo NethVoice Proxy è costruito su due componenti open-source principali:
 
@@ -31,9 +31,9 @@ Il modulo NethVoice Proxy è costruito su due componenti open-source principali:
 
 Questi componenti lavorano insieme per gestire tutte le connessioni SIP e RTP in entrata e in uscita tra le tue istanze di NethVoice e le reti VoIP esterne (Internet, trunk, uffici remoti, utenti mobili).
 
-## Ruolo nelle distribuzioni di NethVoice
+## Ruolo nelle distribuzioni di NethVoice {#role-in-nethvoice-deployments}
 
-### Distribuzione con singola istanza
+### Distribuzione con singola istanza {#single-instance-deployment}
 
 Anche con una singola installazione di NethVoice, NethVoice Proxy è essenziale:
 - Agisce come interfaccia esterna per il traffico VoIP basato su Internet
@@ -41,7 +41,7 @@ Anche con una singola installazione di NethVoice, NethVoice Proxy è essenziale:
 - Gestisce l'attraversamento NAT per le connessioni mobili e remote
 - Fornisce un singolo dominio affinché gli utenti esterni raggiungano il tuo PBX
 
-### Distribuzione con più istanze
+### Distribuzione con più istanze {#multi-instance-deployment}
 
 Con più istanze di NethVoice sullo stesso nodo, NethVoice Proxy fornisce:
 - **Punto di ingresso esterno unico**: I chiamanti esterni utilizzano un FQDN (il dominio proxy)
@@ -67,37 +67,37 @@ In questo scenario:
 - Ogni istanza opera in modo indipendente mentre condivide l'accesso esterno
 :::
 
-## Installazione
+## Installazione {#installation}
 
 ### Installazione consigliata: {#installation-steps}
 
-NethVoice Proxy viene installato come parte della procedura guidata di configurazione del modulo NethVoice. Consultare [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza completa di installazione.
+Il NethVoice Proxy viene installato come parte della procedura guidata di configurazione del modulo NethVoice. Consulta [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza completa di installazione.
 
 ### Installazione manuale (non consigliata):
 
 :::note
-È possibile installare un solo NethVoice Proxy per nodo dal Software Center.
+È possibile installare un solo NethVoice Proxy per ogni nodo dal Software Center.
 :::
 
-NethVoice Proxy deve essere installato **prima** di distribuire qualsiasi istanza di NethVoice.
+NethVoice Proxy deve essere installato **prima** di configurare qualsiasi istanza di NethVoice.
 
-1. **Aprire l'interfaccia di gestione di NethServer** sul proprio nodo  
-2. **Navigare al Software Center**  
-3. **Selezionare "NethVoice Proxy"** dall'elenco dei pacchetti disponibili  
+1. **Aprire l'interfaccia di gestione di NethServer**
+2. **Navigare al Software Center**
+3. **Cercare "NethVoice Proxy"**
 4. **Fare clic su "Installa"** e attendere il completamento dell'installazione  
 5. **Procedere alla configurazione** (vedere la sezione seguente)  
 
-## Configurazione
+## Configurazione {#configuration}
 
-### Prerequisiti
+### Prerequisiti {#prerequisites}
 
 Prima di configurare NethVoice Proxy, assicurati che:
 
 1. **Record DNS creati**: Crea un record DNS A/AAAA per il dominio proxy (ad es. `proxy.nethserver.org`) che punta al tuo indirizzo IP pubblico
-2. **Indirizzo IP pubblico**: Conosci l'indirizzo IPv4 o IPv6 pubblico dove il proxy sarà accessibile da Internet
+2. **Indirizzo IP pubblico**: Identifica l'indirizzo IPv4 o IPv6 pubblico dove il proxy sarà accessibile da Internet
 3. **Interfaccia di rete**: Identifica quale interfaccia di rete gestirà il traffico VoIP
 
-### Passaggi di configurazione {#configuration-steps}
+### Passi di configurazione {#configuration-steps}
 
 NethVoice Proxy viene solitamente configurato durante la procedura guidata di configurazione di un modulo NethVoice (consultare [Installazione di NethVoice](../install/nethvoice_install.md) per la sequenza completa di installazione). Per rivedere o modificare la configurazione del proxy:
 
@@ -109,13 +109,13 @@ NethVoice Proxy viene solitamente configurato durante la procedura guidata di co
    - Abilitare Let's Encrypt per gestire automaticamente i certificati SSL per il dominio del proxy  
    - Questo richiede che il record DNS sia risolvibile pubblicamente  
 4. **Selezionare l'interfaccia di rete**: Scegliere l'interfaccia di rete che gestirà il traffico VoIP dal menu a tendina  
-   - Tipicamente l'interfaccia connessa alla rete WAN/Internet  
+   - Tipicamente questa è l'interfaccia connessa alla rete WAN/Internet
 5. **Configurare l'indirizzo IP pubblico**:  
    - Inserire l'indirizzo IPv4 o IPv6 pubblico se diverso dall'IP dell'interfaccia  
    - Questo è necessario se il nodo si trova dietro un router/NAT  
    - Lasciare vuoto se l'interfaccia ha un IP pubblico diretto
 
-### Esempio di configurazione
+### Esempio di configurazione {#configuration-example}
 
 **Scenario**: Nodo singolo con interfaccia di rete privata, IP pubblico dietro NAT
 
@@ -128,9 +128,9 @@ NethVoice Proxy viene solitamente configurato durante la procedura guidata di co
 
 **Risultato**: I dispositivi esterni si connettono a `proxy.example.com` (203.0.113.45), il traffico si instrada internamente a 192.168.1.10
 
-### Casi speciali
+### Casi speciali {#special-cases}
 
-#### Solo rete locale (senza accesso a Internet)
+#### Solo rete locale (senza accesso a Internet) {#local-network-only-no-internet-access}
 
 Se il proxy è accessibile solo all'interno di una rete locale e non da Internet:
 
@@ -143,7 +143,7 @@ Let's Encrypt: Disabilitato
 
 Utilizza l'indirizzo IP privato che i dispositivi sulla tua rete locale usano per raggiungere il proxy.
 
-#### Più IP esterni
+#### Più IP esterni {#multiple-external-ips}
 
 Se il tuo nodo ha più indirizzi IP pubblici, configura il proxy con l'IP pubblico specifico che desideri per il traffico VoIP:
 

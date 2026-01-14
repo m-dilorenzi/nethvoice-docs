@@ -81,11 +81,11 @@ You can install only one NethVoice Proxy per node from the Software Center.
 
 NethVoice Proxy must be installed **before** deploying any NethVoice instances.
 
-1. **Open NethServer Management Interface** on your node
+1. **Open NethServer Management Interface**
 2. **Navigate to Software Center**
 3. **Search for "NethVoice Proxy"**
 4. **Click "Install"** and wait for installation to complete
-5. **Proceed to Configuration** (see section below)
+5. **Proceed to configuration** (see section below)
 
 ## Configuration {#configuration}
 
@@ -94,7 +94,7 @@ NethVoice Proxy must be installed **before** deploying any NethVoice instances.
 Before configuring NethVoice Proxy, ensure:
 
 1. **DNS Records Created**: Create a DNS A/AAAA record for the proxy domain (e.g., `proxy.nethserver.org`) pointing to your public IP address
-2. **Public IP Address**: Know the public IPv4 or IPv6 address where the proxy will be accessible from the internet
+2. **Public IP Address**: Identify the public IPv4 or IPv6 address where the proxy will be accessible from the internet
 3. **Network Interface**: Identify which network interface will handle VoIP traffic
 
 ### Configuration Steps {#configuration-steps}
@@ -109,7 +109,7 @@ NethVoice Proxy is usually configured during the setup wizard of a NethVoice mod
    - Enable Let's Encrypt to automatically manage SSL certificates for the proxy domain
    - This requires the DNS record to be publicly resolvable
 4. **Select Network Interface**: Choose the network interface that will handle VoIP traffic from the dropdown menu
-   - Typically the interface connected to your WAN/Internet
+   - This is typically the interface connected to your WAN/Internet
 5. **Configure Public IP Address**: 
    - Enter the public IPv4 or IPv6 address if different from the interface IP
    - This is necessary if your node is behind a router/NAT
