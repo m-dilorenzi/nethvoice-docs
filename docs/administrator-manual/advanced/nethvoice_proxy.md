@@ -73,7 +73,7 @@ In this scenario:
 
 NethVoice proxy is installed as part of the NethVoice module setup wizard. See [NethVoice Installation](../install/nethvoice_install.md) for the complete installation sequence.
 
-### Manual Installation (not recommended):
+### Manual Installation (not recommended)
 
 :::note
 You can install only one NethVoice Proxy per node from the Software Center.
