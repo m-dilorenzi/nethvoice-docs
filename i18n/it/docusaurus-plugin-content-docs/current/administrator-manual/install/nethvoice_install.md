@@ -22,7 +22,7 @@ Se desideri un'installazione di NethVoice pronta all'uso, prendi in considerazio
 
 ## Procedura guidata di configurazione iniziale {#setup-wizard}
 
-Apri l'applicazione NethVoice dalla pagina **Applicazioni** o dal **Application Drawer** in NethServer 8. Apparirà una procedura guidata di configurazione iniziale che ti guiderà attraverso:  
+Apri l'applicazione NethVoice dalla pagina **Applicazioni** oppure dal **Menu Applicazioni** (icona a 9 punti in alto a destra, oppure premi **Ctrl + Shift + A**) in NethServer 8. Apparirà una procedura guidata di configurazione iniziale che ti guiderà attraverso:
 - Configurazione di un provider di account per NethVoice  
 - Installazione e configurazione del NethVoice Proxy  
 - Configurazione dell'applicazione NethVoice  
@@ -73,7 +73,7 @@ Il proxy gestisce tutto l'accesso esterno a Internet e il routing del traffico S
 - Gestione delle connessioni SIP e RTP per tutte le istanze di NethVoice  
 - Terminazione SSL/TLS per il traffico VoIP esposto a Internet  
 
-Il NethVoice Proxy è un'applicazione standard di NethServer 8: le sue impostazioni possono essere riviste e modificate accedendo dal **Application drawer** o dalla pagina **Applicazioni**.  
+Il NethVoice Proxy è un'applicazione standard di NethServer 8: le sue impostazioni possono essere riviste e modificate accedendo dalla pagina **Applicazioni** oppure dal **Menu Applicazioni** (icona a 9 punti in alto a destra, oppure premi **Ctrl + Shift + A**).
 
 #### Prerequisiti {#prerequisiti}
 
@@ -145,7 +145,7 @@ https://cti.nethserver.org
 Le impostazioni del modulo NethVoice possono essere riviste e modificate accedendo al modulo NethVoice di NethServer 8. Per farlo:  
 
 - Accedi alla pagina di amministrazione del cluster NethServer.  
-- Apri l'applicazione NethVoice dall'**Application drawer** o dalla pagina **Applicazioni**.  
+- Apri l'applicazione NethVoice dalla pagina **Applicazioni** oppure dal **Menu Applicazioni** (icona a 9 punti in alto a destra, oppure premi **Ctrl + Shift + A**).
 - Vai alla pagina di configurazione specifica che desideri modificare.  
 
 Nella pagina **Impostazioni** puoi rivedere e modificare la maggior parte dei parametri di configurazione:  

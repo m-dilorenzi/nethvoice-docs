@@ -22,7 +22,7 @@ If you want a ready-to-use NethVoice installation, please consider:
 
 ## First-time setup wizard {#setup-wizard}
 
-Open the NethVoice application from the **Applications** page or from the **Application Drawer** in NethServer 8. A first-time configuration wizard will appear and guide you through:
+Open the NethVoice application from the **Applications** page or the **Application Launcher** (the 9-dot icon in the top-right corner, or press **Ctrl + Shift + A**) in NethServer 8. A first-time configuration wizard will appear and guide you through:
 - Configuring an account provider for NethVoice
 - Installing and configuring the NethVoice Proxy
 - Configuring the NethVoice application
@@ -74,7 +74,7 @@ The proxy handles all external internet access and manages SIP/RTP traffic routi
 - Managing SIP and RTP connections for all NethVoice instances
 - SSL/TLS termination for internet-facing VoIP traffic
 
-NethVoice Proxy is a standard NethServer 8 application: its settings can be reviewed and changed by accessing it from the **Application drawer** or from the **Applications** page.
+NethVoice Proxy is a standard NethServer 8 application: its settings can be reviewed and changed by accessing it from the **Applications** page or the **Application Launcher** (the 9-dot icon in the top-right corner, or press **Ctrl + Shift + A**).
 
 #### Prerequisites
 
@@ -147,7 +147,7 @@ https://cti.nethserver.org
 The settings of the NethVoice module can be reviewed and changed by accessing the NethVoice module of NethServer 8. To do this:
 
 - Access the NethServer cluster administration page.
-- Open the NethVoice application from the **Application drawer** or from the **Applications** page.
+- Open the NethVoice application from the **Applications** page or the **Application Launcher** (the 9-dot icon in the top-right corner, or press **Ctrl + Shift + A**).
 - Go to the specific configuration page you want to modify.
 
 On the **Settings** page you can review and change most of the configuration parameters:
