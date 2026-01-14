@@ -94,15 +94,15 @@ Per accedere all'interfaccia web di NethServer 8, utilizza una versione aggiorna
 - Chrome
 - Chromium
 
-## Metodi di installazione
+## Metodi di installazione {#installation-methods}
 
 NethServer 8 può essere installato utilizzando due metodi:
 
-### Metodo 1: Procedura standard
+### Metodo 1: Procedura standard {#method-1-standard-procedure}
 
 Per la maggior parte delle installazioni, utilizza la procedura di installazione standard.
 
-#### Passaggi di installazione
+#### Passaggi di installazione {#installation-steps}
 
 1. **Installa curl** (se non già disponibile):
 ```bash
@@ -116,13 +116,13 @@ curl https://raw.githubusercontent.com/NethServer/ns8-core/ns8-stable/core/insta
 
 3. **Attendi il completamento**: Lo script installerà tutti i componenti core di NethServer 8.
 
-### Metodo 2: Immagine di macchina virtuale pre-costruita
+### Metodo 2: Immagine di macchina virtuale pre-costruita {#method-2-pre-built-virtual-machine-image}
 
 Un'immagine Rocky Linux 9 pre-costruita è disponibile per la distribuzione rapida su piattaforme virtuali.
 
 Vedi la documentazione ufficiale di NethServer per più dettagli: [Immagini pre-costruite di NethServer 8](https://docs.nethserver.org/projects/ns8/en/latest/install.html#pre-built-image).
 
-## Passaggi post-installazione
+## Passaggi post-installazione {#post-installation-steps}
 
 Dopo il completamento dell'installazione:
 
@@ -140,8 +140,8 @@ Ulteriori informazioni disponibili nella [documentazione ufficiale di NethServer
 
 Dopo la configurazione del cluster, puoi:
 
-1. **Installa NethVoice**: Procedi con l'[installazione di NethVoice](nethvoice_install) tramite il Software Center
-2. **Registra NethServer**: Attiva il tuo [abbonamento Enterprise](#registrare-nethserver)
+1. **Installare NethVoice**: Procedi con l'[installazione di NethVoice](nethvoice_install) tramite il Software Center
+2. **Registrare NethServer**: Attiva il tuo [abbonamento Enterprise](#registrare-nethserver)
 
 ## Registrare NethServer {#register-nethserver}
 
