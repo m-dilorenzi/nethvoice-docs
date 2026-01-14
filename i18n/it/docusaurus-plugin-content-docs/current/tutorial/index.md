@@ -10,7 +10,7 @@ Progettata per funzionare su [NethServer](https://www.nethserver.org/), NethVoic
 
 Questa guida ti accompagnerà nei passaggi fondamentali per configurare NethVoice sul tuo sistema.
 
-## 1. Installare NethServer 8 {#1-install-nethserver-8}
+## 1. Installare NethServer 8 {#install-nethserver-8}
 
 Inizia installando NethServer 8 sul tuo server.
 - Scarica e segui le istruzioni di installazione dalla [guida ufficiale](https://docs.nethserver.org/projects/ns8/it/latest/install.html).
@@ -19,14 +19,14 @@ Inizia installando NethServer 8 sul tuo server.
 	- **Password:** `Nethesis,1234`
 - Crea un cluster e assicurati che il server abbia un IP statico e un FQDN valido.
 
-## 2. Installa il modulo NethVoice {#2-installa-il-modulo-nethvoice}
+## 2. Installa il modulo NethVoice {#install-nethvoice-module}
 
 Una volta configurato il proxy, è possibile installare il modulo NethVoice:
 - Aprire il **Software Center** dall'interfaccia web.
 - Cercare l'applicazione NethVoice e fare clic su **Install**.
 - Per maggiori informazioni, consultare la [documentazione del Software Center](https://docs.nethserver.org/projects/ns8/en/latest/software_center.html).
 
-## 3. Configura NethVoice {#3-configura-nethvoice}
+## 3. Configura NethVoice {#configure-nethvoice}
 
 Dopo l'installazione, configurare l'istanza NethVoice:
 - Seguire il [wizard di configurazione iniziale](https://docs.nethvoice.com/docs/administrator-manual/install/nethvoice_install#setup-wizard)
