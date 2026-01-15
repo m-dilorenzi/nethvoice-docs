@@ -26,6 +26,13 @@ Per garantire una qualità ottimale delle chiamate:
 3. Eseguire il test audio per verificare la configurazione
 4. Regolare i livelli del volume secondo necessità
 
+## Chiamate in entrata {#configurazione-chiamate-in-entrata}
+
+![Nethlinkaudio](/img/nethlink/nethlink_ringtone.png)
+
+1. Scegli il suono che verrà riprodotto quando si riceve una chiamata in entrata.  
+2. Seleziona quale dispositivo audio riprodurrà la suoneria.
+
 ## Configurazione delle scorciatoie da tastiera
 
 ![Nethlinkshortcut](/img/nethlink/nethlink_scorciatoia.png)
