@@ -271,4 +271,4 @@ Seguendo questa guida, avete:
 * Abilitato l'eliminazione giornaliera automatica delle vecchie registrazioni di chiamate.
 * Appreso come eseguire il backup e il ripristino sicuro dei metadati di registrazione e dei file.
 
-Il servizio di eliminazione delle registrazioni verrà ora eseguito una volta al giorno e rimuoverà le registrazioni più vecchi del periodo di conservazione configurato, aiutandovi a gestire lo spazio su disco e a mantenere le prestazioni del database.
+Il servizio di eliminazione delle registrazioni verrà ora eseguito una volta al giorno e rimuoverà le registrazioni più vecchie del periodo di conservazione configurato, aiutandovi a gestire lo spazio su disco e a mantenere le prestazioni del database.
