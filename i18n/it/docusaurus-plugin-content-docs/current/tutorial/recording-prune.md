@@ -1,4 +1,4 @@
-# Eliminare i vecchi registrazioni di chiamate
+# Eliminare le vecchie registrazioni di chiamate
 
 *Come eliminare automaticamente i registrazioni di chiamate più vecchi di un numero specificato di giorni su NethVoice*
 
