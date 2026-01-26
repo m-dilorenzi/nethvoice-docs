@@ -4,7 +4,7 @@
 
 ## Obiettivo della guida
 
-Lo scopo di questa guida è **spiegare come configurare l'eliminazione automatica dei registrazioni di chiamate** su NethVoice e **descrivere la configurazione, il funzionamento e le procedure di pulizia dei dati** per garantire un'eliminazione sicura dei vecchi registrazioni.
+Lo scopo di questa guida è **spiegare come configurare l'eliminazione automatica delle registrazioni di chiamate** su NethVoice e **descrivere la configurazione, il funzionamento e le procedure di pulizia dei dati** per garantire un'eliminazione sicura delle vecchie registrazioni.
 
 ## Introduzione
 
