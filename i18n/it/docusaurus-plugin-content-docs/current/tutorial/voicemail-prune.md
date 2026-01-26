@@ -32,7 +32,7 @@ NethVoice archivia i messaggi di posta vocale in un database MariaDB. Nel corso 
 
 ### Passaggio 1: Accedere all'applicazione
 
-Innanzi tutto, connettersi a NethServer utilizzando SSH, quindi accedere all'ambiente container NethVoice:
+Innanzitutto, connettersi a NethServer utilizzando SSH, quindi accedere all'ambiente container NethVoice:
 
 ```bash
 runagent -m nethvoice1
@@ -83,7 +83,7 @@ Environment=PODMAN_SYSTEMD_UNIT=%n
 EnvironmentFile=%S/state/passwords.env
 WorkingDirectory=%S/state
 Environment=DAYS=10
-ExecStart=podman exec -i mariadb mysql -uroot -p"${MARIADB_ROOT_PASSWORD}" asteriskcdrdb -e "DELETE FROM voicemessages WHERE msgnum <> -1 AND CAST(origtime AS UNSIGNED) < (UNIX_TIMESTAMP() - ${DAYS}*24*60*60);OPTIMIZE TABLE voicemessages;"
+ExecStart=podman exec -i mariadb mysql -uroot -p"${MARIADB_ROOT_PASSWORD}" asteriskcdrdb -e "DELETE FROM voicemessages WHERE msgnum <> -1 AND CAST(origtime AS UNSIGNED) < (UNIX_TIMESTAMP() - ${DAYS}*24*60*60); OPTIMIZE TABLE voicemessages;"
 ```
 
 La riga `Environment=DAYS=10` imposta il periodo di conservazione su 10 giorni. È possibile modificare questo valore per cambiare quanti giorni di posta vocale conservare.

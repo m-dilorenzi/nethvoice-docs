@@ -8,19 +8,19 @@ Lo scopo di questa guida è **spiegare come configurare l'eliminazione automatic
 
 ## Introduzione
 
-NethVoice archivia i registrazioni di chiamate come file nel file system e mantiene i riferimenti ai metadati in un database MariaDB. Nel corso del tempo, i registrazioni possono consumare spazio su disco significativo. La **funzionalità di eliminazione dei registrazioni** consente di **eliminare automaticamente sia i file di registrazione che i loro metadati del database per i registrazioni più vecchi di un numero configurabile di giorni** (predefinito: 10 giorni) utilizzando i timer systemd e i servizi.
+NethVoice archivia le registrazioni di chiamate come file nel file system e mantiene i riferimenti ai metadati in un database MariaDB. Nel corso del tempo, le registrazioni possono consumare spazio su disco significativo. La **funzionalità di eliminazione delle registrazioni** consente di **eliminare automaticamente sia i file di registrazione che i loro metadati del database per le registrazioni più vecchie di un numero configurabile di giorni** (predefinito: 10 giorni) utilizzando i timer systemd e i servizi.
 
 ### Come funziona
 
 * Un timer systemd attiva un servizio ogni giorno a mezzanotte.
-* Il servizio rimuove prima i riferimenti ai metadati del database per i vecchi registrazioni.
+* Il servizio rimuove prima i riferimenti ai metadati nel database delle registrazioni più vecchie.
 * Il servizio quindi elimina i file di registrazione effettivi dal file system.
 * Il periodo di conservazione è **configurabile** (predefinito: 10 giorni).
-* I registrazioni e i loro metadati eliminati sono **rimossi permanentemente**.
+* Le registrazioni e i loro metadati eliminati sono **rimossi permanentemente**.
 
 ### Casi di utilizzo
 
-* **Gestione dello spazio su disco**: Prevenire l'ingrandimento del file system rimuovendo automaticamente i vecchi registrazioni.
+* **Gestione dello spazio su disco**: Prevenire l'ingrandimento del file system rimuovendo automaticamente le vecchie registrazioni.
 * **Conformità ai criteri di conservazione dei dati**: Mantenere le politiche di conservazione specifiche dell'organizzazione per i record di chiamata.
 * **Ottimizzazione delle prestazioni**: Mantenere il database snello migliora le prestazioni delle query.
 
@@ -105,7 +105,7 @@ systemctl --user daemon-reload
 systemctl --user enable --now recording-prune.timer
 ```
 
-**Fatto!** Il servizio di eliminazione dei registrazioni è ora configurato per l'esecuzione una volta al giorno.
+**Fatto!** Il servizio di eliminazione delle registrazioni è ora configurato per l'esecuzione una volta al giorno.
 
 ---
 
@@ -119,7 +119,7 @@ Prima di eseguire qualsiasi comando, assicurarsi di essere nell'ambiente applica
 runagent -m nethvoice1
 ```
 
-### Backup dei metadati di registrazione
+### Backup dei metadati delle registrazioni di chiamata
 
 Per eseguire il backup dei metadati di registrazione di chiamata dalla tabella CDR:
 
@@ -197,7 +197,7 @@ Per vedere l'output del servizio di eliminazione:
 api-server-logs logs --entity module --name nethvoice1
 ```
 
-Questo visualizza i log per il modulo NethVoice. Cercare le voci relative al servizio di eliminazione dei registrazioni:
+Questo visualizza i log per il modulo NethVoice. Cercare le voci relative al servizio di eliminazione delle registrazioni:
 
 ```
 2026-01-20T13:51:42Z [1:nethvoice1:systemd] Starting Prune old call recordings...
@@ -214,9 +214,9 @@ Per modificare il periodo di conservazione dai 10 giorni predefiniti:
 4. Salvare il file.
 5. Ricaricare il daemon utente systemd: `systemctl --user daemon-reload`
 
-### Verificare l'eliminazione dei registrazioni
+### Verificare l'eliminazione delle registrazioni
 
-Per verificare che i registrazioni siano stati eliminati, controllare la directory di registrazione:
+Per verificare che le registrazioni siano state eliminate, controllare la directory di registrazione:
 
 ```bash
 ls -lah /var/spool/asterisk/monitor/
@@ -266,9 +266,9 @@ systemctl --user daemon-reload
 
 Seguendo questa guida, avete:
 
-* Creato file di servizio e timer dell'utente systemd per l'eliminazione automatica dei registrazioni di chiamate.
+* Creato file di servizio e timer dell'utente systemd per l'eliminazione automatica delle registrazioni di chiamate.
 * Configurato il periodo di conservazione in base alle esigenze dell'organizzazione.
-* Abilitato l'eliminazione giornaliera automatica dei vecchi registrazioni di chiamate.
+* Abilitato l'eliminazione giornaliera automatica delle vecchie registrazioni di chiamate.
 * Appreso come eseguire il backup e il ripristino sicuro dei metadati di registrazione e dei file.
 
-Il servizio di eliminazione dei registrazioni verrà ora eseguito una volta al giorno e rimuoverà i registrazioni più vecchi del periodo di conservazione configurato, aiutandovi a gestire lo spazio su disco e a mantenere le prestazioni del database.
+Il servizio di eliminazione delle registrazioni verrà ora eseguito una volta al giorno e rimuoverà le registrazioni più vecchi del periodo di conservazione configurato, aiutandovi a gestire lo spazio su disco e a mantenere le prestazioni del database.
