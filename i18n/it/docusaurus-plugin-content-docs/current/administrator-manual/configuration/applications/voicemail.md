@@ -51,8 +51,12 @@ Dopo aver modificato le variabili d’ambiente del modulo, riavvia il servizio N
 
 Se non puoi (o non vuoi) impostare `SMTP_FROM_ADDRESS`, puoi forzare il mittente aggiungendo l’opzione `-f` dall’interfaccia avanzata di NethVoice:
 
-- Vai in **Avanzate > Impostazioni > Amministrazione Casella Vocale > Email**
+- Vai in **Avanzate > Impostazioni > Amministrtore Voicemail > Configurazione email > Comando di posta**
 - Aggiungi `-f user@example.com`
+
+Il risultato finale sarà:
+
+```/var/lib/asterisk/bin/send_email -f nethvoice@example.com```
 
 In questo modo NethVoice passerà il parametro `-f` al comando di invio usato per le notifiche della casella vocale.
 

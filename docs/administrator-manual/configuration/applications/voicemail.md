@@ -51,8 +51,12 @@ After changing module environment variables, restart the NethVoice service for t
 
 If you can’t (or don’t want to) set `SMTP_FROM_ADDRESS`, you can force the sender envelope by adding the `-f` option in the NethVoice advanced interface:
 
-- Go to **Advanced > Settings > Voicemail Admin > Email**
+- Go to **Advanced > Settings > Voicemail Admin > Settings > Email Config > Mail Command**
 - Add `-f user@example.com`
+
+The final result will be:
+
+```/var/lib/asterisk/bin/send_email -f nethvoice@example.com```
 
 ## Advanced: override SMTP settings for voicemail {#advanced-smtp-override}
 
