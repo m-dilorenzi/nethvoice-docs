@@ -28,7 +28,7 @@ Different VoiceBox models are available through [NethShop](https://nethshop.neth
 
 ## New Test Section
 
-Test section used to check the Translation Agent functionalities.
+Test section used to verify the functionality of the Translation Agent.
 
 ## Default configuration
 
@@ -234,7 +234,3 @@ For technical support and issues:
 - Consult the [NethVoice Administrator Manual](../index.md)
 - Review [NethServer 8 Documentation](https://docs.nethserver.org/projects/ns8/)
 - Contact Nethesis support if you have a subscription via [Helpdesk](https://helpdesk.nethesis.it)
-
-
-
-

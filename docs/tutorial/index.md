@@ -3,7 +3,6 @@ title: Getting started
 sidebar_position: 1
 ---
 
-
 # Getting Started with NethVoice
 
 NethVoice is a telephony and unified communications platform that provides PBX features for small and medium businesses.  
