@@ -77,18 +77,22 @@ jobs:
           PR_LANGUAGE=""
           COMMIT_INDEX=0
           
+          # Save commits to array to avoid subshell issues with pipes
+          mapfile -t COMMITS_ARRAY <<< "$COMMITS"
+          
           # Iterate through commits until we determine a language
-          echo "$COMMITS" | while read check_commit; do
+          for check_commit in "${COMMITS_ARRAY[@]}"; do
             COMMIT_INDEX=$((COMMIT_INDEX + 1))
             
             if [ -n "$PR_LANGUAGE" ]; then
-              # Language already determined, skip
+              # Language already determined, stop
               break
             fi
             
-            echo "  � Checking commit $COMMIT_INDEX: $(git log --oneline -1 $check_commit)"
+            echo "  ✓ Checking commit $COMMIT_INDEX: $(git log --oneline -1 $check_commit)"
             
-            COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $check_commit -- 'docs/**/*.md' 'docs/**/*.mdx' 'i18n/**/*.md' 'i18n/**/*.mdx')
+            # Get files changed in this commit - using simpler pattern matching
+            COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $check_commit)
             
             if [ -z "$COMMIT_FILES" ]; then
               echo "    ⏭️  No documentation files, checking next commit..."
@@ -163,18 +167,17 @@ jobs:
           # Process each commit
           echo ""
           echo "🔄 Processing commits one by one..."
-          echo "$COMMITS" > /tmp/all-commits.txt
           
           # Clear the files list
           > /tmp/commits-needing-translation.json
           
-          echo "$COMMITS" | while read commit; do
+          for commit in "${COMMITS_ARRAY[@]}"; do
             echo ""
             echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
             echo "📦 Processing commit: $(git log --oneline -1 $commit)"
             
             # Get files changed in this specific commit
-            COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $commit -- 'docs/**/*.md' 'docs/**/*.mdx' 'i18n/**/*.md' 'i18n/**/*.mdx')
+            COMMIT_FILES=$(git diff-tree --no-commit-id --name-only -r $commit)
             
             if [ -z "$COMMIT_FILES" ]; then
               echo "  ⏭️  No documentation files in this commit"
