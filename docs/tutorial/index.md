@@ -19,6 +19,7 @@ Begin by installing NethServer 8 on your server.
 - After installation, access the web interface at `https://<server_ip_or_fqdn>/cluster-admin/` using:
   - **Username:** `admin`
   - **Password:** `Nethesis,1234`
+  - **Passkey:** `NewPasskey`
 - Create a cluster and ensure your server has a static IP address and a valid FQDN.
 
 ## 2. Install NethVoice Module {#install-nethvoice-module}
