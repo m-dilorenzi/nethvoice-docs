@@ -51,10 +51,12 @@ jobs:
           echo "Current HEAD: $(git rev-parse HEAD)"
           echo "Main branch: $(git rev-parse origin/main)"
           
-          # Get the merge base using the PR's base commit directly
-          MERGE_BASE="${{ github.event.pull_request.base.sha }}"
-          echo "🔧 Using PR base commit as merge base..."
+          # Get all commits in the PR (from merge base to HEAD)
+          MERGE_BASE=$(git merge-base origin/${{ github.event.pull_request.base.ref }} HEAD)
           echo "📍 Merge base: $MERGE_BASE"
+          
+          # Get list of commits in chronological order (oldest first)
+          COMMITS=$(git rev-list --reverse $MERGE_BASE..HEAD)
           
           # Get list of commits in chronological order (oldest first)
           COMMITS=$(git rev-list --reverse $MERGE_BASE..HEAD)
