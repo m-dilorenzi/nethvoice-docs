@@ -13,6 +13,7 @@ The application is available for the following operating systems:
 - Windows 10/11 and later
 - macOS 10.13 and later
 - Linux (AppImage) - Not officially supported
+- Android 8.5 and later
 
 ## Key Features {#key-features}
 
