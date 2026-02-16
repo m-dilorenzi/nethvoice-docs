@@ -26,6 +26,10 @@ Physical specifications:
 Different VoiceBox models are available through [NethShop](https://nethshop.nethesis.it). Please refer to NethShop for current models and specifications.
 :::
 
+## New Test Section
+
+Test section used to check the Translation Agent functionalities.
+
 ## Default configuration
 
 ### Network Interfaces
