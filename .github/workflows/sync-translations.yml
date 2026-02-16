@@ -58,9 +58,6 @@ jobs:
           # Get list of commits in chronological order (oldest first)
           COMMITS=$(git rev-list --reverse $MERGE_BASE..HEAD)
           
-          # Get list of commits in chronological order (oldest first)
-          COMMITS=$(git rev-list --reverse $MERGE_BASE..HEAD)
-          
           if [ -z "$COMMITS" ]; then
             echo "✅ No commits found in PR"
             echo "needs-translation=false" >> $GITHUB_OUTPUT
