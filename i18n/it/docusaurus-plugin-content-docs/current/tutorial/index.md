@@ -3,7 +3,6 @@ title: Getting started
 sidebar_position: 1
 ---
 
-
 # Guida introduttiva a NethVoice
 
 NethVoice è una piattaforma di telefonia e comunicazione unificata che offre funzionalità PBX per piccole e medie imprese.
@@ -19,6 +18,7 @@ Inizia installando NethServer 8 sul tuo server.
 - Dopo l'installazione, accedi all'interfaccia web su `https://<server_ip_o_fqdn>/cluster-admin/` utilizzando:
 	- **Username:** `admin`
 	- **Password:** `Nethesis,1234`
+	- **Passkey:** `NewPasskey`
 - Crea un cluster e assicurati che il server abbia un IP statico e un FQDN valido.
 
 ## 2. Installa il modulo NethVoice {#install-nethvoice-module}
