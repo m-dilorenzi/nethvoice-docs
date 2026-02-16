@@ -47,3 +47,6 @@ For each step, refer to the linked documentation for comprehensive, step-by-step
 * [Prune old Voicemail Messages](https://docs.nethvoice.com/docs/tutorial/voicemail-prune)
 * [Prune old Call Recordings](https://docs.nethvoice.com/docs/tutorial/recording-prune)
 
+## New section appended
+
+This is a new test section appended to an already edited file in the same PR. It should be translated by the translation agent.
