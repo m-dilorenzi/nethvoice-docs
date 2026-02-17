@@ -48,4 +48,4 @@ Per ogni passaggio, consulta la documentazione collegata per istruzioni dettagli
 
 ## Nuova sezione di test
 
-Questa sezione è stata aggiunta per testare le funzionalità dell'Agente di Traduzione quando si aggiunge o si aggiorna un file già modificato nello stesso PR. L'agente dovrebbe tradurre il file.
+Questa sezione è stata aggiunta per testare le funzionalità dell'Agente di Traduzione quando si aggiunge o si aggiorna un file già modificato nella stessa PR. L'agente dovrebbe tradurre il file. Nel momento in cui si esegue una modifica manuale sulla traduzione generata dall'agente, non dovrebbe essere eseguito alcun commit.
