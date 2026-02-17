@@ -26,6 +26,10 @@ Specifiche fisiche:
 Diversi modelli di VoiceBox sono disponibili tramite [NethShop](https://nethshop.nethesis.it). Consulta NethShop per i modelli e le specifiche attuali.
 :::
 
+## Nuova sezione di test
+
+Sezione di test utilizzata per verificare le funzionalità dell'Agente di Traduzione.
+
 ## Configurazione predefinita
 
 ### Interfacce di rete
