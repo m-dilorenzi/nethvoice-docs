@@ -96,3 +96,4 @@ Se riscontri problemi di connettività dopo aver aperto le porte del firewall:
 3. **Disabilita NAT helper**: Prova a disabilitare le funzioni NAT helper/ALG se la connettività è intermittente
 4. **Verifica le porte dell'istanza**: Verifica di aver aperto le porte corrette per la tua istanza specifica di NethVoice
 5. **Contatta il supporto**: Apri un ticket con il supporto Nethesis se i problemi persistono
+6. **Recati presso uno dei nostri punti vendita autorizzati**: Prenota una sessione di supporto recandoti direttamente agli sportelli dei nostri punti vendita
