@@ -46,3 +46,7 @@ For each step, refer to the linked documentation for comprehensive, step-by-step
 * [Export phonebook as CSV from NethVoice](https://docs.nethvoice.com/docs/tutorial/export-phonebook-csv)
 * [Prune old Voicemail Messages](https://docs.nethvoice.com/docs/tutorial/voicemail-prune)
 * [Prune old Call Recordings](https://docs.nethvoice.com/docs/tutorial/recording-prune)
+
+## New appended test section
+
+This section has been added to test the Translation Agent funcionalities when adding or updating an already modified file in the same PR. The agent should translate the file.
