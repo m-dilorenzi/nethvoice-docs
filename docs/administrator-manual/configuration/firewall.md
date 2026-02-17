@@ -96,3 +96,4 @@ If you encounter connectivity issues after opening firewall ports:
 3. **Disable NAT helper**: Try disabling NAT helper/ALG functions if connectivity is intermittent
 4. **Verify instance ports**: Double-check that you've opened the correct ports for your specific NethVoice instance
 5. **Contact support**: Open a ticket with Nethesis support if issues persist
+6. **Visit one of our authorized sales points**: Book a support session by going directly to the counters of our sales points
