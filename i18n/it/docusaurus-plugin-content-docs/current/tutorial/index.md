@@ -45,3 +45,7 @@ Per ogni passaggio, consulta la documentazione collegata per istruzioni dettagli
 * [Esportare la rubrica come CSV da NethVoice](./export-phonebook-csv.md)
 * [Eliminare i vecchi messaggi della casella vocale](./voicemail-prune.md)
 * [Eliminare le vecchie registrazioni di chiamate](./recording-prune.md)
+
+## Nuova sezione di test
+
+Questa sezione è stata aggiunta per testare le funzionalità dell'Agente di Traduzione quando si aggiunge o si aggiorna un file già modificato nello stesso PR. L'agente dovrebbe tradurre il file.
