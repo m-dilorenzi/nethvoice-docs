@@ -94,3 +94,7 @@ Per informazioni o per iniziare:
 - **Supporto tecnico**: [portale di supporto Nethesis](https://helpdesk.nethesis.it)
 - **Ordini e gestione**: [NethShop](https://nethshop.nethesis.it)
 
+## Sezione di test
+
+Sezione di test sul file `saas.md` per controllare che cosa accade quando si modificano nello stesso commit sia il file inglese che quello relativo in italiano.
+

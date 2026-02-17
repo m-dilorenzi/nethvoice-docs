@@ -3,7 +3,6 @@ title: Getting started
 sidebar_position: 1
 ---
 
-
 # Guida introduttiva a NethVoice
 
 NethVoice è una piattaforma di telefonia e comunicazione unificata che offre funzionalità PBX per piccole e medie imprese.
@@ -19,6 +18,7 @@ Inizia installando NethServer 8 sul tuo server.
 - Dopo l'installazione, accedi all'interfaccia web su `https://<server_ip_o_fqdn>/cluster-admin/` utilizzando:
 	- **Username:** `admin`
 	- **Password:** `Nethesis,1234`
+	- **Passkey:** `NewPasskey`
 - Crea un cluster e assicurati che il server abbia un IP statico e un FQDN valido.
 
 ## 2. Installa il modulo NethVoice {#install-nethvoice-module}
@@ -45,3 +45,7 @@ Per ogni passaggio, consulta la documentazione collegata per istruzioni dettagli
 * [Esportare la rubrica come CSV da NethVoice](./export-phonebook-csv.md)
 * [Eliminare i vecchi messaggi della casella vocale](./voicemail-prune.md)
 * [Eliminare le vecchie registrazioni di chiamate](./recording-prune.md)
+
+## Nuova sezione di test
+
+Questa sezione è stata aggiunta per testare le funzionalità dell'Agente di Traduzione quando si aggiunge o si aggiorna un file già modificato nella stessa PR. L'agente dovrebbe tradurre il file. Nel momento in cui si esegue una modifica manuale sulla traduzione generata dall'agente, non dovrebbe essere eseguito alcun commit.

@@ -93,3 +93,7 @@ For information or to get started:
 - **Prices & Billing**: [sales@nethesis.it](mailto:sales@nethesis.it)
 - **Technical Support**: [Nethesis helpdesk portal](https://helpdesk.nethesis.it)
 - **Orders & Management**: [NethShop](https://nethshop.nethesis.it)
+
+## Test section
+
+Test section on `saas.md` file to check what happens when updating both english and italian file at the same time.

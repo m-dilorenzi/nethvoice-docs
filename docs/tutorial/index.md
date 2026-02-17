@@ -19,6 +19,7 @@ Begin by installing NethServer 8 on your server.
 - After installation, access the web interface at `https://<server_ip_or_fqdn>/cluster-admin/` using:
   - **Username:** `admin`
   - **Password:** `Nethesis,1234`
+  - **Passkey:** `NewPasskey`
 - Create a cluster and ensure your server has a static IP address and a valid FQDN.
 
 ## 2. Install NethVoice Module {#install-nethvoice-module}
@@ -45,3 +46,7 @@ For each step, refer to the linked documentation for comprehensive, step-by-step
 * [Export phonebook as CSV from NethVoice](https://docs.nethvoice.com/docs/tutorial/export-phonebook-csv)
 * [Prune old Voicemail Messages](https://docs.nethvoice.com/docs/tutorial/voicemail-prune)
 * [Prune old Call Recordings](https://docs.nethvoice.com/docs/tutorial/recording-prune)
+
+## New appended test section
+
+This section has been added to test the Translation Agent funcionalities when adding or updating an already modified file in the same PR. The agent should translate the file.
